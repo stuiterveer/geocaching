@@ -31,13 +31,7 @@ MainView {
             mainView.password = results[1]
 
             mainView.lastCoords = QtPositioning.coordinate(-33.8665593, 151.2086631)
-            mainView.cacheid = "GC7GFY8"
-
-            loadMap()
-            return
-
-            mainView.cacheid = "GC7XZM5"
-            loadDetails()
+            loadAuth()
         })        
     }
 
