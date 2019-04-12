@@ -1,6 +1,6 @@
 {
     "name": "geocaching.evilbunny",
-    "description": "A simple app to go geocaching with",
+    "description": "An app for using geocaching.com (unofficial) on Ubuntu Touch, designed to be similar to c:geo for Android.",
     "architecture": "@CLICK_ARCH@",
     "title": "Geocaching",
     "hooks": {
@@ -9,7 +9,7 @@
             "desktop":  "geocaching.desktop"
         }
     },
-    "version": "0.0.1",
+    "version": "0.0.2",
     "maintainer": "Evil Bunny <evilbunny@evilbunny.org>",
     "framework" : "ubuntu-sdk-16.04"
 }

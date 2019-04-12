@@ -771,6 +771,8 @@ def saveLogs(conn, cacheid, logstr, user_token):
     size = page_info['size']
     total_rows = page_info['totalRows']
     pages = math.ceil(total_rows / size)
+    if pages > 5:
+        pages = 5
     json_array = json_object['data']
 
     for i in range(1, pages):

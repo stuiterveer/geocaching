@@ -8,7 +8,7 @@ Item {
 
     function setBearing(headingIn)
     {
-        backRotation.angle = headingIn
+        backRotation.angle = Math.round(headingIn)
     }
 
     function setDirection(headingIn)

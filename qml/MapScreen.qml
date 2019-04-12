@@ -410,7 +410,8 @@ Page {
             
 
             yeahh.coordinate = position.coordinate
-            yeahh.angle = Math.round(mainView.direction)
+            // Not sure what to do here as it's not just an image...
+            // yeahh.angle = Math.round(mainView.direction)
 
             mainView.lastCoords = position.coordinate
             header.title = "coords: " + mainView.from_decimal(position.coordinate.latitude, "lat") + " - " + 

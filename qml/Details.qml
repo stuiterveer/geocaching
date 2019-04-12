@@ -719,16 +719,19 @@ Page {
 
             headerTitle.text = JsonObject["cachename"]
             detailsPage.coord1 = QtPositioning.coordinate(JsonObject["lat"], JsonObject["lon"])
-            var distance = Math.round(mainView.lastCoords.distanceTo(detailsPage.coord1)) + "m"
-            var azimuth = mainView.lastCoords.azimuthTo(detailsPage.coord1)
-            console.log(mainView.cacheid + ": " + distance + ", azimuth: " + azimuth)
-
+            try {
+                var distance = Math.round(mainView.lastCoords.distanceTo(detailsPage.coord1)) + "m"
+                var azimuth = mainView.lastCoords.azimuthTo(detailsPage.coord1)
+                console.log(mainView.cacheid + ": " + distance + ", azimuth: " + azimuth)
+                distanceText.text = distance + " @ " + Math.round(azimuth) + "°"
+            } catch (error) {
+                console.log(error)
+            }
             headingText.text = JsonObject['cachename']
             locText.text = mainView.from_decimal(JsonObject['lat'], 'lat') + " - " + mainView.from_decimal(JsonObject['lon'], 'lon')
             typeText.text = JsonObject['cachetype']
             sizeText.text = JsonObject['cachesize']
             cacheidText.text = mainView.cacheid
-            distanceText.text = distance + " @ " + Math.round(azimuth) + "°"
             diffText.text = JsonObject['diff'] + " / 5.0"
             terrText.text = JsonObject['terr'] + " / 5.0"
             ownerText.text = JsonObject['cacheowner']
