@@ -119,7 +119,7 @@ Page {
         pytest.call("util.getJsonRow", [mainView.cacheid], function(results) {
             var JsonObject = JSON.parse(results)
             if(JsonObject["cacheid"] != mainView.cacheid) {
-                mainView.loadMap()
+                stack.pop()
                 return
             }
 

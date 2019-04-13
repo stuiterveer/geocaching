@@ -215,13 +215,13 @@ def doAuth(username, password):
     url = "https://www.geocaching.com/account/signin"
     html = SESSION.get(url)
 
-    tokenField = html.text.split('__RequestVerificationToken', 1)[1]
-    tokenField = tokenField.split('value="', 1)[1].split('"', 1)[0].strip()
+    token_field = html.text.split('__RequestVerificationToken', 1)[1]
+    token_field = token_field.split('value="', 1)[1].split('"', 1)[0].strip()
 
     data = {}
     data['UsernameOrEmail'] = username
     data['Password'] = password
-    data['__RequestVerificationToken'] = tokenField
+    data['__RequestVerificationToken'] = token_field
     data['ReturnUrl'] = ""
 
     response = SESSION.post(url, data=data)
@@ -348,7 +348,7 @@ def cacheimage(url, filename):
     if url.startswith("file://") or url.startswith('../assets/notfound.svg'):
         return url
 
-    if url.startswith("/images/icons/"):
+    if url.startswith("/images/"):
         url = "https://www.geocaching.com" + url
 
     try:
@@ -359,7 +359,6 @@ def cacheimage(url, filename):
             if res.status_code == 200:
                 with open(filename, 'wb') as f:
                     shutil.copyfileobj(res.raw, f)
-            del res
 
         return "file://" + filename
     except Exception as error:
@@ -490,111 +489,111 @@ def dlCache(cacheid):
     conn = checkDB()
 
     cache = getRow(conn, cacheid)
-    if cache is None or (cache.lat == 0.0 and cache.lon == 0.0):
+    # if cache is None or (cache.lat == 0.0 and cache.lon == 0.0):
         # doesn't exist in the DB, dl and cache it...
 
-        cache_url = "https://www.geocaching.com/geocache/" + cacheid
-        print(cache_url)
+    cache_url = "https://www.geocaching.com/geocache/" + cacheid
+    print(cache_url)
 
-        try:
-            html = SESSION.get(cache_url)
-            data = html.text
-        except Exception as error:
-            print("494 - bombed out, are we still logged in?")
-            print(error)
-            return "bombed out, are we still logged in?"
+    try:
+        html = SESSION.get(cache_url)
+        data = html.text
+    except Exception as error:
+        print("494 - bombed out, are we still logged in?")
+        print(error)
+        return "bombed out, are we still logged in?"
 
-        # TODO: check if cache is not found, 404 page doesn't show logged in user menu
-        if "li-user-info" not in data:
-            print("bombed out, are we still logged in?")
-            return "bombed out, are we still logged in?"
+    # TODO: check if cache is not found, 404 page doesn\'t show logged in user menu
+    if "li-user-info" not in data:
+        print("bombed out, are we still logged in?")
+        return "bombed out, are we still logged in?"
 
-        print("Found cacheid: " + cacheid)
-        cachename = data.split('<span id="ctl00_ContentBody_CacheName">', 1)[1]
-        cachename = cachename.split('</span>', 1)[0].strip()
-        cachesize = data.split('" title="Size: ', 1)[1].split(' ', 1)[0].strip()
+    print("Found cacheid: " + cacheid)
+    cachename = data.split('<span id="ctl00_ContentBody_CacheName">', 1)[1]
+    cachename = cachename.split('</span>', 1)[0].strip()
+    cachesize = data.split('" title="Size: ', 1)[1].split(' ', 1)[0].strip()
 
-        cacheowner = data.split('<div id="ctl00_ContentBody_mcd1">', 1)[1]
-        cacheowner = cacheowner.split('">', 1)[1].split('</a>', 1)[0].strip()
-        cachetype = data.split('<a href="/about/cache_types.aspx" target="_blank" title="', 1)[1]
-        cachetype = cachetype.split('"', 1)[0].strip()
+    cacheowner = data.split('<div id="ctl00_ContentBody_mcd1">', 1)[1]
+    cacheowner = cacheowner.split('">', 1)[1].split('</a>', 1)[0].strip()
+    cachetype = data.split('<a href="/about/cache_types.aspx" target="_blank" title="', 1)[1]
+    cachetype = cachetype.split('"', 1)[0].strip()
 
-        diff = data.split('<span id="ctl00_ContentBody_uxLegendScale" title="', 1)[1]
-        diff = diff.split('alt="', 1)[1].split(' ', 1)[0].strip()
-        diff = float(diff)
-        terr = data.split('<span id="ctl00_ContentBody_Localize12" title="', 1)[1]
-        terr = terr.split('alt="', 1)[1].split(' ', 1)[0].strip()
-        terr = float(terr)
+    diff = data.split('<span id="ctl00_ContentBody_uxLegendScale" title="', 1)[1]
+    diff = diff.split('alt="', 1)[1].split(' ', 1)[0].strip()
+    diff = float(diff)
+    terr = data.split('<span id="ctl00_ContentBody_Localize12" title="', 1)[1]
+    terr = terr.split('alt="', 1)[1].split(' ', 1)[0].strip()
+    terr = float(terr)
 
-        hidden = data.split('<div id="ctl00_ContentBody_mcd2">', 1)[1]
-        hidden = hidden.split('</div>', 1)[0].split(':', 1)[1].strip()
-        hidden = hidden.split('\n', 1)[0].strip()
-        hidden = cleanUp(hidden)
+    hidden = data.split('<div id="ctl00_ContentBody_mcd2">', 1)[1]
+    hidden = hidden.split('</div>', 1)[0].split(':', 1)[1].strip()
+    hidden = hidden.split('\n', 1)[0].strip()
+    hidden = cleanUp(hidden)
 
-        bits = data.split("var lat=", 1)[1].split(", guid='")[0].strip()
-        lat = bits.split(", lng=", 1)[0].strip()
-        lon = bits.split(", lng=", 1)[1].strip()
+    bits = data.split("var lat=", 1)[1].split(", guid='")[0].strip()
+    lat = bits.split(", lng=", 1)[0].strip()
+    lon = bits.split(", lng=", 1)[1].strip()
 
-        short = data.split('<span id="ctl00_ContentBody_ShortDescription">', 1)[1]
-        short = short.split("</span>", 1)[0].strip()
+    short = data.split('<span id="ctl00_ContentBody_ShortDescription">', 1)[1]
+    short = short.split("</span>", 1)[0].strip()
 
-        body = data.split('<span id="ctl00_ContentBody_LongDescription">', 1)[1]
-        body = body.split('<p id="ctl00_ContentBody_hints">', 1)[0].strip()
-        body = '<span id="ctl00_ContentBody_LongDescription">' + body
+    body = data.split('<span id="ctl00_ContentBody_LongDescription">', 1)[1]
+    body = body.split('<p id="ctl00_ContentBody_hints">', 1)[0].strip()
+    body = '<span id="ctl00_ContentBody_LongDescription">' + body
 
-        hint = data.split('<div id="div_hint" class="span-8 WrapFix">', 1)[1]
-        hint = hint.split('</div>', 1)[0].strip()
+    hint = data.split('<div id="div_hint" class="span-8 WrapFix">', 1)[1]
+    hint = hint.split('</div>', 1)[0].strip()
 
-        attributes = []
+    attributes = []
 
-        tmpstr = data.split('<div class="WidgetBody">', 1)[1]
-        tmpstr = tmpstr.split('<p class="NoBottomSpacing">', 1)[0]
-        for line in tmpstr.split('<img src="/images/attributes/'):
-            line = line.strip()
-            if line == "":
-                continue
+    tmpstr = data.split('<div class="WidgetBody">', 1)[1]
+    tmpstr = tmpstr.split('<p class="NoBottomSpacing">', 1)[0]
+    for line in tmpstr.split('<img src="/images/attributes/'):
+        line = line.strip()
+        if line == "":
+            continue
 
-            line = line.split('.png"')[0]
-            if line == "attribute-blank":
-                continue
+        line = line.split('.png"', 1)[0]
+        if line == "attribute-blank":
+            continue
 
-            attributes.append(line)
-            print("attribute == " + line)
+        attributes.append(line)
+        print("attribute == " + line)
 
-        tmpstr = "{" + data.split('initialLogs = {', 1)[1]
-        tmpstr = tmpstr.split('};', 1)[0] + "}"
-        user_token = data.split("userToken = '", 1)[1].split("';", 1)[0].strip()
-        saveLogs(conn, cacheid, tmpstr, user_token)
+    tmpstr = "{" + data.split('initialLogs = {', 1)[1]
+    tmpstr = tmpstr.split('};', 1)[0] + "}"
+    user_token = data.split("userToken = '", 1)[1].split("';", 1)[0].strip()
+    saveLogs(conn, cacheid, tmpstr, user_token)
 
-        cursor = conn.cursor()
-        cursor.execute("SELECT visited FROM logbook WHERE cacheid=? and logtype='Found it' " + \
-                       "ORDER BY logid DESC LIMIT 1", (cacheid,))
-        ret = cursor.fetchone()
-        cursor.close()
-        if ret is not None:
-            lastfound = ret[0]
-        else:
-            lastfound = -1
+    cursor = conn.cursor()
+    cursor.execute("SELECT visited FROM logbook WHERE cacheid=? and logtype='Found it' " + \
+                    "ORDER BY logid DESC LIMIT 1", (cacheid,))
+    ret = cursor.fetchone()
+    cursor.close()
+    if ret is not None:
+        lastfound = ret[0]
+    else:
+        lastfound = -1
 
-        g = geocache.GeoCache()
-        g.cacheid = cacheid
-        g.dltime = int(time.time())
-        g.cachename = cachename
-        g.cacheowner = cacheowner
-        g.cachesize = cachesize
-        g.cacheurl = cache_url
-        g.cachetype = cachetype
-        g.lat = float(lat)
-        g.lon = float(lon)
-        g.diff = diff
-        g.terr = terr
-        g.hidden = hidden
-        g.lastfound = lastfound
-        g.short = short
-        g.body = body
-        g.hint = hint
+    g = geocache.GeoCache()
+    g.cacheid = cacheid
+    g.dltime = int(time.time())
+    g.cachename = cachename
+    g.cacheowner = cacheowner
+    g.cachesize = cachesize
+    g.cacheurl = cache_url
+    g.cachetype = cachetype
+    g.lat = float(lat)
+    g.lon = float(lon)
+    g.diff = diff
+    g.terr = terr
+    g.hidden = hidden
+    g.lastfound = lastfound
+    g.short = short
+    g.body = body
+    g.hint = hint
 
-        addToDB(conn, g, attributes)
+    addToDB(conn, g, attributes)
 
     closeDB(conn)
 
@@ -767,7 +766,6 @@ def saveLogs(conn, cacheid, logstr, user_token):
     cacheid = cacheid.upper()
     json_object = json.loads(logstr)
     page_info = json_object['pageInfo']
-    # { "idx":1, "size": 25, "totalRows": 151, "rows": 151 }
     size = page_info['size']
     total_rows = page_info['totalRows']
     pages = math.ceil(total_rows / size)
@@ -775,7 +773,7 @@ def saveLogs(conn, cacheid, logstr, user_token):
         pages = 5
     json_array = json_object['data']
 
-    for i in range(1, pages):
+    for i in range(1, pages + 1):
         if i > 1:
             json_array = getMoreLogs(i, size, user_token)
             if json_array is None:

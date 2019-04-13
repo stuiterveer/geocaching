@@ -60,9 +60,9 @@ class GeoCache(object):
     #     from_lon, to_lon = switchem(from_lon, to_lon)
 
     # cursor.execute("SELECT ABS(? - lat) * ABS(? - lat) + ABS(? - lon) * ABS(? - lon) " +
-    #                 "AS distance, * FROM geocaches", (lat, lat, lon, lon))
-    #                where lat between ? and ? and lon " +
-    #                "between ? and ? ORDER BY distance ASC limit 20",
+    #                 "AS distance, * FROM geocaches", (lat, lat, lon, lon)) \
+    #                where lat between ? and ? and lon " + \
+    #                "between ? and ? ORDER BY distance ASC limit 20", \
     #                (lat, lat, lon, lon, from_lat, to_lat, from_lon, to_lon))
 
    # if "*" in var:

@@ -56,11 +56,32 @@ Page {
         zoomLevel: 9
 
         MapQuickItem {
-            id: yeahh
-            sourceItem: Image { width: units.gu(10); height: units.gu(10); source: "../assets/my_location_chevron.png" }
+            id: map_marker
+            sourceItem: nav_icon
             coordinate: positionSource.position.coordinate
             opacity:1.0
             anchorPoint: Qt.point(sourceItem.width / 2, sourceItem.height / 2)
+        }
+
+        Image {
+            id: nav_icon
+            width: units.gu(10)
+            height: units.gu(10)
+            source: "../assets/my_location_chevron.png"
+
+            transform: Rotation {
+                id: mm_rotation
+                angle: 0
+                origin.x: map_marker.width / 2
+                origin.y: map_marker.height / 2
+                Behavior on angle {
+                    SpringAnimation {
+                        spring: 2
+                        damping: 0.2
+                        modulus: 360
+                    }
+                }
+            }
         }
 
         MapItemView {
@@ -387,7 +408,7 @@ Page {
         width: units.gu(20)
         height: units.gu(20)
         anchors.centerIn: parent
-        running: false
+        running: true
     }
 
     PositionSource {
@@ -408,15 +429,12 @@ Page {
             else
                 mainView.direction = map.center.azimuthTo(position.coordinate)
             
-
-            yeahh.coordinate = position.coordinate
-            // Not sure what to do here as it's not just an image...
-            // yeahh.angle = Math.round(mainView.direction)
-
             mainView.lastCoords = position.coordinate
             header.title = "coords: " + mainView.from_decimal(position.coordinate.latitude, "lat") + " - " + 
                                mainView.from_decimal(position.coordinate.longitude, "lon") + ", " + map.zoomLevel
 
+            map_marker.coordinate = position.coordinate
+            mm_rotation.angle = Math.round(mainView.direction)
         }
 
         onSourceErrorChanged: {
@@ -479,7 +497,7 @@ Page {
     Timer {
         running: true
         repeat: true
-        interval: 1000
+        interval: 5000
 
         onTriggered: {
             if(mainView.updateMap) {
@@ -493,7 +511,6 @@ Page {
     Python {
         id: pytest
         Component.onCompleted: {
-            busyIndicator.running = true
             addImportPath(Qt.resolvedUrl('../py/'))
             importModule("util", function() {});
             updateMap(map.center.latitude, map.center.longitude)

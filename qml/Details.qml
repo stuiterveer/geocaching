@@ -713,7 +713,7 @@ Page {
             if(JsonObject["cacheid"] != mainView.cacheid) {
                 print(mainView.cacheid)
                 print(JsonObject["cacheid"])
-                mainView.loadMap()
+                stack.pop()
                 return
             }
 
