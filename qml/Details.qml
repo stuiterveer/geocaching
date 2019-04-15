@@ -46,7 +46,7 @@ Page {
                     sourceSize.width: units.gu(4.5)
                     sourceSize.height: units.gu(4.5)
                 }
-                onClicked: mainView.loadCompass()
+                onClicked: loadCompass()
             }
             ToolButton {
                 width: units.gu(5)
@@ -96,7 +96,7 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     menuPopup.close()
-                    mainView.loadCompass()
+                    loadCompass()
                 }
             }
         }
@@ -146,7 +146,7 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     menuPopup.close()
-                    mainView.loadLogVisit()
+                    loadLogVisit()
                 }
             }
         }
@@ -171,7 +171,7 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     menuPopup.close()
-                    Qt.openUrlExternally("https://www.geocaching.com/geocache/" + mainView.cacheid)
+                    Qt.openUrlExternally("https://www.geocaching.com/geocache/" + cacheid)
                 }
             }
         }
@@ -196,7 +196,7 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     menuPopup.close()
-                    mainView.loadShare()
+                    loadShare()
                 }
             }
         }
@@ -427,7 +427,7 @@ Page {
                         anchors.fill: parent
                         onClicked: {
                             busyIndicator.running = true
-                            pytest.call("util.refreshCache", [mainView.cacheid], function(results) {
+                            pytest.call("util.refresh_cache", [cacheid], function(results) {
                                 updateScreen()
                                 busyIndicator.running = false
                             })
@@ -611,33 +611,18 @@ Page {
         }
     }
 
-    PositionSource {
-        id: positionSource
-        active: true
-        updateInterval: 1000
-        // preferredPositioningMethods: PositionSource.SatellitePositioningMethods
+    Timer {
+        id: detailsTimer
+        running: true
+        repeat: true
+        interval: 1000
 
-        onPositionChanged: {
-            if(isNaN(position.coordinate.longitude) || isNaN(position.coordinate.latitude)) {
-                headerTitle.text = "Waiting for a GPS fix..."
-                return
+        onTriggered: {
+            if(!isNaN(lastCoords.latitude) && lastCoords.latitude != 0 && lastCoords.longitude != 0) {
+                var distance = Math.round(lastCoords.distanceTo(detailsPage.coord1)) + "m"
+                var azimuth = Math.round(lastCoords.azimuthTo(detailsPage.coord1))
+                distanceText.text = distance + " @ " + Math.round(azimuth) + "°"
             }
-
-            mainView.direction = mainView.lastCoords.azimuthTo(position.coordinate)
-            mainView.lastCoords = position.coordinate
-
-            var distance = Math.round(position.coordinate.distanceTo(detailsPage.coord1)) + "m"
-            var azimuth = Math.round(position.coordinate.azimuthTo(detailsPage.coord1))
-
-            console.log(mainView.cacheid + ": " + distance + ", azimuth: " + position.coordinate.azimuthTo(detailsPage.coord1))
-            distanceText.text = distance + " @ " + Math.round(azimuth) + "°"
-        }
-
-        onSourceErrorChanged: {
-            if (sourceError == PositionSource.NoError)
-                return
-
-            console.log("Source error: " + sourceError)
         }
     }
 
@@ -647,7 +632,7 @@ Page {
     }
     
     function updateLogBooks() {
-        pytest.call("util.getJsonLogs", [mainView.cacheid], function(results) {
+        pytest.call("util.get_json_logs", [cacheid], function(results) {
             var JsonArray = JSON.parse(results)
             for(var i in JsonArray) {
                 var JsonObject = JsonArray[i]
@@ -708,10 +693,10 @@ Page {
     }
 
     function updateScreen() {
-        pytest.call("util.getJsonRow", [mainView.cacheid], function(results) {
+        pytest.call("util.get_json_row", [cacheid], function(results) {
             var JsonObject = JSON.parse(results)
-            if(JsonObject["cacheid"] != mainView.cacheid) {
-                print(mainView.cacheid)
+            if(JsonObject["cacheid"] != cacheid) {
+                print(cacheid)
                 print(JsonObject["cacheid"])
                 stack.pop()
                 return
@@ -720,18 +705,18 @@ Page {
             headerTitle.text = JsonObject["cachename"]
             detailsPage.coord1 = QtPositioning.coordinate(JsonObject["lat"], JsonObject["lon"])
             try {
-                var distance = Math.round(mainView.lastCoords.distanceTo(detailsPage.coord1)) + "m"
-                var azimuth = mainView.lastCoords.azimuthTo(detailsPage.coord1)
-                console.log(mainView.cacheid + ": " + distance + ", azimuth: " + azimuth)
+                var distance = Math.round(lastCoords.distanceTo(detailsPage.coord1)) + "m"
+                var azimuth = lastCoords.azimuthTo(detailsPage.coord1)
+                console.log(cacheid + ": " + distance + ", azimuth: " + azimuth)
                 distanceText.text = distance + " @ " + Math.round(azimuth) + "°"
             } catch (error) {
                 console.log(error)
             }
             headingText.text = JsonObject['cachename']
-            locText.text = mainView.from_decimal(JsonObject['lat'], 'lat') + " - " + mainView.from_decimal(JsonObject['lon'], 'lon')
+            locText.text = from_decimal(JsonObject['lat'], 'lat') + " - " + from_decimal(JsonObject['lon'], 'lon')
             typeText.text = JsonObject['cachetype']
             sizeText.text = JsonObject['cachesize']
-            cacheidText.text = mainView.cacheid
+            cacheidText.text = cacheid
             diffText.text = JsonObject['diff'] + " / 5.0"
             terrText.text = JsonObject['terr'] + " / 5.0"
             ownerText.text = JsonObject['cacheowner']
@@ -758,7 +743,7 @@ Page {
             longDesc.text = JsonObject["body"]
             storedText.text = "Stored in device: " + showAge(JsonObject["dltime"])
 
-            pytest.call("util.getJsonAttributes", [mainView.cacheid], function(results) {
+            pytest.call("util.get_json_attributes", [cacheid], function(results) {
                 var JsonArray = JSON.parse(results)
                 var tmp = []
                 for(var i in JsonArray) {

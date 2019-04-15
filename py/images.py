@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-"""blah!"""
+""" Images Class"""
 
 import json
 
 class Images(object):
-    """ Store logbook details in a class """
+    """ download and store images """
 
     cacheid = ""
     accountid = 0

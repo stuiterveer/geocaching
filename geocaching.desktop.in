@@ -1,7 +1,8 @@
 [Desktop Entry]
 _Name=Geocaching
-Exec=qmlscene qml/Main.qml
+Exec=qmlscene %u qml/Main.qml
 Icon=assets/logo.svg
 Terminal=false
 Type=Application
 X-Ubuntu-Touch=true
+X-Ubuntu-Splash-Color=#F5F5F5

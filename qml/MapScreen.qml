@@ -106,7 +106,7 @@ Page {
 
                     onPressed: {
                         console.log("marker " + title + " was clicked, lat: " + coordinate.latitude + ", lon: " + coordinate.longitude)
-                        mainView.cacheid = title
+                        cacheid = title
                         map.center = coordinate
                         markerPopup.open()
                     }
@@ -155,7 +155,7 @@ Page {
                         Text {
                             width: parent.width
                             id: locText
-                            text: mainView.from_decimal(lat, "lat") + " - " + mainView.from_decimal(lon, "lon")
+                            text: from_decimal(lat, "lat") + " - " + from_decimal(lon, "lon")
                         }
 
                         Label {
@@ -222,8 +222,8 @@ Page {
                         color: "#3eb34f"
                         onClicked: {
                             markerPopup.close()
-                            mainView.cacheid = title
-                            mainView.loadDetails()
+                            cacheid = title
+                            loadDetails()
                         }
                     }
 
@@ -270,7 +270,7 @@ Page {
                             onClicked: {
                                 markerPopup.close()
                                 busyIndicator.running = true
-                                pytest.call("util.refreshCache", [title], function(results) {
+                                pytest.call("util.refresh_cache", [title], function(results) {
                                     markerPopup.close()
                                     updateMap(map.center.latitude, map.center.longitude)
                                     busyIndicator.running = false
@@ -346,7 +346,7 @@ Page {
             text: "Search Caches"
             color: "#3eb34f"
             onClicked: {
-                mainView.loadSearch()
+                loadSearch()
                 updateMap(map.center.latitude, map.center.longitude)
             }
         }
@@ -374,7 +374,7 @@ Page {
             color: "#3eb34f"
             onClicked: {
                 busyIndicator.running = true
-                pytest.call("util.getCacheList", [map.center.latitude, map.center.longitude], function(results) {
+                pytest.call("util.get_cache_list", [map.center.latitude, map.center.longitude], function(results) {
                     updateMap(map.center.latitude, map.center.longitude)
                     busyIndicator.running = false
                 })
@@ -411,44 +411,10 @@ Page {
         running: true
     }
 
-    PositionSource {
-        id: positionSource
-        active: true
-        updateInterval: 1000
-        // preferredPositioningMethods: PositionSource.SatellitePositioningMethods
-
-        onPositionChanged: {
-            if(isNaN(position.coordinate.longitude) || isNaN(position.coordinate.latitude)) {
-                header.title = "Waiting for a GPS fix..."
-                return
-            }
-
-            // map.center = position.coordinate
-            if(mainView.lastCoords != null)
-                mainView.direction = mainView.lastCoords.azimuthTo(position.coordinate)
-            else
-                mainView.direction = map.center.azimuthTo(position.coordinate)
-            
-            mainView.lastCoords = position.coordinate
-            header.title = "coords: " + mainView.from_decimal(position.coordinate.latitude, "lat") + " - " + 
-                               mainView.from_decimal(position.coordinate.longitude, "lon") + ", " + map.zoomLevel
-
-            map_marker.coordinate = position.coordinate
-            mm_rotation.angle = Math.round(mainView.direction)
-        }
-
-        onSourceErrorChanged: {
-            if (sourceError == PositionSource.NoError)
-                return
-
-            console.log("Source error: " + sourceError)
-        }
-    }
-
     function updateMap(lat, lon)
     {
         console.log("UpdateMap(" + lat + ", " + lon + ")")
-        pytest.call("util.getMarkers", [], function(results) {
+        pytest.call("util.get_markers", [], function(results) {
             locationModel.clear()
             var JsonArray = JSON.parse(results)
 
@@ -458,7 +424,7 @@ Page {
                 var coord1 = QtPositioning.coordinate(JsonObject["lat"], JsonObject["lon"])
                 var distance = 0
                 try {
-                    distance = Math.round(mainView.lastCoords.distanceTo(coord1)) + "m"
+                    distance = Math.round(lastCoords.distanceTo(coord1)) + "m"
                 } catch (error) {
                     distance = Math.round(map.center.distanceTo(coord1)) + "m"
                 }
@@ -495,17 +461,39 @@ Page {
     }
 
     Timer {
+        id: updateMapTimer
         running: true
         repeat: true
         interval: 5000
 
         onTriggered: {
-            if(mainView.updateMap) {
-                mainView.updateMap = false
+            if(requestMapUpdate) {
+                requestMapUpdate = false
                 console.log("Update map")
                 updateMap(map.center.latitude, map.center.longitude)
             }
         }
+    }
+
+    Timer {
+        id: mapTimer
+        running: true
+        repeat: true
+        interval: 1000
+
+        onTriggered: {
+            if(!isNaN(lastCoords.latitude) && lastCoords.latitude != 0 && lastCoords.longitude != 0) {
+                header.title = from_decimal(lastCoords.latitude, "lat") + " - " + 
+                               from_decimal(lastCoords.longitude, "lon") + ", " + map.zoomLevel
+
+                map_marker.coordinate = lastCoords
+                mm_rotation.angle = Math.round(direction)
+            }
+        }
+    }
+
+    Component.onCompleted: {
+         positionSource.start()
     }
 
     Python {

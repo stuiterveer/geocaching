@@ -48,7 +48,7 @@ Page {
                 proccessButton.enabled = false
                 var gc = geocode.text
                 gc = gc.toUpperCase();
-                mainView.cacheid = gc
+                cacheid = gc
                 pytest.call("util.dlCache", [geocode.text], function(results) {
                     proccessButton.enabled = true
                     busyIndicator.running = false
@@ -56,8 +56,8 @@ Page {
                         toast.show(results, 5000)
                         return
                     } else {
-                        mainView.updateMap = true
-                        mainView.loadDetails()
+                        requestMapUpdate = true
+                        loadDetails()
                         return
                     }
                 })

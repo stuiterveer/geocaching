@@ -79,35 +79,24 @@ Page {
         font.pixelSize: units.gu(3)
     }
 
-    PositionSource {
-        id: positionSource
-        active: true
-        updateInterval: 1000
-    
-        onPositionChanged: {
-            if(isNaN(position.coordinate.longitude) || isNaN(position.coordinate.latitude)) {
-                return
+    Timer {
+        id: compassTimer
+        running: true
+        repeat: true
+        interval: 1000
+
+        onTriggered: {
+            if(!isNaN(lastCoords.latitude) && lastCoords.latitude != 0 && lastCoords.longitude != 0) {
+                var distance = Math.round(lastCoords.distanceTo(compassPage.coord1)) + "m"
+                var azimuth = Math.round(lastCoords.azimuthTo(compassPage.coord1))
+
+                compassui.setDirection(azimuth)
+                distanceText.text = distance
+                degreeText.text = Math.round(azimuth) + "°"
+
+                compassui.setBearing(Math.floor(direction))
+                curlocText.text = from_decimal(lastCoords.latitude, "lat") + " - " + from_decimal(lastCoords.longitude, "lon")
             }
-
-            mainView.direction = mainView.lastCoords.azimuthTo(position.coordinate)
-            compassui.setDirection(mainView.direction)
-            mainView.lastCoords = position.coordinate
-
-            var distance = Math.round(position.coordinate.distanceTo(compassPage.coord1)) + "m"
-            var azimuth = Math.round(compassPage.coord1.azimuthTo(position.coordinate))
-
-            console.log(mainView.cacheid + ": " + distance + ", azimuth: " + position.coordinate.azimuthTo(compassPage.coord1))
-            distanceText.text = distance
-            degreeText.text = Math.round(azimuth) + "°"
-            compassui.setBearing(azimuth)
-            curlocText.text = mainView.lastCoords.latitude + " - " + mainView.lastCoords.longitude
-        }
-
-        onSourceErrorChanged: {
-            if (sourceError == PositionSource.NoError)
-                return
-
-            console.log("Source error: " + sourceError)
         }
     }
 
@@ -116,7 +105,7 @@ Page {
     }
 
     function updateScreen() {
-        pytest.call("util.getJsonRow", [mainView.cacheid], function(results) {
+        pytest.call("util.get_json_row", [mainView.cacheid], function(results) {
             var JsonObject = JSON.parse(results)
             if(JsonObject["cacheid"] != mainView.cacheid) {
                 stack.pop()
@@ -125,7 +114,7 @@ Page {
 
             compassHeader.title = JsonObject["cachename"]
             compassPage.coord1 = QtPositioning.coordinate(JsonObject["lat"], JsonObject["lon"])
-            var distance = Math.round(mainView.lastCoords.distanceTo(compassPage.coord1)) + "m"
+            var distance = Math.round(lastCoords.distanceTo(compassPage.coord1)) + "m"
             var azimuth = mainView.lastCoords.azimuthTo(compassPage.coord1)
             console.log(mainView.cacheid + ": " + distance + ", azimuth: " + azimuth)
 
@@ -133,9 +122,10 @@ Page {
             distanceText.text = distance
             degreeText.text = Math.round(azimuth) + "°"
             dtsText.text = "D " + JsonObject['diff'] + " - T " + JsonObject['terr'] + " - " + JsonObject['cachesize']
-            compassui.setBearing(azimuth)
-            compassui.setDirection(mainView.direction)
-            curlocText.text =  mainView.from_decimal(mainView.lastCoords.latitude, "lat") + " - " + mainView.from_decimal(mainView.lastCoords.longitude, "lon")
+            compassui.setBearing(Math.round(azimuth))
+            compassui.setDirection(Math.round(direction))
+            curlocText.text =  mainView.from_decimal(lastCoords.latitude, "lat") + " - " + from_decimal(lastCoords.longitude, "lon")
+            console.log(mainView.cacheid + ": " + distance + ", azimuth: " + azimuth)
         })
     }
 

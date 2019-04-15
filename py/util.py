@@ -1,106 +1,47 @@
 #!/usr/bin/python3
 
-import os
-import sqlite3
+""" code to download and display geocaching.com locations """
+
 import time
 import datetime
-import pickle
 import math
 from html.parser import HTMLParser
 from html import unescape
 import json
-import shutil
-import requests
+import files
+import htmlcode
 import geocache
 import images
 import logbook
+import sqlite
 import users
-from bs4 import BeautifulSoup, NavigableString
 
-APP_ID = os.environ.get("APP_ID", "").split('_')[0]
-CONFIGBASE = os.environ.get("XDG_CONFIG_HOME", "/tmp") + "/" + APP_ID
-DBBASE = os.environ.get("XDG_DATA_HOME", "/tmp") + "/" + APP_ID
-CACHEBASE = os.environ.get("XDG_CACHE_HOME", "/tmp") + "/" + APP_ID
-
-HEADERS = {}
-HEADERS['User-Agent'] = "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
-HEADERS['User-Agent'] += "(KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
-
-SESSION = requests.session()
-SESSION.headers = HEADERS
-
+SESSION = files.get_session()
 TOKEN = ""
 
-def getSession():
-    global SESSION
-
-    checkPath()
-
-    print("Attempting to reload the previous session.")
-
-    try:
-        filename = CONFIGBASE + "/session.bin"
-        with open(filename, 'rb') as f:
-            SESSION = pickle.load(f)
-
-        SESSION.headers = HEADERS
-        print("Session re-loaded.")
-        return
-    except Exception as error:
-        print("line 50 - Failed to load session, see below for trace.")
-        print(error)
-        SESSION = requests.Session()
-        SESSION.headers = HEADERS
-        return
-
-def saveSession():
-    checkPath()
-
-    print("Attempting to save the session.")
-
-    try:
-        filename = CONFIGBASE + "/session.bin"
-        with open(filename, 'wb') as f:
-            pickle.dump(SESSION, f)
-        print("Session saved.")
-    except Exception as error:
-        print("line 67 - Failed to save session, see below for trace.")
-        print(error)
-
-def getAuth():
-    username = ""
-    password = ""
-
-    getSession()
-
-    data = readFile("geocaching.ini")
-    for line in data.split("\n"):
-        if line.split("=", 1)[0] == "username":
-            username = line.split("=", 1)[1]
-        if line.split("=", 1)[0] == "password":
-            password = line.split("=", 1)[1]
-
-    return [username, password]
-
 def gclogin(username, password):
+    """ login in to geocaching.com """
+
     loginok = 0
 
-    loginok, response = isLoggedIn()
+    loginok, response = is_logged_in()
 
     if loginok == 0:
-        data = doAuth(username, password)
+        data = do_auth(username, password)
         response = data.text
         if "li-user-info" in response:
             data = "username=" + username  + "\npassword=" + password + "\n"
-            writeFile("geocaching.ini", data)
+            files.write_file("geocaching.ini", data)
             loginok = 1
-            saveSession()
+            files.save_session(SESSION)
     else:
         loginok = 1
 
     return [loginok, response]
 
-def getLogTypes(cacheid):
+def get_log_types(cacheid):
+    """ get the current types that can be logged """
+
     global TOKEN
     cacheid = cacheid.upper()
     url = "https://www.geocaching.com/play/geocache/" + cacheid.lower() + "/log"
@@ -129,6 +70,8 @@ def getLogTypes(cacheid):
     return json.dumps(log_arr)
 
 def logvisit(cacheid, logtype, logdate, logtext):
+    """ Log a cache visit """
+
     cacheid = cacheid.upper()
     url = "https://www.geocaching.com/play/geocache/" + cacheid.lower() + "/log"
 
@@ -140,7 +83,7 @@ def logvisit(cacheid, logtype, logdate, logtext):
         yesterday = now - datetime.timedelta(days=1)
         logdate = yesterday.strftime("%Y-%m-%d")
 
-    logtypeid = getLogTypeID(logtype)
+    logtypeid = get_log_type_id(logtype)
 
     data = {}
     data['__RequestVerificationToken'] = TOKEN
@@ -162,30 +105,8 @@ def logvisit(cacheid, logtype, logdate, logtext):
         print(error)
         return error
 
-def getLogTypeID(logtype):
-    # found_it = "2"
-    # didnt_find_it = "3"
-    # note = "4"
-    # archive = "5"
-    # will_attend = "9"
-    # attended = "10"
-    # webcam_photo_taken = "11"
-    # unarchive = "12"
-    # retrieved_it = "13"
-    # placed_it = "14"
-    # post_reviewer_note = "18"
-    # temp_disable_listing = "22"
-    # enable_listing = "23"
-    # publish_listing = "24"
-    # retract = "25"
-    # needs_maintenance = "45"
-    # owner_maintenance = "46"
-    # update_coordinates = "47"
-    # discovered_it = "48"
-    # announcement = "74"
-    # visit = "75"
-    # submit_for_review = "76"
-    # oc_team_comment = "83"
+def get_log_type_id(logtype):
+    """ Convert name to id """
 
     print("logtype == " + logtype)
 
@@ -211,7 +132,9 @@ def getLogTypeID(logtype):
         return 47
     return 4
 
-def doAuth(username, password):
+def do_auth(username, password):
+    """ Actual code to log in to geocaching.com """
+
     url = "https://www.geocaching.com/account/signin"
     html = SESSION.get(url)
 
@@ -228,7 +151,9 @@ def doAuth(username, password):
 
     return response
 
-def isLoggedIn():
+def is_logged_in():
+    """ check to see if the app is logged in """
+
     url = "https://www.geocaching.com/play/search"
     html = SESSION.get(url)
 
@@ -239,195 +164,56 @@ def isLoggedIn():
     print("User not logged in, not skipping re-auth")
     return [0, html.text]
 
-def checkPath():
-    os.makedirs(CONFIGBASE, exist_ok=True)
-    os.makedirs(DBBASE, exist_ok=True)
-    os.makedirs(CACHEBASE, exist_ok=True)
+def get_row(conn, cacheid):
+    """ get a geocache from the database """
 
-def readFile(filename):
-    checkPath()
-
-    try:
-        filename = CONFIGBASE + "/" + filename
-        my_file = open(filename, "r+")
-        ret = my_file.read()
-        my_file.close()
-        return ret
-    except Exception as error:
-        print("line 248")
-        print(error)
-        return ""
-
-def writeFile(filename, mydata):
-    checkPath()
-    filename = CONFIGBASE + "/" + filename
-    myFile = open(filename, "w")
-    myFile.write(str(mydata))
-    myFile.close()
-    print("Wrote to: " + filename)
-    return CONFIGBASE
-
-def checkDB():
-    checkPath()
-    filename = DBBASE + "/geocaches.db"
-
-    if not os.path.exists(filename):
-        conn = sqlite3.connect(filename)
-        cursor = conn.cursor()
-        cursor.execute("CREATE TABLE IF NOT EXISTS geocaches " +
-                       "(cacheid TEXT NOT NULL PRIMARY KEY, " +
-                       "dltime INTEGER, cachename TEXT, cacheowner TEXT, " +
-                       "cacheurl TEXT, cachesize TEXT, cachetype TEXT, lat REAL, lon REAL, " +
-                       "diff REAL, terr REAL, hidden INTEGER, lastfound INTEGER, " +
-                       "short TEXT, body TEXT, hint TEXT)")
-
-        cursor.execute("CREATE TABLE IF NOT EXISTS attributes " +
-                       "(cacheid TEXT NOT NULL, attribute TEXT NOT NULL)")
-
-        cursor.execute("CREATE TABLE IF NOT EXISTS logbook (cacheid TEXT NOT NULL, " +
-                       "logid INTEGER NOT NULL, accountid INTEGER, logtype TEXT, " +
-                       "logimage TEXT, logtext TEXT, created INTEGER, visited INTEGER)")
-
-        cursor.execute("CREATE TABLE IF NOT EXISTS users (accountid INTEGER PRIMARY KEY, " +
-                       "username TEXT, accountguid TEXT, avatarimage TEXT, findcount INTEGER, " +
-                       "hidecount INTEGER)")
-
-        cursor.execute("CREATE TABLE IF NOT EXISTS cacheimages (cacheid TEXT NOT NULL, " +
-                       "accountid INTEGER, logid INTEGER, imageid INTEGER PRIMARY KEY, " +
-                       "filename TEXT, created INTEGER, name TEXT, descr TEXT)")
-
-        cursor.execute("CREATE INDEX IF NOT EXISTS attributes_cacheid ON attributes(cacheid)")
-        cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS attributes_unique ON " +
-                       "attributes(cacheid, attribute)")
-        cursor.execute("CREATE INDEX IF NOT EXISTS logbook_cacheid ON logbook(cacheid)")
-        cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS logbook_unique ON " +
-                       "logbook(cacheid, logid)")
-        cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS cacheimages_unique ON " +
-                       "cacheimages(cacheid, logid, imageid)")
-        conn.commit()
-        cursor.close()
-    else:
-        conn = sqlite3.connect(filename)
-
-    return conn
-
-def getRow(conn, cacheid):
     cacheid = cacheid.upper()
-    row = geocache.GeoCache()
-    cursor = conn.cursor()
-    cursor.execute("SELECT * from geocaches where cacheid=?", (cacheid,))
-    ret = cursor.fetchone()
-    cursor.close()
+    ret = sqlite.get_row(conn, cacheid)
 
     if ret != None and ret[0] != "":
-        g = geocache.GeoCache()
-        g.cacheid = ret[0]
-        g.dltime = ret[1]
-        g.cachename = ret[2]
-        g.cacheowner = ret[3]
-        g.cacheurl = ret[4]
-        g.cachesize = ret[5]
-        g.cachetype = ret[6]
-        g.lat = ret[7]
-        g.lon = ret[8]
-        g.diff = ret[9]
-        g.terr = ret[10]
-        g.hidden = ret[11]
-        g.lastfound = ret[12]
-        g.short = ret[13]
-        g.body = cacheimages(ret[14])
-        g.hint = ret[15].replace("<br>", "\n")
-        row = g
+        g_arr = geocache.GeoCache()
+        g_arr.cacheid = ret[0]
+        g_arr.dltime = ret[1]
+        g_arr.cachename = ret[2]
+        g_arr.cacheowner = ret[3]
+        g_arr.cacheurl = ret[4]
+        g_arr.cachesize = ret[5]
+        g_arr.cachetype = ret[6]
+        g_arr.lat = ret[7]
+        g_arr.lon = ret[8]
+        g_arr.diff = ret[9]
+        g_arr.terr = ret[10]
+        g_arr.hidden = ret[11]
+        g_arr.lastfound = ret[12]
+        g_arr.short = ret[13]
+        g_arr.body = htmlcode.cache_images(ret[14], SESSION)
+        g_arr.hint = ret[15].replace("<br>", "\n")
+        row = g_arr
 
     else:
         row = None
 
     return row
 
-def cacheimage(url, filename):
-    if url.startswith("file://") or url.startswith('../assets/notfound.svg'):
-        return url
+def get_json_attributes(cacheid):
+    """ get attributes for a cache """
 
-    if url.startswith("/images/"):
-        url = "https://www.geocaching.com" + url
-
-    try:
-        print(url + " => " + filename)
-        if not os.path.exists(filename):
-            print(filename + " file doesn't exist, downloading it.")
-            res = SESSION.get(url, stream=True)
-            if res.status_code == 200:
-                with open(filename, 'wb') as f:
-                    shutil.copyfileobj(res.raw, f)
-
-        return "file://" + filename
-    except Exception as error:
-        print("line 357")
-        print(error)
-
-    return "../assets/notfound.svg"
-
-def cacheimages(html):
-    data = BeautifulSoup(html, "html.parser")
-    for image in data.findAll('img'):
-        filename = CACHEBASE + "/" + os.path.basename(image['src']).split("?", 1)[0]
-        replacement = cacheimage(image['src'], filename)
-        html = html.replace(image['src'], replacement)
-
-    return html
-
-def addToDB(conn, g, attributes):
-    cursor = conn.cursor()
-    row = getRow(conn, g.cacheid)
-    if row != None and row.cacheid != "":
-        cursor.execute("UPDATE geocaches set dltime = ?, cachename = ?, cacheowner = ?, " +
-                       "cacheurl = ?, cachesize = ?, cachetype = ?, lat = ?, lon = ?, " +
-                       "diff = ?, terr = ?, lastfound = ?, short = ?, body = ?, hint = ? " +
-                       "WHERE cacheid = ?", (g.dltime, g.cachename, g.cacheowner, g.cacheurl, \
-                       g.cachesize, g.cachetype, g.lat, g.lon, g.diff, g.terr, g.lastfound, \
-                       g.short, g.body, g.hint, g.cacheid))
-    else:
-        cursor.execute("INSERT INTO geocaches (cacheid, dltime, cachename, cacheowner, cacheurl, " +
-                       "cachesize, cachetype, lat, lon, diff, terr, lastfound, hidden, short, " +
-                       "body, hint) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", \
-                       (g.cacheid, g.dltime, g.cachename, g.cacheowner, g.cacheurl, \
-                       g.cachesize, g.cachetype, g.lat, g.lon, g.diff, g.terr, g.lastfound, \
-                       g.hidden, g.short, g.body, g.hint))
-
-    if attributes is not None:
-        cursor.execute("DELETE FROM attributes WHERE cacheid = ?", (g.cacheid,))
-        for attribute in attributes:
-            cursor.execute("INSERT INTO attributes (cacheid, attribute) VALUES (?, ?)", \
-                           (g.cacheid, attribute))
-
-    conn.commit()
-    cursor.close()
-
-def getAttributes(conn, cacheid):
     cacheid = cacheid.upper()
-    attributes = []
-    cursor = conn.cursor()
+    conn = sqlite.check_db()
+    a_out = sqlite.get_attributes(conn, cacheid)
+    close_db(conn)
 
-    cursor.execute("SELECT attribute from attributes where cacheid=?", (cacheid,))
-    for row in cursor.fetchall():
-        attributes.append(row[0])
+    return json.dumps(a_out)
 
-    cursor.close()
-    return attributes
+def close_db(conn):
+    """ If the link to the db is open, close it """
 
-def getJsonAttributes(cacheid):
-    cacheid = cacheid.upper()
-    conn = checkDB()
-    a = getAttributes(conn, cacheid)
-    closeDB(conn)
-
-    return json.dumps(a)
-
-def closeDB(conn):
     if conn:
         conn.close()
 
-def cleanUp(var):
+def clean_up(var):
+    """ Convert dates to unix timestamps """
+
     if var == "-":
         var = -1
     else:
@@ -436,38 +222,14 @@ def cleanUp(var):
 
     return var
 
-def decdeg2dm(lat, lon):
-    lat = float(lat)
-    lon = float(lon)
+def refresh_cache(cacheid):
+    """ Update the stored cache info with new data if it exists """
 
-    if lat > 0:
-        cardinal_lat = 'N'
-    else:
-        lat = -lat
-        cardinal_lat = 'S'
-
-    if lon > 0:
-        cardinal_lon = 'E'
-    else:
-        lon = -lon
-        cardinal_lon = 'W'
-
-    latdeg = int(lat)
-    latmin = (lat - int(lat)) * 60
-
-    londeg = int(lon)
-    lonmin = (lon - int(lon)) * 60
-
-    loc = "%c+%2d°+%02.3f'+%c+%03d°+%02.3f'" % \
-          (cardinal_lat, latdeg, latmin, cardinal_lon, londeg, lonmin)
-    return loc
-
-def refreshCache(cacheid):
     cacheid = cacheid.upper()
-    conn = checkDB()
-    g = getRow(conn, cacheid)
+    conn = sqlite.check_db()
+    g_arr = get_row(conn, cacheid)
 
-    ret = getCachePage(conn, cacheid, g.cacheurl)
+    ret = get_cache_page(conn, cacheid, g_arr.cacheurl)
     if ret is None:
         print("Failed to update cache details, are we logged in?")
         return
@@ -475,23 +237,20 @@ def refreshCache(cacheid):
     lat, lon, short, body, hint, attributes = ret
     dltime = int(time.time())
 
-    g.dltime = dltime
-    g.lat = float(lat)
-    g.lon = float(lon)
-    g.short = short
-    g.body = body
-    g.hint = hint
+    g_arr.dltime = dltime
+    g_arr.lat = float(lat)
+    g_arr.lon = float(lon)
+    g_arr.short = short
+    g_arr.body = body
+    g_arr.hint = hint
 
-    addToDB(conn, g, attributes)
+    sqlite.add_to_db(conn, g_arr, attributes)
 
-def dlCache(cacheid):
+def dl_cache(cacheid):
+    """ Download and parse a cache page """
+
     cacheid = cacheid.upper()
-    conn = checkDB()
-
-    cache = getRow(conn, cacheid)
-    # if cache is None or (cache.lat == 0.0 and cache.lon == 0.0):
-        # doesn't exist in the DB, dl and cache it...
-
+    conn = sqlite.check_db()
     cache_url = "https://www.geocaching.com/geocache/" + cacheid
     print(cache_url)
 
@@ -503,7 +262,7 @@ def dlCache(cacheid):
         print(error)
         return "bombed out, are we still logged in?"
 
-    # TODO: check if cache is not found, 404 page doesn\'t show logged in user menu
+    # TODO: check if cache is not found, 404 page doesnt show logged in user menu
     if "li-user-info" not in data:
         print("bombed out, are we still logged in?")
         return "bombed out, are we still logged in?"
@@ -528,7 +287,7 @@ def dlCache(cacheid):
     hidden = data.split('<div id="ctl00_ContentBody_mcd2">', 1)[1]
     hidden = hidden.split('</div>', 1)[0].split(':', 1)[1].strip()
     hidden = hidden.split('\n', 1)[0].strip()
-    hidden = cleanUp(hidden)
+    hidden = clean_up(hidden)
 
     bits = data.split("var lat=", 1)[1].split(", guid='")[0].strip()
     lat = bits.split(", lng=", 1)[0].strip()
@@ -563,7 +322,7 @@ def dlCache(cacheid):
     tmpstr = "{" + data.split('initialLogs = {', 1)[1]
     tmpstr = tmpstr.split('};', 1)[0] + "}"
     user_token = data.split("userToken = '", 1)[1].split("';", 1)[0].strip()
-    saveLogs(conn, cacheid, tmpstr, user_token)
+    save_logs(conn, cacheid, tmpstr, user_token)
 
     cursor = conn.cursor()
     cursor.execute("SELECT visited FROM logbook WHERE cacheid=? and logtype='Found it' " + \
@@ -575,37 +334,39 @@ def dlCache(cacheid):
     else:
         lastfound = -1
 
-    g = geocache.GeoCache()
-    g.cacheid = cacheid
-    g.dltime = int(time.time())
-    g.cachename = cachename
-    g.cacheowner = cacheowner
-    g.cachesize = cachesize
-    g.cacheurl = cache_url
-    g.cachetype = cachetype
-    g.lat = float(lat)
-    g.lon = float(lon)
-    g.diff = diff
-    g.terr = terr
-    g.hidden = hidden
-    g.lastfound = lastfound
-    g.short = short
-    g.body = body
-    g.hint = hint
+    g_arr = geocache.GeoCache()
+    g_arr.cacheid = cacheid
+    g_arr.dltime = int(time.time())
+    g_arr.cachename = cachename
+    g_arr.cacheowner = cacheowner
+    g_arr.cachesize = cachesize
+    g_arr.cacheurl = cache_url
+    g_arr.cachetype = cachetype
+    g_arr.lat = float(lat)
+    g_arr.lon = float(lon)
+    g_arr.diff = diff
+    g_arr.terr = terr
+    g_arr.hidden = hidden
+    g_arr.lastfound = lastfound
+    g_arr.short = short
+    g_arr.body = body
+    g_arr.hint = hint
 
-    addToDB(conn, g, attributes)
+    sqlite.add_to_db(conn, g_arr, attributes)
 
-    closeDB(conn)
+    close_db(conn)
 
     return True
 
-def getCacheList(lat, lon):
-    loc = decdeg2dm(lat, lon)
+def get_cache_list(lat, lon):
+    """ Search for the nearest 50 unfound caches not owned by the app """
+
+    loc = htmlcode.decdeg2dm(lat, lon)
     url = "https://www.geocaching.com/play/search/@" + str(lat) + "," + str(lon) + \
           "?origin=" + loc + "&radius=100km&f=2&o=2&sort=Distance&asc=True"
 
     print(url)
-    conn = checkDB()
+    conn = sqlite.check_db()
 
     try:
         html = SESSION.get(url)
@@ -646,15 +407,15 @@ def getCacheList(lat, lon):
         terr = row.split('data-column="Terrain">', 1)[1].split('</td>', 1)[0].strip()
         terr = float(terr)
         hidden = row.split('data-column="PlaceDate">', 1)[1].split('</td>', 1)[0].strip()
-        hidden = cleanUp(hidden)
+        hidden = clean_up(hidden)
         lastfound = row.split('data-column="DateLastVisited">', 1)[1].split('</td>', 1)[0].strip()
-        lastfound = cleanUp(lastfound)
+        lastfound = clean_up(lastfound)
         cacheurl = "https://www.geocaching.com" + row.split('<a href="', 1)[1]
         cacheurl = cacheurl.split('"', 1)[0].strip()
 
-        cache = getRow(conn, cacheid)
+        cache = get_row(conn, cacheid)
         if cache is None or (cache.lat == 0.0 and cache.lon == 0.0):
-            ret = getCachePage(conn, cacheid, cacheurl)
+            ret = get_cache_page(conn, cacheid, cacheurl)
             if ret is None:
                 print("Failed to update cache details, are we logged in?")
                 return
@@ -669,31 +430,33 @@ def getCacheList(lat, lon):
             body = cache.body
             hint = cache.hint
             dltime = cache.dltime
-            attributes = getAttributes(conn, cacheid)
+            attributes = sqlite.get_attributes(conn, cacheid)
 
-        g = geocache.GeoCache()
-        g.cacheid = cacheid
-        g.dltime = dltime
-        g.cachename = cachename
-        g.cacheowner = cacheowner
-        g.cachesize = cachesize
-        g.cacheurl = cacheurl
-        g.cachetype = cachetype
-        g.lat = float(lat)
-        g.lon = float(lon)
-        g.diff = diff
-        g.terr = terr
-        g.hidden = hidden
-        g.lastfound = lastfound
-        g.short = short
-        g.body = body
-        g.hint = hint
+        g_arr = geocache.GeoCache()
+        g_arr.cacheid = cacheid
+        g_arr.dltime = dltime
+        g_arr.cachename = cachename
+        g_arr.cacheowner = cacheowner
+        g_arr.cachesize = cachesize
+        g_arr.cacheurl = cacheurl
+        g_arr.cachetype = cachetype
+        g_arr.lat = float(lat)
+        g_arr.lon = float(lon)
+        g_arr.diff = diff
+        g_arr.terr = terr
+        g_arr.hidden = hidden
+        g_arr.lastfound = lastfound
+        g_arr.short = short
+        g_arr.body = body
+        g_arr.hint = hint
 
-        addToDB(conn, g, attributes)
+        sqlite.add_to_db(conn, g_arr, attributes)
 
-    closeDB(conn)
+    close_db(conn)
 
-def getCachePage(conn, cacheid, url):
+def get_cache_page(conn, cacheid, url):
+    """ download and parse cache info... """
+
     cacheid = cacheid.upper()
     try:
         html = SESSION.get(url)
@@ -736,7 +499,7 @@ def getCachePage(conn, cacheid, url):
         tmpstr = "{" + data.split('initialLogs = {', 1)[1]
         tmpstr = tmpstr.split('};', 1)[0] + "}"
         user_token = data.split("userToken = '", 1)[1].split("';", 1)[0].strip()
-        saveLogs(conn, cacheid, tmpstr, user_token)
+        save_logs(conn, cacheid, tmpstr, user_token)
 
     except Exception as error:
         print("734 - Failed to download cache details, most likely not logged in.")
@@ -745,7 +508,9 @@ def getCachePage(conn, cacheid, url):
 
     return [float(lat), float(lon), short, body, hint, attributes]
 
-def getMoreLogs(index, size, user_token):
+def get_more_logs(index, size, user_token):
+    """ download more logbook entries """
+
     url = "https://www.geocaching.com/seek/geocache.logbook?tkn=" + user_token + "&idx=" + \
           str(index) + "&num=" + str(size)
     print(url)
@@ -762,7 +527,9 @@ def getMoreLogs(index, size, user_token):
 
     return None
 
-def saveLogs(conn, cacheid, logstr, user_token):
+def save_logs(conn, cacheid, logstr, user_token):
+    """ Save logs to the database """
+
     cacheid = cacheid.upper()
     json_object = json.loads(logstr)
     page_info = json_object['pageInfo']
@@ -775,22 +542,22 @@ def saveLogs(conn, cacheid, logstr, user_token):
 
     for i in range(1, pages + 1):
         if i > 1:
-            json_array = getMoreLogs(i, size, user_token)
+            json_array = get_more_logs(i, size, user_token)
             if json_array is None:
                 return
 
         for log in json_array:
-            lb = logbook.LogBook()
-            lb.cacheid = cacheid
-            lb.logid = log['LogID']
-            lb.accountid = log['AccountID']
-            lb.logtype = log['LogType']
-            lb.logimage = log['LogTypeImage']
-            lb.logtext = cacheimages(log['LogText'])
-            lb.created = cleanUp(log['Created'])
-            lb.visited = cleanUp(log['Visited'])
+            l_b = logbook.LogBook()
+            l_b.cacheid = cacheid
+            l_b.logid = log['LogID']
+            l_b.accountid = log['AccountID']
+            l_b.logtype = log['LogType']
+            l_b.logimage = log['LogTypeImage']
+            l_b.logtext = htmlcode.cache_images(log['LogText'], SESSION)
+            l_b.created = clean_up(log['Created'])
+            l_b.visited = clean_up(log['Visited'])
 
-            saveLog(conn, lb)
+            save_log(conn, l_b)
 
             user = users.Users()
             user.accountid = log['AccountID']
@@ -800,7 +567,7 @@ def saveLogs(conn, cacheid, logstr, user_token):
             user.findcount = log['GeocacheFindCount']
             user.hidecount = log['GeocacheHideCount']
 
-            saveUser(conn, user)
+            save_user(conn, user)
 
             for img in log['Images']:
                 image = images.Images()
@@ -809,31 +576,36 @@ def saveLogs(conn, cacheid, logstr, user_token):
                 image.imageid = img['ImageID']
                 image.logid = log['LogID']
                 image.filename = img['FileName']
-                image.created = cleanUp(img['Created'])
+                image.created = clean_up(img['Created'])
                 image.name = img['Name']
                 image.descr = img['Descr']
 
-                saveImage(conn, image)
+                save_image(conn, image)
 
-def saveLog(conn, lb):
-    gl = getLog(conn, lb.logid)
+def save_log(conn, l_b):
+    """ create or update the logbook entries """
+
+    g_l = get_log(conn, l_b.logid)
     cursor = conn.cursor()
-    if gl is None:
+    if g_l is None:
         cursor.execute("INSERT INTO logbook (cacheid, logid, accountid, logtype, logimage, " +
                        "logtext, created, visited) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", \
-                       (lb.cacheid, lb.logid, lb.accountid, lb.logtype, lb.logimage, lb.logtext, \
-                        lb.created, lb.visited))
+                       (l_b.cacheid, l_b.logid, l_b.accountid, l_b.logtype, l_b.logimage,
+                        l_b.logtext, l_b.created, l_b.visited))
     else:
         cursor.execute("UPDATE logbook set logtype = ?, logimage = ?, logtext = ?, " +
                        "created = ?, visited = ? WHERE logid = ?", \
-                       (lb.logtype, lb.logimage, lb.logtext, lb.created, lb.visited, lb.logid))
+                       (l_b.logtype, l_b.logimage, l_b.logtext, l_b.created, l_b.visited, \
+                        l_b.logid))
     cursor.close()
     conn.commit()
 
-def saveUser(conn, user):
-    u = getUser(conn, user.accountid)
+def save_user(conn, user):
+    """ Save or update user to the db """
+
+    ret = get_user(conn, user.accountid)
     cursor = conn.cursor()
-    if u is None:
+    if ret is None:
         cursor.execute("INSERT INTO users (accountid, username, accountguid, avatarimage, " +
                        "findcount, hidecount) VALUES (?, ?, ?, ?, ?, ?)", (user.accountid, \
                        user.username, user.accountguid, user.avatarimage, user.findcount, \
@@ -846,8 +618,10 @@ def saveUser(conn, user):
     cursor.close()
     conn.commit()
 
-def saveImage(conn, image):
-    img = getImage(conn, image.imageid)
+def save_image(conn, image):
+    """ save image metadata to the DB """
+
+    img = get_image(conn, image.imageid)
     if img is None:
         cursor = conn.cursor()
         cursor.execute("INSERT INTO cacheimages (cacheid, accountid, imageid, " +
@@ -858,7 +632,9 @@ def saveImage(conn, image):
         cursor.close()
         conn.commit()
 
-def getImage(conn, imageid):
+def get_image(conn, imageid):
+    """ return image array from db """
+
     cursor = conn.cursor()
     cursor.execute("SELECT * from cacheimages where imageid = ?", (imageid,))
     ret = cursor.fetchone()
@@ -881,7 +657,9 @@ def getImage(conn, imageid):
 
     return row
 
-def getImages(conn, logid):
+def get_images(conn, logid):
+    """ get image details from the DB """
+
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM cacheimages where logid = ?", (logid,))
 
@@ -893,7 +671,7 @@ def getImages(conn, logid):
         output['imageid'] = row[2]
         output['logid'] = row[3]
         url = "https://img.geocaching.com/cache/log/large/" + row[4]
-        filename = cacheimage(url, CACHEBASE + "/" + row[4])
+        filename = files.cache_image(url, SESSION)
         output['filename'] = filename
         output['created'] = row[5]
         output['name'] = row[6]
@@ -902,28 +680,33 @@ def getImages(conn, logid):
 
     return arr
 
-def getJsonUser(accountid):
-    conn = checkDB()
-    u = getUser(conn, accountid)
-    closeDB(conn)
+def get_json_user(accountid):
+    """ get user details from DB """
+    conn = sqlite.check_db()
+    user = get_user(conn, accountid)
+    close_db(conn)
 
-    return str(u)
+    return str(user)
 
-def getJsonLogs(cacheid):
+def get_json_logs(cacheid):
+    """ returns logs in json format """
+
     cacheid = cacheid.upper()
-    conn = checkDB()
-    a = getLogs(conn, cacheid)
-    closeDB(conn)
+    conn = sqlite.check_db()
+    g_l = get_logs(conn, cacheid)
+    close_db(conn)
 
-    return a
+    return g_l
 
-def getLogs(conn, cacheid):
+def get_logs(conn, cacheid):
+    """ get logs from db """
+
     cacheid = cacheid.upper()
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM logbook, users where logbook.accountid = users.accountid and " +
                    "cacheid = ? ORDER BY logid DESC", (cacheid,))
 
-    gArr = "["
+    g_arr = "["
     for row in cursor:
         output = {}
         output['cacheid'] = row[0]
@@ -931,7 +714,7 @@ def getLogs(conn, cacheid):
         output['accountid'] = row[2]
         output['logtype'] = row[3]
         output['logimage'] = row[4]
-        output['logtext'] = cacheimages(row[5])
+        output['logtext'] = htmlcode.cache_images(row[5], SESSION)
         output['created'] = datetime.datetime.fromtimestamp(row[6]).strftime('%Y-%m-%d')
         output['visited'] = datetime.datetime.fromtimestamp(row[7]).strftime('%Y-%m-%d')
         output['accountid'] = row[8]
@@ -940,20 +723,22 @@ def getLogs(conn, cacheid):
         output['avatarimage'] = row[11]
         output['findcount'] = row[12]
         output['hidecount'] = row[13]
-        output['images'] = getImages(conn, row[1])
+        output['images'] = get_images(conn, row[1])
 
-        gArr += json.dumps(output) + ","
+        g_arr += json.dumps(output) + ","
 
     cursor.close()
-    closeDB(conn)
+    close_db(conn)
 
-    if gArr[-1:] == ",":
-        gArr = gArr[:-1]
-    gArr += "]"
+    if g_arr[-1:] == ",":
+        g_arr = g_arr[:-1]
+    g_arr += "]"
 
-    return gArr
+    return g_arr
 
-def getUser(conn, accountid):
+def get_user(conn, accountid):
+    """ Get user from the database """
+
     cursor = conn.cursor()
     cursor.execute("SELECT * from users where accountid = ?", (accountid,))
     ret = cursor.fetchone()
@@ -974,102 +759,86 @@ def getUser(conn, accountid):
 
     return row
 
-def getLog(conn, logid):
+def get_log(conn, logid):
+    """ Get a logbook entry """
+
     cursor = conn.cursor()
     cursor.execute("SELECT * from logbook where logid = ?", (logid,))
     ret = cursor.fetchone()
     cursor.close()
 
     if ret != None and ret[0] != "":
-        lb = logbook.LogBook()
-        lb.cacheid = ret[0]
-        lb.logid = ret[1]
-        lb.accountid = ret[2]
-        lb.logtype = ret[3]
-        lb.logimage = ret[4]
-        lb.logtext = cacheimages(ret[5])
-        lb.created = ret[6]
-        lb.visited = ret[7]
-        row = lb
+        l_b = logbook.LogBook()
+        l_b.cacheid = ret[0]
+        l_b.logid = ret[1]
+        l_b.accountid = ret[2]
+        l_b.logtype = ret[3]
+        l_b.logimage = ret[4]
+        l_b.logtext = htmlcode.cache_images(ret[5], SESSION)
+        l_b.created = ret[6]
+        l_b.visited = ret[7]
+        row = l_b
 
     else:
         row = None
 
     return row
 
-def switchem(from_ll, to_ll):
-    tmp = from_ll
-    from_ll = to_ll
-    to_ll = tmp
-    return from_ll, to_ll
-
-def getMarkers():
-    conn = checkDB()
+def get_markers():
+    """ Get all marker locations from the sqlite db """
+    conn = sqlite.check_db()
     cursor = conn.cursor()
 
     cursor.execute("SELECT * FROM geocaches")
 
     startcol = -1
 
-    gArr = "["
+    g_arr = "["
     for row in cursor:
         html = HTMLParser()
-        g = geocache.GeoCache()
+        g_c = geocache.GeoCache()
         # print(row[startcol + 1])
-        g.cacheid = row[startcol + 1]
-        g.dltime = int(time.time()) - int(row[startcol + 2])
-        g.cachename = html.unescape(row[startcol + 3])
-        g.cacheowner = row[startcol + 4]
-        g.cacheurl = row[startcol + 5]
-        g.cachesize = row[startcol + 6]
-        g.cachetype = row[startcol + 7]
-        g.lat = row[startcol + 8]
-        g.lon = row[startcol + 9]
-        g.diff = row[startcol + 10]
-        g.terr = row[startcol + 11]
-        g.hidden = row[startcol + 12]
-        g.lastfound = row[startcol + 13]
-        g.short = "" #row[startcol + 14]
-        g.body = "" #row[startcol + 15]
-        g.hint = "" #row[startcol + 16]
-        gArr += str(g) + ","
+        g_c.cacheid = row[startcol + 1]
+        g_c.dltime = int(time.time()) - int(row[startcol + 2])
+        g_c.cachename = html.unescape(row[startcol + 3])
+        g_c.cacheowner = row[startcol + 4]
+        g_c.cacheurl = row[startcol + 5]
+        g_c.cachesize = row[startcol + 6]
+        g_c.cachetype = row[startcol + 7]
+        g_c.lat = row[startcol + 8]
+        g_c.lon = row[startcol + 9]
+        g_c.diff = row[startcol + 10]
+        g_c.terr = row[startcol + 11]
+        g_c.hidden = row[startcol + 12]
+        g_c.lastfound = row[startcol + 13]
+        g_c.short = "" #row[startcol + 14]
+        g_c.body = "" #row[startcol + 15]
+        g_c.hint = "" #row[startcol + 16]
+        g_arr += str(g_c) + ","
 
     cursor.close()
-    closeDB(conn)
+    close_db(conn)
 
-    if gArr[-1:] == ",":
-        gArr = gArr[:-1]
-    gArr += "]"
+    if g_arr[-1:] == ",":
+        g_arr = g_arr[:-1]
+    g_arr += "]"
 
-    return gArr
+    return g_arr
 
-def getJsonRow(cacheid):
+def get_json_row(cacheid):
+    """ return a row as json """
+
     cacheid = cacheid.upper()
-    conn = checkDB()
-    g = getRow(conn, cacheid)
-    closeDB(conn)
+    conn = sqlite.check_db()
+    g_c = get_row(conn, cacheid)
+    close_db(conn)
 
-    if g == None:
+    if g_c is None:
         return "{}"
 
     html = HTMLParser()
-    g.cachename = html.unescape(g.cachename)
-    g.dltime = int(time.time()) - int(g.dltime)
-    g.body = remove_all_attrs_except(g.body)
+    g_c.cachename = html.unescape(g_c.cachename)
+    g_c.dltime = int(time.time()) - int(g_c.dltime)
+    g_c.body = htmlcode.remove_all_attrs_except(g_c.body)
 
-    return str(g)
-
-def strip_html(src):
-    p = BeautifulSoup(src, "html.parser")
-    text = p.findAll(text=lambda text: isinstance(text, NavigableString))
-
-    return u" ".join(text)
-
-def remove_all_attrs_except(soup):
-    whitelist = ['a', 'img', 'br', 'p'] #, 'span', 'strong', 'em', 'font']
-    soup = BeautifulSoup(soup, "html.parser")
-    for tag in soup.find_all(True):
-        if tag.name not in whitelist:
-            tag.hidden = True
-    soup = str(soup)
-    return soup
+    return str(g_c)

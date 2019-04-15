@@ -15,7 +15,7 @@ Page {
     property var lon
 
     header: PageHeader {
-        title: "Share " + mainView.cacheid + " with a contact"
+        title: "Share " + cacheid + " with a contact"
     }
 
     ColumnLayout {
@@ -31,10 +31,10 @@ Page {
             color: "#3EB34F"
             width: parent.width
             Layout.fillWidth: true
-            text: "https://www.geocaching.com/geocache/" + mainView.cacheid
+            text: "https://www.geocaching.com/geocache/" + cacheid
             onClicked: {
                 var mimeData = Clipboard.newData()
-                Clipboard.push("https://www.geocaching.com/geocache/" + mainView.cacheid)
+                Clipboard.push("https://www.geocaching.com/geocache/" + cacheid)
                 toast.show("Link copied to clipboard!", 5000)
             }
         }
@@ -77,10 +77,10 @@ Page {
     }
 
     Component.onCompleted: {
-        pytest.call("util.getJsonRow", [mainView.cacheid], function(results) {
+        pytest.call("util.getJsonRow", [cacheid], function(results) {
             var JsonObject = JSON.parse(results)
-            if(JsonObject["cacheid"] != mainView.cacheid) {
-                mainView.loadMap()
+            if(JsonObject["cacheid"] != cacheid) {
+                loadMap()
                 return
             }
 
