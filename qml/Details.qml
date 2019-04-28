@@ -618,11 +618,15 @@ Page {
         interval: 1000
 
         onTriggered: {
-            if(!isNaN(lastCoords.latitude) && lastCoords.latitude != 0 && lastCoords.longitude != 0) {
-                var distance = Math.round(lastCoords.distanceTo(detailsPage.coord1)) + "m"
-                var azimuth = Math.round(lastCoords.azimuthTo(detailsPage.coord1))
-                distanceText.text = distance + " @ " + Math.round(azimuth) + "°"
-            }
+            if(isNaN(positionSource.position.coordinate.longitude) || isNaN(positionSource.position.coordinate.latitude))
+                return
+
+            if(positionSource.position.coordinate.latitude == 0 && positionSource.position.coordinate.longitude == 0)
+                return
+
+            var distance = Math.round(positionSource.position.coordinate.distanceTo(detailsPage.coord1)) + "m"
+            var azimuth = Math.round(positionSource.position.coordinate.azimuthTo(detailsPage.coord1))
+            distanceText.text = distance + " @ " + Math.round(azimuth) + "°"
         }
     }
 

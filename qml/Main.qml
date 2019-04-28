@@ -112,6 +112,7 @@ MainView {
         }
 
         Component.onDestruction: {
+            console.log("stopping gps before exiting...")
             positionSource.stop()
         }
     }

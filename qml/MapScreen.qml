@@ -10,8 +10,44 @@ import Ubuntu.Components 1.3
 Page {
     id: mapPage
 
+    property var gpsLock: true
+
     header: PageHeader {
+        id: listHeader
         title: "Waiting for GPS fix..."
+
+        trailingActionBar {
+            actions: [
+                Action {
+                    iconSource: "../assets/search.svg"
+                    text: "Show Search"
+
+                    onTriggered: {
+                        loadSearch()
+                        updateMap(map.center.latitude, map.center.longitude)
+                    }
+                },
+                Action {
+                    iconSource: "../assets/download.svg"
+                    text: "Download Caches"
+
+                    onTriggered: {
+                        busyIndicator.running = true
+                        pytest.call("util.get_cache_list", [map.center.latitude, map.center.longitude], function(results) {
+                            updateMap(map.center.latitude, map.center.longitude)
+                            busyIndicator.running = false
+                        })
+                    }
+                },
+                Action {
+                    id: gps
+                    iconSource: "../assets/gps_target.svg"
+                    text: "GPS Lock"
+
+                    onTriggered: gpsToggle()
+                }
+            ]
+        }
     }
 
     Plugin {
@@ -331,73 +367,6 @@ Page {
         }
     }
 
-    Item {
-        z: map.z + 3
-        anchors.bottom: parent.bottom
-        anchors.right: parent.right
-        anchors.left: parent.left
-        anchors.margins: 20
-
-        Button {
-            id: searchCaches
-            anchors.bottom: parent.bottom
-            anchors.left: parent.left
-            anchors.margins: 20
-            text: "Search Caches"
-            color: "#3eb34f"
-            onClicked: {
-                loadSearch()
-                updateMap(map.center.latitude, map.center.longitude)
-            }
-        }
-        
-        Button {
-            id: showCaches
-            anchors.bottom: parent.bottom
-            anchors.right: parent.right
-            anchors.margins: 20
-            text: "Load Caches"
-            color: "#3eb34f"
-            onClicked: {
-                busyIndicator.running = true
-                updateMap(map.center.latitude, map.center.longitude)
-                busyIndicator.running = false
-            }
-        }
-
-        Button {
-            id: downloadCaches
-            anchors.bottom: parent.bottom
-            anchors.right: showCaches.left
-            anchors.margins: 20
-            text: "Downoad Caches"
-            color: "#3eb34f"
-            onClicked: {
-                busyIndicator.running = true
-                pytest.call("util.get_cache_list", [map.center.latitude, map.center.longitude], function(results) {
-                    updateMap(map.center.latitude, map.center.longitude)
-                    busyIndicator.running = false
-                })
-            }
-        }
-
-        Button {
-            id: recentre
-            anchors.bottom: showCaches.top
-            anchors.right: parent.right
-            anchors.margins: 20
-            text: "Recentre"
-            color: "#3eb34f"
-            onClicked: {
-                busyIndicator.running = true
-                map.center = positionSource.position.coordinate
-                updateMap(map.center.latitude, map.center.longitude)
-                busyIndicator.running = false
-            }
-        }
-
-    }
-
     ListModel {
         id: listModel
     }
@@ -460,6 +429,18 @@ Page {
         return lc
     }
 
+    function gpsToggle() {
+        if(gpsLock) {
+            gpsLock = 0
+            positionSource.stop()
+            gps.iconSource = "../assets/gps_empty.svg"
+        } else {
+            gpsLock = 1
+            positionSource.start()
+            gps.iconSource = "../assets/gps_target.svg"
+        }
+    }
+
     Timer {
         id: updateMapTimer
         running: true
@@ -482,13 +463,22 @@ Page {
         interval: 1000
 
         onTriggered: {
-            if(!isNaN(lastCoords.latitude) && lastCoords.latitude != 0 && lastCoords.longitude != 0) {
-                header.title = from_decimal(lastCoords.latitude, "lat") + " - " + 
-                               from_decimal(lastCoords.longitude, "lon") + ", " + map.zoomLevel
+            if(isNaN(positionSource.position.coordinate.longitude) || isNaN(positionSource.position.coordinate.latitude))
+                return
 
-                map_marker.coordinate = lastCoords
-                mm_rotation.angle = Math.round(direction)
-            }
+            if(positionSource.position.coordinate.latitude == 0 && positionSource.position.coordinate.longitude == 0)
+                return
+
+            header.title = from_decimal(positionSource.position.coordinate.latitude, "lat") + " - " + 
+                           from_decimal(positionSource.position.coordinate.longitude, "lon") + ", " + map.zoomLevel
+
+            map_marker.coordinate = positionSource.position.coordinate
+            mm_rotation.angle = Math.round(direction)
+
+            busyIndicator.running = true
+            map.center = positionSource.position.coordinate
+            updateMap(map.center.latitude, map.center.longitude)
+            busyIndicator.running = false
         }
     }
 

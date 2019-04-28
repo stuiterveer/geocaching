@@ -13,7 +13,7 @@ Page {
     height: parent.height
 
     header: PageHeader {
-        title: "Log your vitsit to " + mainView.cacheid
+        title: "Log your vitsit to " + cacheid
     }
 
     ComboBox {
@@ -101,7 +101,7 @@ Page {
         }
 
         Component.onCompleted: {
-            pytest.call("util.getLogTypes", [mainView.cacheid], function(results) {
+            pytest.call("util.getLogTypes", [cacheid], function(results) {
                 var JsonArray = JSON.parse(results)
                 logModel.clear()
                 var jobj = null
@@ -235,7 +235,7 @@ Page {
             busyIndicator.running = true
             proccessButton.enabled = false
 
-            pytest.call("util.logvisit", [mainView.cacheid, control.currentText, control2.currentText, logText.text], function(results) {
+            pytest.call("util.logvisit", [cacheid, control.currentText, control2.currentText, logText.text], function(results) {
                 proccessButton.enabled = true
                 busyIndicator.running = false
                 if(results == true) {

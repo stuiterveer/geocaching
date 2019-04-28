@@ -49,7 +49,7 @@ Page {
                 var gc = geocode.text
                 gc = gc.toUpperCase();
                 cacheid = gc
-                pytest.call("util.dlCache", [geocode.text], function(results) {
+                pytest.call("util.dl_cache", [geocode.text], function(results) {
                     proccessButton.enabled = true
                     busyIndicator.running = false
                     if(results != true) {

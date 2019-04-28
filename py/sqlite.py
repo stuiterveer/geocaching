@@ -4,6 +4,7 @@
 
 import os
 import sqlite3
+import util
 
 APP_ID = os.environ.get("APP_ID", "").split('_')[0]
 DBBASE = os.environ.get("XDG_DATA_HOME", "/tmp") + "/" + APP_ID
@@ -66,8 +67,8 @@ def add_to_db(conn, cache, attributes):
     """ Add or update the database with new data """
 
     cursor = conn.cursor()
-    row = get_row(conn, cache.cacheid)
-    if row != None and row.cacheid != "":
+    row = util.get_row(conn, cache.cacheid)
+    if row is not None and row.cacheid != "":
         cursor.execute("UPDATE geocaches set dltime = ?, cachename = ?, cacheowner = ?, " +
                        "cacheurl = ?, cachesize = ?, cachetype = ?, lat = ?, lon = ?, " +
                        "diff = ?, terr = ?, lastfound = ?, short = ?, body = ?, hint = ? " +

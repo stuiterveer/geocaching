@@ -12,7 +12,7 @@ Page {
 
     header: PageHeader {
         id: compassHeader
-        title: "Cache: " + mainView.cacheid
+        title: "Cache: " + cacheid
     }
 
     property var coord1
@@ -86,17 +86,22 @@ Page {
         interval: 1000
 
         onTriggered: {
-            if(!isNaN(lastCoords.latitude) && lastCoords.latitude != 0 && lastCoords.longitude != 0) {
-                var distance = Math.round(lastCoords.distanceTo(compassPage.coord1)) + "m"
-                var azimuth = Math.round(lastCoords.azimuthTo(compassPage.coord1))
+            if(isNaN(positionSource.position.coordinate.longitude) || isNaN(positionSource.position.coordinate.latitude))
+                return
 
-                compassui.setDirection(azimuth)
-                distanceText.text = distance
-                degreeText.text = Math.round(azimuth) + "°"
+            if(positionSource.position.coordinate.latitude == 0 && positionSource.position.coordinate.longitude == 0)
+                return
 
-                compassui.setBearing(Math.floor(direction))
-                curlocText.text = from_decimal(lastCoords.latitude, "lat") + " - " + from_decimal(lastCoords.longitude, "lon")
-            }
+            var distance = Math.round(positionSource.position.coordinate.distanceTo(compassPage.coord1)) + "m"
+            var azimuth = Math.round(positionSource.position.coordinate.azimuthTo(compassPage.coord1))
+
+            compassui.setBearing(azimuth)
+            distanceText.text = distance
+            degreeText.text = Math.round(azimuth) + "°"
+
+            compassui.setDirection(Math.floor(direction))
+            curlocText.text = from_decimal(positionSource.position.coordinate.latitude, "lat") + " - " +
+                              from_decimal(positionSource.position.coordinate.longitude, "lon")
         }
     }
 
@@ -105,27 +110,28 @@ Page {
     }
 
     function updateScreen() {
-        pytest.call("util.get_json_row", [mainView.cacheid], function(results) {
+        pytest.call("util.get_json_row", [cacheid], function(results) {
             var JsonObject = JSON.parse(results)
-            if(JsonObject["cacheid"] != mainView.cacheid) {
+            if(JsonObject["cacheid"] != cacheid) {
                 stack.pop()
                 return
             }
 
             compassHeader.title = JsonObject["cachename"]
             compassPage.coord1 = QtPositioning.coordinate(JsonObject["lat"], JsonObject["lon"])
-            var distance = Math.round(lastCoords.distanceTo(compassPage.coord1)) + "m"
-            var azimuth = mainView.lastCoords.azimuthTo(compassPage.coord1)
-            console.log(mainView.cacheid + ": " + distance + ", azimuth: " + azimuth)
+            var distance = Math.round(positionSource.position.coordinate.distanceTo(compassPage.coord1)) + "m"
+            var azimuth = positionSource.position.coordinate.azimuthTo(compassPage.coord1)
+            console.log(cacheid + ": " + distance + ", azimuth: " + azimuth)
 
-            locText.text = mainView.from_decimal(JsonObject['lat'], "lat") + " - " + mainView.from_decimal(JsonObject['lon'], "lon")
+            locText.text = from_decimal(JsonObject['lat'], "lat") + " - " + from_decimal(JsonObject['lon'], "lon")
             distanceText.text = distance
             degreeText.text = Math.round(azimuth) + "°"
             dtsText.text = "D " + JsonObject['diff'] + " - T " + JsonObject['terr'] + " - " + JsonObject['cachesize']
             compassui.setBearing(Math.round(azimuth))
             compassui.setDirection(Math.round(direction))
-            curlocText.text =  mainView.from_decimal(lastCoords.latitude, "lat") + " - " + from_decimal(lastCoords.longitude, "lon")
-            console.log(mainView.cacheid + ": " + distance + ", azimuth: " + azimuth)
+            curlocText.text = from_decimal(positionSource.position.coordinate.latitude, "lat") + " - " +
+                              from_decimal(positionSource.position.coordinate.longitude, "lon")
+            console.log(cacheid + ": " + distance + ", azimuth: " + azimuth)
         })
     }
 
