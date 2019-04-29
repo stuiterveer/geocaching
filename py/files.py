@@ -86,10 +86,29 @@ def read_file(filename):
         my_file.close()
         return ret
     except Exception as error:
-        print("line 94")
+        print("line 89")
         print(error)
 
     return ""
+
+def get_config():
+    """ open and parse the config file """
+
+    data = read_file("lastpos.ini")
+    if data is None or data == "":
+        return "-33.86", "151.20", "18", "1"
+
+    for line in data.split("\n"):
+        if line.split("=", 1)[0] == "lat":
+            lat = line.split("=", 1)[1]
+        if line.split("=", 1)[0] == "lon":
+            lon = line.split("=", 1)[1]
+        if line.split("=", 1)[0] == "zoom":
+            zoom = line.split("=", 1)[1]
+        if line.split("=", 1)[0] == "gps_lock":
+            gps_lock = line.split("=", 1)[1]
+
+    return [lat, lon, zoom, gps_lock]
 
 def write_file(filename, mydata):
     """ save data to a file """
@@ -101,6 +120,14 @@ def write_file(filename, mydata):
     my_file.close()
     print("Wrote to: " + filename)
     return CONFIGBASE
+
+def save_config(lat, lon, zoom, gps_lock):
+    """ Save config variables to ini file """
+
+    mystr = "lat=" + str(lat) + "\nlon=" + str(lon) + "\nzoom=" + str(zoom) + \
+            "\ngps_lock=" + str(gps_lock)
+
+    write_file("lastpos.ini", mystr)
 
 def cache_image(url, session):
     """ check to see if a file is cached, otherwise download and save to a file """

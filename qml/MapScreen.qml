@@ -91,6 +91,10 @@ Page {
         }
         zoomLevel: 9
 
+        Component.onDestruction: {
+            pytest.call("files.save_config", [map.center.latitude, map.center.longitude, map.zoomLevel, gpsLock], function(results) {})
+        }
+
         MapQuickItem {
             id: map_marker
             sourceItem: nav_icon
@@ -363,6 +367,8 @@ Page {
 
                 map.lastX = -1;
                 map.lastY = -1;
+
+                pytest.call("files.save_config", [map.center.latitude, map.center.longitude, map.zoomLevel, gpsLock], function(results) {})
             }
         }
     }
@@ -439,6 +445,8 @@ Page {
             positionSource.start()
             gps.iconSource = "../assets/gps_target.svg"
         }
+
+        pytest.call("files.save_config", [map.center.latitude, map.center.longitude, map.zoomLevel, gpsLock], function(results) {})
     }
 
     Timer {
@@ -469,6 +477,9 @@ Page {
             if(positionSource.position.coordinate.latitude == 0 && positionSource.position.coordinate.longitude == 0)
                 return
 
+            if(positionSource.position.coordinate == map.center)
+                return
+
             header.title = from_decimal(positionSource.position.coordinate.latitude, "lat") + " - " + 
                            from_decimal(positionSource.position.coordinate.longitude, "lon") + ", " + map.zoomLevel
 
@@ -482,17 +493,27 @@ Page {
         }
     }
 
-    Component.onCompleted: {
-         positionSource.start()
-    }
-
     Python {
         id: pytest
         Component.onCompleted: {
             addImportPath(Qt.resolvedUrl('../py/'))
             importModule("util", function() {});
-            updateMap(map.center.latitude, map.center.longitude)
-            busyIndicator.running = false
+            importModule("files", function() {});
+            call("files.get_config", [], function(results) {
+                if(results[2] != "") {
+                    map.center = QtPositioning.coordinate(results[0], results[1])
+                    map.zoomLevel = results[2]
+                    updateMap(map.center.latitude, map.center.longitude)
+                    if(results[3] != "") {
+                        if(results[3] == 0)
+                            gpsLock = 1
+                        else
+                            gpsLock = 0
+                        gpsToggle()
+                    }
+                }
+                busyIndicator.running = false
+            })
         }
     }
 }

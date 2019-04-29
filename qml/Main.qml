@@ -21,6 +21,7 @@ MainView {
     property var lastCoords
     property var direction
     property bool requestMapUpdate: false
+    property var gpsLock: 1
 
     ListModel {
         id: listModel
