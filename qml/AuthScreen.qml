@@ -15,9 +15,10 @@ Page {
     }
 
     ColumnLayout {
-        spacing: units.gu(1)
         width: parent.width
-        anchors.centerIn: parent
+        anchors.top: header.bottom
+        anchors.left: parent.left
+        anchors.right: parent.right
 
         TextField {
             id: login
@@ -88,7 +89,7 @@ Page {
         id: pytest
         Component.onCompleted: {
             addImportPath(Qt.resolvedUrl('../py/'))
-            importModule("util", function() {});
+            importModule("util", function() {})
         }
     }
 }

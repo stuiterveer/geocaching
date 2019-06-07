@@ -42,38 +42,31 @@ MainView {
         screenSaverEnabled: true
     }
 
-    function loadMap()
-    {
+    function loadMap() {
         stack.push(Qt.resolvedUrl("MapScreen.qml"))
     }
 
-    function loadAuth()
-    {
+    function loadAuth() {
         stack.push(Qt.resolvedUrl("AuthScreen.qml"))
     }
 
-    function loadDetails()
-    {
+    function loadDetails() {
         stack.push(Qt.resolvedUrl("Details.qml"))
     }
 
-    function loadCompass()
-    {
+    function loadCompass() {
         stack.push(Qt.resolvedUrl("Compass.qml"))
     }
     
-    function loadLogVisit()
-    {
+    function loadLogVisit() {
         stack.push(Qt.resolvedUrl("LogVisit.qml"))
     }
 
-    function loadShare()
-    {
+    function loadShare() {
         stack.push(Qt.resolvedUrl("Share.qml"))
     }
 
-    function loadSearch()
-    {
+    function loadSearch() {
         stack.push(Qt.resolvedUrl("Search.qml"))
     }
 

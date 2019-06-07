@@ -39,9 +39,9 @@ Rectangle {
 
     id: root
 
-    readonly property real defaultTime: 3000
+    readonly property real defaultTime: 5000
     property real time: defaultTime
-    readonly property real fadeTime: 300
+    readonly property real fadeTime: 500
 
     property real margin: 10
 

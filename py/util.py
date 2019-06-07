@@ -361,9 +361,9 @@ def dl_cache(cacheid):
 def get_cache_list(lat, lon):
     """ Search for the nearest 50 unfound caches not owned by the app """
 
-    loc = htmlcode.decdeg2dm(lat, lon)
-    url = "https://www.geocaching.com/play/search/@" + str(lat) + "," + str(lon) + \
-          "?origin=" + loc + "&radius=100km&f=2&o=2&sort=Distance&asc=True"
+    # loc = htmlcode.decdeg2dm(lat, lon)
+    url = "https://www.geocaching.com/play/search?lat=" + str(lat) + "&lng=" + str(lon) + \
+          "&origin=" + str(lat) + "," + str(lon) + "&g=-1&f=2&o=2"
 
     print(url)
     conn = sqlite.check_db()

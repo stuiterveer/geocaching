@@ -437,11 +437,11 @@ Page {
 
     function gpsToggle() {
         if(gpsLock) {
-            gpsLock = 0
+            gpsLock = false
             positionSource.stop()
             gps.iconSource = "../assets/gps_empty.svg"
         } else {
-            gpsLock = 1
+            gpsLock = true
             positionSource.start()
             gps.iconSource = "../assets/gps_target.svg"
         }
@@ -486,10 +486,13 @@ Page {
             map_marker.coordinate = positionSource.position.coordinate
             mm_rotation.angle = Math.round(direction)
 
-            busyIndicator.running = true
-            map.center = positionSource.position.coordinate
-            updateMap(map.center.latitude, map.center.longitude)
-            busyIndicator.running = false
+            if(gpsLock)
+            {
+                busyIndicator.running = true
+                map.center = positionSource.position.coordinate
+                updateMap(map.center.latitude, map.center.longitude)
+                busyIndicator.running = false
+            }
         }
     }
 
@@ -506,9 +509,9 @@ Page {
                     updateMap(map.center.latitude, map.center.longitude)
                     if(results[3] != "") {
                         if(results[3] == 0)
-                            gpsLock = 1
+                            gpsLock = true
                         else
-                            gpsLock = 0
+                            gpsLock = false
                         gpsToggle()
                     }
                 }
