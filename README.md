@@ -1,6 +1,6 @@
 # Geocaching for Ubuntu Touch
 
-This is an unofficial fork of the original version from Evil Bunny. It seemed like the he abandoned the project.
+This is an unofficial fork of the original version from Evil Bunny. It seemed like he abandoned the project.
 
 So far I fixed the search and the date Problems. I included both pull requests that were open on the original project as well. 
 
