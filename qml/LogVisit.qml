@@ -101,7 +101,7 @@ Page {
         }
 
         Component.onCompleted: {
-            pytest.call("util.getLogTypes", [cacheid], function(results) {
+            pytest.call("util.get_log_types", [cacheid], function(results) {
                 var JsonArray = JSON.parse(results)
                 logModel.clear()
                 var jobj = null
