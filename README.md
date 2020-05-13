@@ -15,3 +15,9 @@ Source code is made available under the GPLv3 license, in the hope the code migh
 ## Credits
 
 Icons came from [c:geo](https://github.com/cgeo/cgeo) and application icon cc-by [by Flaticon.com](https://www.flaticon.com/)
+Most of the original Code is made by evilbunny2008, check out his repo!
+
+## Changelog
+
+- V. 0.0.8: Added found Marker! 
+Since I was extremely annoyed for not seeing witch caches were already found, I added a new marker, so every cache you found should be marked with a smiley! One small note: Because I made a change to the database, you have to delete all app data through the tweaktool. 
