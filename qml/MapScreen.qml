@@ -6,6 +6,7 @@ import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.2
 import QtQuick.Window 2.2
 import Ubuntu.Components 1.3
+import Ubuntu.Components.Themes 1.3
 
 Page {
     id: mapPage
@@ -19,8 +20,18 @@ Page {
         trailingActionBar {
             actions: [
                 Action {
-                    iconSource: "../assets/search.svg"
+                    iconSource: findColorPaletteSearch()
                     text: "Show Search"
+
+                    function findColorPaletteSearch(){
+                        if(theme.palette.normal.base != "#cdcdcd"){
+                            return "../assets/search-light.svg"}
+                        else{
+                            return "../assets/search.svg"
+                        }
+                        
+                    
+                    }
 
                     onTriggered: {
                         loadSearch()
@@ -28,8 +39,19 @@ Page {
                     }
                 },
                 Action {
-                    iconSource: "../assets/download.svg"
+                    iconSource: findColorPaletteDownload()
                     text: "Download Caches"
+
+                    function findColorPaletteDownload(){
+                        if(theme.palette.normal.base != "#cdcdcd"){
+                            return "../assets/download-light.svg"}
+                        else{
+                            return "../assets/download.svg"
+                        }
+                        
+                    
+                    }
+                    
 
                     onTriggered: {
                         busyIndicator.running = true
@@ -41,8 +63,9 @@ Page {
                 },
                 Action {
                     id: gps
-                    iconSource: "../assets/gps_target.svg"
+                    iconSource: findColorPaletteGpsTarget()
                     text: "GPS Lock"
+
 
                     onTriggered: gpsToggle()
                 }
@@ -438,15 +461,35 @@ Page {
         return lc
     }
 
+    function findColorPaletteGpsEmpty(){
+                        if(theme.palette.normal.base != "#cdcdcd"){
+                            return "../assets/gps_empty-light.svg"}
+                        else{
+                            return "../assets/gps_empty.svg"
+                        }
+                        
+                    
+                    }
+
+    function findColorPaletteGpsTarget(){
+                        if(theme.palette.normal.base != "#cdcdcd"){
+                            return "../assets/gps_target-light.svg"}
+                        else{
+                            return "../assets/gps_target.svg"
+                        }
+                        
+                    
+                    }
+
     function gpsToggle() {
         if(gpsLock) {
             gpsLock = false
             positionSource.stop()
-            gps.iconSource = "../assets/gps_empty.svg"
+            gps.iconSource = findColorPaletteGpsEmpty()
         } else {
             gpsLock = true
             positionSource.start()
-            gps.iconSource = "../assets/gps_target.svg"
+            gps.iconSource = findColorPaletteGpsTarget()
         }
 
         pytest.call("files.save_config", [map.center.latitude, map.center.longitude, map.zoomLevel, gpsLock], function(results) {})
