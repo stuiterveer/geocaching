@@ -23,6 +23,7 @@ class GeoCache(object):
     short = ""
     body = ""
     hint = ""
+    found = 0
 
     def __init__(self):
         pass
@@ -46,6 +47,7 @@ class GeoCache(object):
         output['short'] = self.short
         output['body'] = self.body
         output['hint'] = self.hint
+        output['found'] = self.found
 
         return json.dumps(output)
 

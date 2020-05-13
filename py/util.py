@@ -402,6 +402,11 @@ def get_cache_list(lat, lon):
             body = ""
             hint = ""
             dltime = 0
+            found = 0
+
+            if row.find("icon-found") != -1:
+                found = 1
+
 
             cacheid = row.split('data-id="', 1)[1].split('"', 1)[0].strip()
             print("Found cacheid: " + cacheid)
@@ -458,7 +463,8 @@ def get_cache_list(lat, lon):
             g_arr.short = short
             g_arr.body = body
             g_arr.hint = hint
-
+            g_arr.found = found
+            
             sqlite.add_to_db(conn, g_arr, attributes)
         except Exception as error:
             print("459 - Failed to parse cache info.")
@@ -826,6 +832,7 @@ def get_markers():
         g_c.short = "" #row[startcol + 14]
         g_c.body = "" #row[startcol + 15]
         g_c.hint = "" #row[startcol + 16]
+        g_c.found = row[startcol + 17]
         g_arr += str(g_c) + ","
 
     cursor.close()
