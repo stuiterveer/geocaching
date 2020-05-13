@@ -21,3 +21,10 @@ Most of the original Code is made by evilbunny2008, check out his repo!
 
 - V. 0.0.8: Added found Marker! 
 Since I was extremely annoyed for not seeing witch caches were already found, I added a new marker, so every cache you found should be marked with a smiley! One small note: Because I made a change to the database, you have to delete all app data through the tweaktool. 
+
+
+## Things to get done before publishing to Open Store
+
+- Fix color theme for buttons
+- ~~Add found Marker~~
+- Add customizable search range
