@@ -134,7 +134,7 @@ Page {
                 anchorPoint.y: image.height
 
                 sourceItem: Column {
-                    Image { id: image; source: getMapMarker(cachetype); width: units.gu(5); height: units.gu(5) }
+                    Image { id: image; source: getMapMarker(cachetype, found); width: units.gu(5); height: units.gu(5) }
                     Text { text: title; font.bold: true }
                 }
 
@@ -408,7 +408,7 @@ Page {
                 locationModel.append({lat: JsonObject["lat"], lon: JsonObject["lon"], title: cacheTitle, heading: JsonObject["cachename"],
                                       type: JsonObject["cachetype"] + " (" + JsonObject["cachesize"] + ")", dist: distance,
                                       diff: JsonObject["diff"], terr: JsonObject["terr"], dlage: JsonObject["dltime"],
-                                      cachetype: JsonObject["cachetype"]})
+                                      cachetype: JsonObject["cachetype"], found: JsonObject["found"]})
             }
         })
     }
@@ -427,9 +427,12 @@ Page {
         return age
     }
 
-    function getMapMarker(cachetype) {
+    function getMapMarker(cachetype, found) {
+        console.log(cachetype, found)
         if(cachetype.toLowerCase() == "cache in trash out event")
             var lc = "../assets/marker_type_cito.png"
+        else if(found == 1)
+            var lc = "../assets/marker_found.png"
         else
             var lc = "../assets/marker_type_" + cachetype.toLowerCase().split("-")[0].split(" ")[0] + ".png"
         return lc
