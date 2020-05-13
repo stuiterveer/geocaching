@@ -22,7 +22,7 @@ def check_db():
                        "dltime INTEGER, cachename TEXT, cacheowner TEXT, " +
                        "cacheurl TEXT, cachesize TEXT, cachetype TEXT, lat REAL, lon REAL, " +
                        "diff REAL, terr REAL, hidden INTEGER, lastfound INTEGER, " +
-                       "short TEXT, body TEXT, hint TEXT)")
+                       "short TEXT, body TEXT, hint TEXT, found INTEGER)")
 
         cursor.execute("CREATE TABLE IF NOT EXISTS attributes " +
                        "(cacheid TEXT NOT NULL, attribute TEXT NOT NULL)")
@@ -71,7 +71,7 @@ def add_to_db(conn, cache, attributes):
     if row is not None and row.cacheid != "":
         cursor.execute("UPDATE geocaches set dltime = ?, cachename = ?, cacheowner = ?, " +
                        "cacheurl = ?, cachesize = ?, cachetype = ?, lat = ?, lon = ?, " +
-                       "diff = ?, terr = ?, lastfound = ?, short = ?, body = ?, hint = ? " +
+                       "diff = ?, terr = ?, lastfound = ?, short = ?, body = ?, hint = ?, found = ?" +
                        "WHERE cacheid = ?", (cache.dltime, cache.cachename, cache.cacheowner, \
                        cache.cacheurl, cache.cachesize, cache.cachetype, cache.lat, cache.lon, \
                        cache.diff, cache.terr, cache.lastfound, cache.short, cache.body, \
@@ -79,12 +79,12 @@ def add_to_db(conn, cache, attributes):
     else:
         cursor.execute("INSERT INTO geocaches (cacheid, dltime, cachename, cacheowner, " +
                        "cacheurl, cachesize, cachetype, lat, lon, diff, terr, lastfound, " +
-                       "hidden, short, body, hint) " +
-                       "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", \
+                       "hidden, short, body, hint, found) " +
+                       "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", \
                        (cache.cacheid, cache.dltime, cache.cachename, cache.cacheowner, \
                        cache.cacheurl, cache.cachesize, cache.cachetype, cache.lat, \
                        cache.lon, cache.diff, cache.terr, cache.lastfound, \
-                       cache.hidden, cache.short, cache.body, cache.hint))
+                       cache.hidden, cache.short, cache.body, cache.hint, cache.found))
 
     if attributes is not None:
         cursor.execute("DELETE FROM attributes WHERE cacheid = ?", (cache.cacheid,))
