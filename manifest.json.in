@@ -1,6 +1,6 @@
 {
     "name": "geocaching.speiburger",
-    "description": "An app for using geocaching.com (unofficial) on Ubuntu Touch, designed to be similar to c:geo for Android.",
+    "description": "An app for using geocaching.com (unofficial) on Ubuntu Touch, designed to be similar to c:geo for Android, forked from evilbunny2008/geocaching.",
     "architecture": "@CLICK_ARCH@",
     "title": "Geocaching(Fork)",
     "hooks": {
@@ -10,6 +10,6 @@
         }
     },
     "version": "0.0.9",
-    "maintainer": "Speiburger",
+    "maintainer": "Speiburger <speiburger@gmx.de>",
     "framework" : "ubuntu-sdk-16.04"
 }
