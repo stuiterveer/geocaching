@@ -25,6 +25,5 @@ Since I was extremely annoyed for not seeing witch caches were already found, I 
 
 ## Things to get done before publishing to Open Store
 
-- Fix color theme for buttons
+- ~~Fix color theme for buttons~~
 - ~~Add found Marker~~
-- Add customizable search range
