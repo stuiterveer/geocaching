@@ -10,7 +10,7 @@ import Ubuntu.Components 1.3
 MainView {
     id: mainView
     objectName: "mainView"
-    applicationName: "geocaching.evilbunny"
+    applicationName: "geocaching.speiburger"
 
     width: units.gu(50)
     height: units.gu(80)
