@@ -19,6 +19,9 @@ Most of the original Code is made by evilbunny2008, check out his repo!
 
 ## Changelog
 
+- V. 0.0.9: Added dark theme support!
+This was the last(at least to my knowledge) critical bug that needed to be fixed before we submit the app to the open store again. The soluton is a bit hacky, but I will make it more elegant during the next update.
+
 - V. 0.0.8: Added found Marker! 
 Since I was extremely annoyed for not seeing witch caches were already found, I added a new marker, so every cache you found should be marked with a smiley! One small note: Because I made a change to the database, you have to delete all app data through the tweaktool. 
 
