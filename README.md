@@ -1,8 +1,6 @@
 # Geocaching for Ubuntu Touch
 
-This is an unofficial fork of the original version from Evil Bunny. It seemed like he abandoned the project.
-
-So far I fixed the search and the date Problems. I included both pull requests that were open on the original project as well. 
+This is an unofficial fork of the original version from Evil Bunny. Because the app was broken and did not work anymore and the corresponing pull requests adressing these features were open for nearly a year it seemed like the app was abandoned long ago. Because the app itself seemed to be very well made and I couln't find a different geocaching App for Ubuntu Touch, I decided to fork the App, fix it and maybe add more functionality in the future. All credit goes to evilbunny2008, who created the app and vpzomtrrfrt, who made the two pull requests at the original code
 
 An app for using geocaching.com(unofficial) on Ubuntu Touch, designed to be similar to [c:geo for Android](https://github.com/cgeo/cgeo).
 
@@ -25,8 +23,3 @@ This was the last(at least to my knowledge) critical bug that needed to be fixed
 - V. 0.0.8: Added found Marker! 
 Since I was extremely annoyed for not seeing witch caches were already found, I added a new marker, so every cache you found should be marked with a smiley! One small note: Because I made a change to the database, you have to delete all app data through the tweaktool. 
 
-
-## Things to get done before publishing to Open Store
-
-- ~~Fix color theme for buttons~~
-- ~~Add found Marker~~
