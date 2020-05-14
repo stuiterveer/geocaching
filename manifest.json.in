@@ -1,5 +1,5 @@
 {
-    "name": "geocaching.evilbunny",
+    "name": "geocaching.speiburger",
     "description": "An app for using geocaching.com (unofficial) on Ubuntu Touch, designed to be similar to c:geo for Android.",
     "architecture": "@CLICK_ARCH@",
     "title": "Geocaching(Fork)",
