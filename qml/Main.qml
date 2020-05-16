@@ -55,7 +55,7 @@ MainView {
     }
 
     function loadCompass() {
-        stack.push(Qt.resolvedUrl("Compass.qml"))
+        stack.push(Qt.resolvedUrl("CompassPage.qml"))
     }
     
     function loadLogVisit() {

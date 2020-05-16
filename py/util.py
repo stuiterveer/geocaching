@@ -358,6 +358,22 @@ def dl_cache(cacheid):
 
     return True
 
+def get_cache_list2(lat1, lon1, lat2, lon2, lat3, lon3):
+    """ Grab a quick list of locations """
+
+    lat1 = str(lat1)
+    lon1 = str(lon1)
+    lat2 = str(lat2)
+    lon2 = str(lon2)
+    lat3 = str(lat3)
+    lon3 = str(lon3)
+
+    url = "https://www.geocaching.com/api/proxy/web/search?box=" + lat1 + "%2C" + lon1 + \
+          "%2C" + lat2 + "%2C" + lon2 + "&take=500&asc=true&skip=0&sort=distance&origin=" + \
+          lat3 + "%2C" + lon3
+
+    print(url)
+
 def get_cache_list(lat, lon):
     """ Search for the nearest 50 unfound caches not owned by the app """
 

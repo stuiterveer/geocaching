@@ -5,6 +5,8 @@ import QtQuick 2.5
 import QtQuick.Controls 2.1
 import QtQuick.Layouts 1.1
 import QtQuick.Window 2.2
+import QtSensors 5.9
+import QtSensors 5.9 as Sensors
 import Ubuntu.Components 1.3
 
 Page {
@@ -105,8 +107,20 @@ Page {
         }
     }
 
+    Compass {
+        id:compass
+        active: true
+        alwaysOn: true
+
+        onReadingChanged: {
+            console.log("Compass.azimuth: " + reading.azimuth)
+        }
+    }
+
     Component.onCompleted: {
         updateScreen()
+        var types = Sensors.QmlSensors.sensorTypes()
+        console.log(types.join(", "))
     }
 
     function updateScreen() {

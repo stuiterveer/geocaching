@@ -10,7 +10,7 @@ import Ubuntu.Components 1.3
 Page {
     id: mapPage
 
-    property var gpsLock: true
+    property var gpsLock: false
 
     header: PageHeader {
         id: listHeader
@@ -33,6 +33,9 @@ Page {
 
                     onTriggered: {
                         busyIndicator.running = true
+                        // var nw = map.toCoordinate(Qt.point(0, 0));
+                        // var se = map.toCoordinate(Qt.point(map.width, map.height));
+                        // pytest.call("util.get_cache_list2", [nw.latitude, nw.longitude, se.latitude, se.longitude, map.center.latitude, map.center.longitude], function(results) {
                         pytest.call("util.get_cache_list", [map.center.latitude, map.center.longitude], function(results) {
                             updateMap(map.center.latitude, map.center.longitude)
                             busyIndicator.running = false
@@ -508,11 +511,15 @@ Page {
                     map.zoomLevel = results[2]
                     updateMap(map.center.latitude, map.center.longitude)
                     if(results[3] != "") {
-                        if(results[3] == 0)
-                            gpsLock = true
-                        else
+                        if(results[3] == 0) {
                             gpsLock = false
-                        gpsToggle()
+                            positionSource.stop()
+                            gps.iconSource = "../assets/gps_empty.svg"
+                        } else {
+                            gpsLock = true
+                            positionSource.start()
+                            gps.iconSource = "../assets/gps_target.svg"
+                        }
                     }
                 }
                 busyIndicator.running = false
