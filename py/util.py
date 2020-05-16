@@ -217,7 +217,10 @@ def clean_up(var):
     if var == "-":
         var = -1
     else:
-        var = time.mktime(datetime.datetime.strptime(var, "%Y-%m-%d").timetuple())
+        date_format = "%Y-%m-%d"
+        if "/" in var:
+            date_format = "%m/%d/%Y"
+        var = time.mktime(datetime.datetime.strptime(var, date_format).timetuple())
         var = int(var)
 
     return var
