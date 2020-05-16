@@ -1,5 +1,7 @@
 # Geocaching for Ubuntu Touch
 
+# As it seems, the owner of the App did not abandon it, he just turned off notifications. I will now take town the app from the open store after my pull request gets accepted
+
 This is an unofficial fork of the original version from Evil Bunny. Because the app was broken and did not work anymore and the corresponing pull requests adressing these features were open for nearly a year it seemed like the app was abandoned long ago. Because the app itself seemed to be very well made and I couln't find a different geocaching App for Ubuntu Touch, I decided to fork the App, fix it and maybe add more functionality in the future. All credit goes to evilbunny2008, who created the app and vpzomtrrfrt, who made the two pull requests at the original code
 
 An app for using geocaching.com(unofficial) on Ubuntu Touch, designed to be similar to [c:geo for Android](https://github.com/cgeo/cgeo).
