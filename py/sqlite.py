@@ -52,6 +52,15 @@ def check_db():
     else:
         conn = sqlite3.connect(filename)
 
+    cursor = conn.cursor()
+    try:
+        cursor.execute("ALTER TABLE geocaches ADD COLUMN found INTEGER")
+        conn.commit()
+    except Exception:
+        pass
+
+    cursor.close()
+
     return conn
 
 def get_row(conn, cacheid):

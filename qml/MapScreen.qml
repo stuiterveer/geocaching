@@ -453,7 +453,8 @@ Page {
         return age
     }
 
-    function getMapMarker(cachetype, found) {
+    function getMapMarker(cachetype, found)
+    {
         console.log(cachetype, found)
         if(cachetype.toLowerCase() == "cache in trash out event")
             var lc = "../assets/marker_type_cito.png"
@@ -464,15 +465,15 @@ Page {
         return lc
     }
 
-    function findColorPaletteGpsEmpty(){
-                        if(theme.palette.normal.base != "#cdcdcd"){
-                            return "../assets/gps_empty-light.svg"}
-                        else{
-                            return "../assets/gps_empty.svg"
-                        }
-                        
-                    
-                    }
+    function findColorPaletteGpsEmpty()
+    {
+        if(theme.palette.normal.base != "#cdcdcd")
+        {
+            return "../assets/gps_empty-light.svg"
+        } else {
+            return "../assets/gps_empty.svg"
+        }
+    }
 
     function findColorPaletteGpsTarget(){
                         if(theme.palette.normal.base != "#cdcdcd"){
