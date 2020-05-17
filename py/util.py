@@ -366,6 +366,22 @@ def dl_cache(cacheid):
 
     return True
 
+def get_cache_list2(lat1, lon1, lat2, lon2, lat3, lon3):
+    """ Grab a quick list of locations """
+
+    lat1 = str(lat1)
+    lon1 = str(lon1)
+    lat2 = str(lat2)
+    lon2 = str(lon2)
+    lat3 = str(lat3)
+    lon3 = str(lon3)
+
+    url = "https://www.geocaching.com/api/proxy/web/search?box=" + lat1 + "%2C" + lon1 + \
+          "%2C" + lat2 + "%2C" + lon2 + "&take=500&asc=true&skip=0&sort=distance&origin=" + \
+          lat3 + "%2C" + lon3
+
+    print(url)
+
 def get_cache_list(lat, lon):
     """ Search for the nearest 50 unfound caches not owned by the app """
 
@@ -406,7 +422,6 @@ def get_cache_list(lat, lon):
 
             if row.find("icon-found") != -1:
                 found = 1
-
 
             cacheid = row.split('data-id="', 1)[1].split('"', 1)[0].strip()
             print("Found cacheid: " + cacheid)
@@ -464,7 +479,7 @@ def get_cache_list(lat, lon):
             g_arr.body = body
             g_arr.hint = hint
             g_arr.found = found
-            
+
             sqlite.add_to_db(conn, g_arr, attributes)
         except Exception as error:
             print("459 - Failed to parse cache info.")
