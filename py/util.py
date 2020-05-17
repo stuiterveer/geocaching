@@ -220,7 +220,12 @@ def clean_up(var):
         date_format = "%Y-%m-%d"
         if "/" in var:
             date_format = "%m/%d/%Y"
-        var = time.mktime(datetime.datetime.strptime(var, date_format).timetuple())
+        else:
+            date_format = "%d %b %y"
+        try:
+            var = time.mktime(datetime.datetime.strptime(var, date_format).timetuple())
+        except:
+            var = 0.0
         var = int(var)
 
     return var
@@ -380,9 +385,9 @@ def get_cache_list2(lat1, lon1, lat2, lon2, lat3, lon3):
 def get_cache_list(lat, lon):
     """ Search for the nearest 50 unfound caches not owned by the app """
 
-    # loc = htmlcode.decdeg2dm(lat, lon)
+    loc = htmlcode.decdeg2dm(lat, lon)
     url = "https://www.geocaching.com/play/search?lat=" + str(lat) + "&lng=" + str(lon) + \
-          "&origin=" + str(lat) + "," + str(lon) + "&g=-1&f=2&o=2"
+          "&origin=" + loc + "&radius=100km&f=2&o=2&sort=Distance&asc=True"
 
     print(url)
     conn = sqlite.check_db()
@@ -413,6 +418,10 @@ def get_cache_list(lat, lon):
             body = ""
             hint = ""
             dltime = 0
+            found = 0
+
+            if row.find("icon-found") != -1:
+                found = 1
 
             cacheid = row.split('data-id="', 1)[1].split('"', 1)[0].strip()
             print("Found cacheid: " + cacheid)
@@ -469,6 +478,7 @@ def get_cache_list(lat, lon):
             g_arr.short = short
             g_arr.body = body
             g_arr.hint = hint
+            g_arr.found = found
 
             sqlite.add_to_db(conn, g_arr, attributes)
         except Exception as error:
@@ -837,6 +847,7 @@ def get_markers():
         g_c.short = "" #row[startcol + 14]
         g_c.body = "" #row[startcol + 15]
         g_c.hint = "" #row[startcol + 16]
+        g_c.found = row[startcol + 17]
         g_arr += str(g_c) + ","
 
     cursor.close()
