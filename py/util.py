@@ -221,7 +221,8 @@ def clean_up(var):
         if "/" in var:
             date_format = "%m/%d/%Y"
         else:
-            date_format = "%d %b %y"
+            if " " in var:
+                date_format = "%d %b %y"
         try:
             var = time.mktime(datetime.datetime.strptime(var, date_format).timetuple())
         except:
