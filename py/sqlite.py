@@ -72,6 +72,16 @@ def get_row(conn, cacheid):
     cursor.close()
     return ret
 
+def delete_row(conn, cacheid):
+    """ delete row from the geocaches table """
+
+    cursor = conn.cursor()
+    cursor.execute("DELETE from geocaches where cacheid=?", (cacheid,))
+    cursor.execute("DELETE FROM attributes WHERE cacheid = ?", (cacheid,))
+    conn.commit()
+    cursor.close()
+    return "Delete cache ID: " + cacheid
+
 def add_to_db(conn, cache, attributes):
     """ Add or update the database with new data """
 
@@ -80,11 +90,12 @@ def add_to_db(conn, cache, attributes):
     if row is not None and row.cacheid != "":
         cursor.execute("UPDATE geocaches set dltime = ?, cachename = ?, cacheowner = ?, " +
                        "cacheurl = ?, cachesize = ?, cachetype = ?, lat = ?, lon = ?, " +
-                       "diff = ?, terr = ?, lastfound = ?, short = ?, body = ?, hint = ?, found = ?" +
-                       "WHERE cacheid = ?", (cache.dltime, cache.cachename, cache.cacheowner, \
-                       cache.cacheurl, cache.cachesize, cache.cachetype, cache.lat, cache.lon, \
+                       "diff = ?, terr = ?, lastfound = ?, short = ?, body = ?, hint = ?, " +
+                       "found = ? WHERE cacheid = ?", \
+                       (cache.dltime, cache.cachename, cache.cacheowner, cache.cacheurl, \
+                       cache.cachesize, cache.cachetype, cache.lat, cache.lon, \
                        cache.diff, cache.terr, cache.lastfound, cache.short, cache.body, \
-                       cache.hint, cache.cacheid))
+                       cache.hint, cache.cacheid, cache.found))
     else:
         cursor.execute("INSERT INTO geocaches (cacheid, dltime, cachename, cacheowner, " +
                        "cacheurl, cachesize, cachetype, lat, lon, diff, terr, lastfound, " +

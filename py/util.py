@@ -255,6 +255,12 @@ def refresh_cache(cacheid):
 
     sqlite.add_to_db(conn, g_arr, attributes)
 
+def delete_cache(cacheid):
+    """Remove deleted caches from the database"""
+
+    conn = sqlite.check_db()
+    sqlite.delete_row(conn, cacheid)
+
 def dl_cache(cacheid):
     """ Download and parse a cache page """
 
@@ -360,6 +366,7 @@ def dl_cache(cacheid):
     g_arr.short = short
     g_arr.body = body
     g_arr.hint = hint
+    g_arr.found = 1
 
     sqlite.add_to_db(conn, g_arr, attributes)
 
@@ -460,6 +467,7 @@ def get_cache_list(lat, lon):
                 body = cache.body
                 hint = cache.hint
                 dltime = cache.dltime
+                found = cache.found
                 attributes = sqlite.get_attributes(conn, cacheid)
 
             g_arr = geocache.GeoCache()

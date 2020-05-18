@@ -320,7 +320,13 @@ Page {
                         MouseArea {
                             anchors.fill: parent
                             onClicked: {
-                                console.log("delete clicked")
+                                markerPopup.close()
+                                busyIndicator.running = true
+                                pytest.call("util.delete_cache", [title], function(results) {
+                                    markerPopup.close()
+                                    updateMap(map.center.latitude, map.center.longitude)
+                                    busyIndicator.running = false
+                                })
                             }
                         }
                     }
