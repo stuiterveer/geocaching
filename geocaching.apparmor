@@ -2,6 +2,7 @@
     "policy_groups": [
         "networking",
         "location",
+        "sensors",
         "keep-display-on"
     ],
     "policy_version": 16.04

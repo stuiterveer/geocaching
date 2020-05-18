@@ -221,7 +221,8 @@ def clean_up(var):
         if "/" in var:
             date_format = "%m/%d/%Y"
         else:
-            date_format = "%d %b %y"
+            if " " in var:
+                date_format = "%d %b %y"
         try:
             var = time.mktime(datetime.datetime.strptime(var, date_format).timetuple())
         except:
@@ -253,6 +254,12 @@ def refresh_cache(cacheid):
     g_arr.hint = hint
 
     sqlite.add_to_db(conn, g_arr, attributes)
+
+def delete_cache(cacheid):
+    """Remove deleted caches from the database"""
+
+    conn = sqlite.check_db()
+    sqlite.delete_row(conn, cacheid)
 
 def dl_cache(cacheid):
     """ Download and parse a cache page """
@@ -359,12 +366,29 @@ def dl_cache(cacheid):
     g_arr.short = short
     g_arr.body = body
     g_arr.hint = hint
+    g_arr.found = 1
 
     sqlite.add_to_db(conn, g_arr, attributes)
 
     close_db(conn)
 
     return True
+
+def get_cache_list2(lat1, lon1, lat2, lon2, lat3, lon3):
+    """ Grab a quick list of locations """
+
+    lat1 = str(lat1)
+    lon1 = str(lon1)
+    lat2 = str(lat2)
+    lon2 = str(lon2)
+    lat3 = str(lat3)
+    lon3 = str(lon3)
+
+    url = "https://www.geocaching.com/api/proxy/web/search?box=" + lat1 + "%2C" + lon1 + \
+          "%2C" + lat2 + "%2C" + lon2 + "&take=500&asc=true&skip=0&sort=distance&origin=" + \
+          lat3 + "%2C" + lon3
+
+    print(url)
 
 def get_cache_list(lat, lon):
     """ Search for the nearest 50 unfound caches not owned by the app """
@@ -407,7 +431,6 @@ def get_cache_list(lat, lon):
             if row.find("icon-found") != -1:
                 found = 1
 
-
             cacheid = row.split('data-id="', 1)[1].split('"', 1)[0].strip()
             print("Found cacheid: " + cacheid)
             cachename = row.split('data-name="', 1)[1].split('"', 1)[0].strip()
@@ -444,6 +467,7 @@ def get_cache_list(lat, lon):
                 body = cache.body
                 hint = cache.hint
                 dltime = cache.dltime
+                found = cache.found
                 attributes = sqlite.get_attributes(conn, cacheid)
 
             g_arr = geocache.GeoCache()
@@ -464,7 +488,7 @@ def get_cache_list(lat, lon):
             g_arr.body = body
             g_arr.hint = hint
             g_arr.found = found
-            
+
             sqlite.add_to_db(conn, g_arr, attributes)
         except Exception as error:
             print("459 - Failed to parse cache info.")
