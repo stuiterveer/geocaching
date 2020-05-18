@@ -282,6 +282,11 @@ def dl_cache(cacheid):
         print("bombed out, are we still logged in?")
         return "bombed out, are we still logged in?"
 
+    if data.find("icon-found") != -1:
+        found = 1
+    else:
+        found = 0
+
     print("Found cacheid: " + cacheid)
     cachename = data.split('<span id="ctl00_ContentBody_CacheName">', 1)[1]
     cachename = cachename.split('</span>', 1)[0].strip()
@@ -366,7 +371,7 @@ def dl_cache(cacheid):
     g_arr.short = short
     g_arr.body = body
     g_arr.hint = hint
-    g_arr.found = 1
+    g_arr.found = found
 
     sqlite.add_to_db(conn, g_arr, attributes)
 
