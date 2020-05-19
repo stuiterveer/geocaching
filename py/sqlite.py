@@ -55,6 +55,7 @@ def check_db():
     cursor = conn.cursor()
     try:
         cursor.execute("ALTER TABLE geocaches ADD COLUMN found INTEGER")
+        cursor.execute("UPDATE geocaches SET found=0 where found is null")
         conn.commit()
     except sqlite3.OperationalError:
         pass
