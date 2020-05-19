@@ -284,7 +284,7 @@ def dl_cache(cacheid):
         print("bombed out, are we still logged in?")
         return "bombed out, are we still logged in?"
 
-    if data.find("icon-found") != -1:
+    if data.find("<strong id=\"ctl00_ContentBody_GeoNav_logText\">Found It!</strong>") != -1:
         found = 1
     else:
         found = 0
@@ -402,7 +402,7 @@ def get_cache_list(lat, lon):
 
     loc = htmlcode.decdeg2dm(lat, lon)
     url = "https://www.geocaching.com/play/search?lat=" + str(lat) + "&lng=" + str(lon) + \
-          "&origin=" + loc + "&radius=100km&f=2&o=2&sort=Distance&asc=True"
+          "&origin=" + loc + "&radius=100km&o=2&sort=Distance&asc=True"
 
     print(url)
     conn = sqlite.check_db()
@@ -435,7 +435,7 @@ def get_cache_list(lat, lon):
             dltime = 0
             found = 0
 
-            if row.find("icon-found") != -1:
+            if row.find("cache-types.svg#icon-found") != -1:
                 found = 1
 
             cacheid = row.split('data-id="', 1)[1].split('"', 1)[0].strip()
@@ -529,7 +529,7 @@ def get_cache_page(conn, cacheid, url):
         hint = data.split('<div id="div_hint" class="span-8 WrapFix">', 1)[1]
         hint = hint.split('</div>', 1)[0].strip()
 
-        if body.find("icon-found") != -1:
+        if data.find("<strong id=\"ctl00_ContentBody_GeoNav_logText\">Found It!</strong>") != -1:
             found = 1
         else:
             found = 0
@@ -821,7 +821,7 @@ def get_log(conn, logid):
     ret = cursor.fetchone()
     cursor.close()
 
-    if ret != None and ret[0] != "":
+    if ret is not None and ret[0] != "":
         l_b = logbook.LogBook()
         l_b.cacheid = ret[0]
         l_b.logid = ret[1]
