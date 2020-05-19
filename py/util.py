@@ -465,7 +465,6 @@ def get_cache_list(lat, lon):
                     return
 
                 lat, lon, short, body, hint, attributes, found = ret
-                dltime = int(time.time())
             else:
                 print(cacheid + ": Already exists in the db, skipping...")
                 lat = cache.lat
@@ -473,13 +472,11 @@ def get_cache_list(lat, lon):
                 short = cache.short
                 body = cache.body
                 hint = cache.hint
-                dltime = cache.dltime
-                found = cache.found
                 attributes = sqlite.get_attributes(conn, cacheid)
 
             g_arr = geocache.GeoCache()
             g_arr.cacheid = cacheid
-            g_arr.dltime = dltime
+            g_arr.dltime = int(time.time())
             g_arr.cachename = cachename
             g_arr.cacheowner = cacheowner
             g_arr.cachesize = cachesize
@@ -798,7 +795,7 @@ def get_user(conn, accountid):
     ret = cursor.fetchone()
     cursor.close()
 
-    if ret != None and ret[0] != "":
+    if ret is not None and ret[0] != "":
         user = users.Users()
         user.accountid = ret[0]
         user.username = ret[1]
