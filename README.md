@@ -11,3 +11,5 @@ Source code is made available under the GPLv3 license, in the hope the code migh
 ## Credits
 
 Icons came from [c:geo](https://github.com/cgeo/cgeo) and application icon cc-by [by Flaticon.com](https://www.flaticon.com/)
+
+[Speiburger](https://github.com/Speiburger) did a great job extending the app in my absence.
