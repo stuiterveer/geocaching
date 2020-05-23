@@ -15,7 +15,7 @@ Page {
     property var lon
 
     header: PageHeader {
-        title: "Share " + cacheid + " with a contact"
+        title: i18n.tr("Share ") + cacheid + i18n.tr(" with a contact")
     }
 
     ColumnLayout {
@@ -24,7 +24,7 @@ Page {
         anchors.top: header.bottom
 
         Label {
-            text: "Select url to put it in the clipboard"
+            text: i18n.tr("Select url to put it in the clipboard")
         }
 
         Button {
@@ -35,7 +35,7 @@ Page {
             onClicked: {
                 var mimeData = Clipboard.newData()
                 Clipboard.push("https://www.geocaching.com/geocache/" + cacheid)
-                toast.show("Link copied to clipboard!", 5000)
+                toast.show(i18n.tr("Link copied to clipboard!"), 5000)
             }
         }
 
@@ -47,7 +47,7 @@ Page {
             onClicked: {
                 var mimeData = Clipboard.newData()
                 Clipboard.push('http://map.unav.me?' + parseFloat(sharePage.lat).toFixed(5) + ',' + parseFloat(sharePage.lon).toFixed(5))
-                toast.show("Link copied to clipboard!", 5000)
+                toast.show(i18n.tr("Link copied to clipboard!"), 5000)
             }
         }
 
@@ -55,11 +55,11 @@ Page {
             color: "#3EB34F"
             width: parent.width
             Layout.fillWidth: true
-            text: "geo:" + parseFloat(sharePage.lat).toFixed(5) + ',' + parseFloat(sharePage.lon).toFixed(5)
+            text: i18n.tr("geo:") + parseFloat(sharePage.lat).toFixed(5) + ',' + parseFloat(sharePage.lon).toFixed(5)
             onClicked: {
                 var mimeData = Clipboard.newData()
                 Clipboard.push("geo:" + parseFloat(sharePage.lat).toFixed(5) + ',' + parseFloat(sharePage.lon).toFixed(5))
-                toast.show("Link copied to clipboard!", 5000)
+                toast.show(i18n.tr("Link copied to clipboard!"), 5000)
             }
         }
 
@@ -71,7 +71,7 @@ Page {
             onClicked: {
                 var mimeData = Clipboard.newData()
                 Clipboard.push(parseFloat(sharePage.lat).toFixed(5) + ',' + parseFloat(sharePage.lon).toFixed(5))
-                toast.show("Link copied to clipboard!", 5000)
+                toast.show(i18n.tr("Link copied to clipboard!"), 5000)
             }
         }
     }

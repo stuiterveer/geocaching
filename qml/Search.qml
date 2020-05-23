@@ -12,7 +12,7 @@ Page {
     height: parent.height
 
     header: PageHeader {
-        title: "Search for a cache..."
+        title: i18n.tr("Search for a cache...")
     }
 
     onVisibleChanged: {
@@ -27,7 +27,7 @@ Page {
         anchors.top: header.bottom
 
         Label {
-            text: "Search for a cache by it's GC code"
+            text: i18n.tr("Search for a cache by it's GC code")
         }
 
         TextField {
@@ -40,7 +40,7 @@ Page {
         Button {
             id: proccessButton
             Layout.fillWidth: true
-            text: "Search"
+            text: i18n.tr("Search")
             color: "#3EB34F"
 
             onClicked: {

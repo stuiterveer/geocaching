@@ -89,7 +89,7 @@ Page {
                 anchors.centerIn: parent
                 height: units.gu(4.9)
                 font.pixelSize: units.gu(4)
-                text: "Compass"
+                text: i18n.tr("Compass")
             }
 
             MouseArea {
@@ -114,7 +114,7 @@ Page {
                 width: parent.width
                 height: units.gu(4.9)
                 font.pixelSize: units.gu(4)
-                text: "Navigation"
+                text: i18n.tr("Navigation")
             }
 
             MouseArea {
@@ -139,7 +139,7 @@ Page {
                 width: parent.width
                 height: units.gu(4.9)
                 font.pixelSize: units.gu(4)
-                text: "Log Visit"
+                text: i18n.tr("Log Visit")
             }
 
             MouseArea {
@@ -164,7 +164,7 @@ Page {
                 width: parent.width
                 height: units.gu(4.9)
                 font.pixelSize: units.gu(4)
-                text: "Open in Browser"
+                text: i18n.tr("Open in Browser")
             }
 
             MouseArea {
@@ -189,7 +189,7 @@ Page {
                 width: parent.width
                 height: units.gu(4.9)
                 font.pixelSize: units.gu(4)
-                text: "Share Cache"
+                text: i18n.tr("Share Cache")
             }
 
             MouseArea {
@@ -248,7 +248,7 @@ Page {
                     Label {
                         width: units.gu(3)
                         horizontalAlignment: Text.AlignRight
-                        text: "Cache Name: "
+                        text: i18n.tr("Cache Name: ")
                     }
 
                     Text {
@@ -261,7 +261,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: "Cache Type: "
+                        text: i18n.tr("Cache Type: ")
                     }
 
                     Text {
@@ -271,7 +271,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: "Cache Size: "
+                        text: i18n.tr("Cache Size: ")
                     }
 
                     Text {
@@ -281,7 +281,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: "Cache ID: "
+                        text: i18n.tr("Cache ID: ")
                     }
 
                     Text {
@@ -291,7 +291,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: "Distance: "
+                        text: i18n.tr("Distance: ")
                     }
 
                     Text {
@@ -301,7 +301,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: "Difficulty: "
+                        text: i18n.tr("Difficulty: ")
                     }
 
                     Text {
@@ -311,7 +311,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: "Terrain: "
+                        text: i18n.tr("Terrain: ")
                     }
 
                     Text {
@@ -729,7 +729,8 @@ Page {
             detailsPage.hintshowing = false
 
             var a = new Date(JsonObject['hidden'] * 1000);
-            var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+            var months = [i18n.tr('Jan'),i18n.tr('Feb'),i18n.tr('Mar'),i18n.tr('Apr'),i18n.tr('May'),i18n.tr('Jun'),
+                            i18n.tr('Jul'),i18n.tr('Aug'),i18n.tr('Sep'),i18n.tr('Oct'),i18n.tr('Nov'),i18n.tr('Dec')]
             var year = a.getFullYear();
             var month = months[a.getMonth()];
             var date = a.getDate();
@@ -772,11 +773,11 @@ Page {
         var age = 0
 
         if(dlage < 3600)
-            age = Math.round(dlage / 60) + " minutes ago"
+            age = Math.round(dlage / 60) + i18n.tr(" minutes ago")
         else if(dlage < 86400)
-            age = Math.round(dlage / 3600) + " hours ago"
+            age = Math.round(dlage / 3600) + i18n.tr(" hours ago")
         else
-            age = Math.round(dlage / 86400) + " days ago"
+            age = Math.round(dlage / 86400) + i18n.tr(" days ago")
 
         return age
     }
