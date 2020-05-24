@@ -13,7 +13,7 @@ Page {
     height: parent.height
 
     header: PageHeader {
-        title: i18n.tr("Log your vitsit to ") + cacheid
+        title: i18n.tr("Log your visit to ") + cacheid
     }
 
     ComboBox {

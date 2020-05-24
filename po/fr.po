@@ -51,8 +51,8 @@ msgid "geo:"
 msgstr "geo:"
 
 #: ../qml/LogVisit.qml:16
-msgid "Log your vitsit to "
-msgstr "Connectez votre vitsit à "
+msgid "Log your visit to "
+msgstr "Connectez votre visite à "
 
 #: ../qml/LogVisit.qml:128
 msgid "Today"
