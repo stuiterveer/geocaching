@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: geocaching.evilbunny\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-24 09:19+0000\n"
+"POT-Creation-Date: 2020-05-24 12:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgid "geo:"
 msgstr ""
 
 #: ../qml/LogVisit.qml:16
-msgid "Log your vitsit to "
+msgid "Log your visit to "
 msgstr ""
 
 #: ../qml/LogVisit.qml:128
