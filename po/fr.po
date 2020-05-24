@@ -1,11 +1,11 @@
-# French translation for ubuntu-calculator-app
-# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
-# This file is distributed under the same license as the ubuntu-calculator-app package.
+# French translation for geocaching.evilbunny
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ubuntu-calculator-app\n"
+"Project-Id-Version: geocaching.evilbunny\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-24 09:11+0000\n"
 "PO-Revision-Date: 2020-05-24 09:11+0000\n"
