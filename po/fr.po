@@ -1,243 +1,243 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the geocaching.evilbunny package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# French translation for ubuntu-calculator-app
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the ubuntu-calculator-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: geocaching.evilbunny\n"
+"Project-Id-Version: ubuntu-calculator-app\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-24 09:19+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2020-05-24 09:11+0000\n"
+"PO-Revision-Date: 2020-05-24 09:11+0000\n"
+"Last-Translator: evilbunny <evilbunny@evilbunny.org>\n"
+"Language-Team: French <evilbunny@evilbunny.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 #: ../qml/Search.qml:15
 msgid "Search for a cache..."
-msgstr ""
+msgstr "Rechercher un cache..."
 
 #: ../qml/Search.qml:30
 msgid "Search for a cache by it's GC code"
-msgstr ""
+msgstr "Rechercher un cache par son code GC"
 
 #: ../qml/Search.qml:43
 msgid "Search"
-msgstr ""
+msgstr "Chercher"
 
 #: ../qml/Share.qml:18
 msgid "Share "
-msgstr ""
+msgstr "Partager "
 
 #: ../qml/Share.qml:18
 msgid " with a contact"
-msgstr ""
+msgstr " avec un contact"
 
 #: ../qml/Share.qml:27
 msgid "Select url to put it in the clipboard"
-msgstr ""
+msgstr "Sélectionnez l'URL pour le mettre dans le presse-papiers"
 
 #: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
 #: ../qml/Share.qml:74
 msgid "Link copied to clipboard!"
-msgstr ""
+msgstr "Lien copié dans le presse-papiers!"
 
 #: ../qml/Share.qml:58
 msgid "geo:"
-msgstr ""
+msgstr "geo:"
 
 #: ../qml/LogVisit.qml:16
 msgid "Log your vitsit to "
-msgstr ""
+msgstr "Connectez votre vitsit à "
 
 #: ../qml/LogVisit.qml:128
 msgid "Today"
-msgstr ""
+msgstr "Aujourd'hui"
 
 #: ../qml/LogVisit.qml:128
 msgid "Yesterday"
-msgstr ""
+msgstr "Hier"
 
 #: ../qml/LogVisit.qml:210
 msgid "Log Text"
-msgstr ""
+msgstr "Texte du journal"
 
 #: ../qml/LogVisit.qml:221
 msgid "Submit Log"
-msgstr ""
+msgstr "Soumettre le journal"
 
 #: ../qml/LogVisit.qml:242
 msgid "Log was submitted successfully."
-msgstr ""
+msgstr "Le journal a été soumis avec succès."
 
 #: ../qml/Details.qml:92
 msgid "Compass"
-msgstr ""
+msgstr "Boussole"
 
 #: ../qml/Details.qml:117
 msgid "Navigation"
-msgstr ""
+msgstr "La navigation"
 
 #: ../qml/Details.qml:142
 msgid "Log Visit"
-msgstr ""
+msgstr "Visite du journal"
 
 #: ../qml/Details.qml:167
 msgid "Open in Browser"
-msgstr ""
+msgstr "Ouvrir dans le navigateur"
 
 #: ../qml/Details.qml:192
 msgid "Share Cache"
-msgstr ""
+msgstr "Partager le cache"
 
 #: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
 msgid "Cache Name: "
-msgstr ""
+msgstr "Nom du cache: "
 
 #: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
 msgid "Cache Type: "
-msgstr ""
+msgstr "Type de cache: "
 
 #: ../qml/Details.qml:274
 msgid "Cache Size: "
-msgstr ""
+msgstr "Taille du cache: "
 
 #: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
 msgid "Cache ID: "
-msgstr ""
+msgstr "ID de cache: "
 
 #: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
 msgid "Distance: "
-msgstr ""
+msgstr "Distance: "
 
 #: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
 msgid "Difficulty: "
-msgstr ""
+msgstr "Difficulté: "
 
 #: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
 msgid "Terrain: "
-msgstr ""
+msgstr "Terrain: "
 
 #: ../qml/Details.qml:732
 msgid "Jan"
-msgstr ""
+msgstr "Jan"
 
 #: ../qml/Details.qml:732
 msgid "Feb"
-msgstr ""
+msgstr "Fév"
 
 #: ../qml/Details.qml:732
 msgid "Mar"
-msgstr ""
+msgstr "Mar"
 
 #: ../qml/Details.qml:732
 msgid "Apr"
-msgstr ""
+msgstr "Avr"
 
 #: ../qml/Details.qml:732
 msgid "May"
-msgstr ""
+msgstr "Mai"
 
 #: ../qml/Details.qml:732
 msgid "Jun"
-msgstr ""
+msgstr "Juin"
 
 #: ../qml/Details.qml:733
 msgid "Jul"
-msgstr ""
+msgstr "Juil"
 
 #: ../qml/Details.qml:733
 msgid "Aug"
-msgstr ""
+msgstr "Août"
 
 #: ../qml/Details.qml:733
 msgid "Sep"
-msgstr ""
+msgstr "Sep"
 
 #: ../qml/Details.qml:733
 msgid "Oct"
-msgstr ""
+msgstr "Oct"
 
 #: ../qml/Details.qml:733
 msgid "Nov"
-msgstr ""
+msgstr "Nov"
 
 #: ../qml/Details.qml:733
 msgid "Dec"
-msgstr ""
+msgstr "Déc"
 
 #: ../qml/Details.qml:776 ../qml/MapScreen.qml:453
 msgid " minutes ago"
-msgstr ""
+msgstr " il y a quelques minutes"
 
 #: ../qml/Details.qml:778 ../qml/MapScreen.qml:455
 msgid " hours ago"
-msgstr ""
+msgstr " il y a des heures"
 
 #: ../qml/Details.qml:780 ../qml/MapScreen.qml:457
 msgid " days ago"
-msgstr ""
+msgstr " il y a quelques jours"
 
 #: ../qml/AuthScreen.qml:26
 msgid "Username"
-msgstr ""
+msgstr "Nom d'utilisateur"
 
 #: ../qml/AuthScreen.qml:39
 msgid "Password"
-msgstr ""
+msgstr "Mot de passe"
 
 #: ../qml/AuthScreen.qml:51
 msgid "Login"
-msgstr ""
+msgstr "S'identifier"
 
 #: ../qml/AuthScreen.qml:56
 msgid "Please wait, attempting to log in."
-msgstr ""
+msgstr "Veuillez patienter, essayez de vous connecter."
 
 #: ../qml/AuthScreen.qml:62
 msgid "Login accepted"
-msgstr ""
+msgstr "Login accepté"
 
 #: ../qml/AuthScreen.qml:65
 msgid "Login details are incorrect, try again."
-msgstr ""
+msgstr "Les informations de connexion sont incorrectes, réessayez."
 
 #: ../qml/AuthScreen.qml:73
 msgid "Not logged in."
-msgstr ""
+msgstr "Pas connecté."
 
 #: ../qml/MapScreen.qml:18
 msgid "Waiting for GPS fix..."
-msgstr ""
+msgstr "En attente de correction GPS..."
 
 #: ../qml/MapScreen.qml:24
 msgid "Show Search"
-msgstr ""
+msgstr "Afficher la recherche"
 
 #: ../qml/MapScreen.qml:43
 msgid "Download Caches"
-msgstr ""
+msgstr "Télécharger les caches"
 
 #: ../qml/MapScreen.qml:70
 msgid "GPS Lock"
-msgstr ""
+msgstr "Verrouillage GPS"
 
 #: ../qml/MapScreen.qml:218
 msgid "Cache Location: "
-msgstr ""
+msgstr "Emplacement du cache: "
 
 #: ../qml/MapScreen.qml:286
 msgid "More Details"
-msgstr ""
+msgstr "Plus de détails"
 
 #: ../qml/MapScreen.qml:309
 msgid "Stored in device: "
-msgstr ""
+msgstr "Stocké dans l'appareil:"
 
 #: geocaching.desktop.in.h:1
 msgid "Geocaching"
-msgstr ""
+msgstr "Géocaching"
