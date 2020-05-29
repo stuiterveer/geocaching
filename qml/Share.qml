@@ -15,7 +15,7 @@ Page {
     property var lon
 
     header: PageHeader {
-        title: i18n.tr("Share ") + cacheid + i18n.tr(" with a contact")
+        title: i18n.tr("Share %1 with a contact").arg(cacheid)
     }
 
     ColumnLayout {
@@ -55,7 +55,7 @@ Page {
             color: "#3EB34F"
             width: parent.width
             Layout.fillWidth: true
-            text: i18n.tr("geo:") + parseFloat(sharePage.lat).toFixed(5) + ',' + parseFloat(sharePage.lon).toFixed(5)
+            text: "geo:" + parseFloat(sharePage.lat).toFixed(5) + ',' + parseFloat(sharePage.lon).toFixed(5)
             onClicked: {
                 var mimeData = Clipboard.newData()
                 Clipboard.push("geo:" + parseFloat(sharePage.lat).toFixed(5) + ',' + parseFloat(sharePage.lon).toFixed(5))

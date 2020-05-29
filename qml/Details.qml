@@ -248,7 +248,7 @@ Page {
                     Label {
                         width: units.gu(3)
                         horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Cache Name: ")
+                        text: i18n.tr("Cache Name") + ": "
                     }
 
                     Text {
@@ -261,7 +261,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Cache Type: ")
+                        text: i18n.tr("Cache Type") + ": "
                     }
 
                     Text {
@@ -271,7 +271,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Cache Size: ")
+                        text: i18n.tr("Cache Size") + ": "
                     }
 
                     Text {
@@ -281,7 +281,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Cache ID: ")
+                        text: i18n.tr("Cache ID") + ": "
                     }
 
                     Text {
@@ -291,7 +291,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Distance: ")
+                        text: i18n.tr("Distance") + ": "
                     }
 
                     Text {
@@ -301,7 +301,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Difficulty: ")
+                        text: i18n.tr("Difficulty") + ": "
                     }
 
                     Text {
@@ -311,7 +311,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Terrain: ")
+                        text: i18n.tr("Terrain") + ": "
                     }
 
                     Text {
@@ -321,7 +321,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: "Owner: "
+                        text: i18n.tr("Owner") + ": "
                     }
 
                     Text {
@@ -331,7 +331,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: "Hidden: "
+                        text: i18n.tr("Hidden") + ": "
                     }
 
                     Text {
@@ -341,7 +341,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: "Last Found: "
+                        text: i18n.tr("Last Found") + ": "
                     }
 
                     Text {
@@ -351,7 +351,7 @@ Page {
 
                     Label {
                         horizontalAlignment: Text.AlignRight
-                        text: "Cache Location: "
+                        text: i18n.tr("Cache Location") + ": "
                     }
 
                     Text {
@@ -412,7 +412,13 @@ Page {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            console.log("delete clicked")
+                            markerPopup.close()
+                            busyIndicator.running = true
+                            pytest.call("util.delete_cache", [title], function(results) {
+                                markerPopup.close()
+                                updateMap(map.center.latitude, map.center.longitude)
+                                busyIndicator.running = false
+                            })
                         }
                     }
                 }
@@ -773,11 +779,11 @@ Page {
         var age = 0
 
         if(dlage < 3600)
-            age = Math.round(dlage / 60) + i18n.tr(" minutes ago")
+            age = i18n.tr("%1 minutes ago").arg(Math.round(dlage / 60))
         else if(dlage < 86400)
-            age = Math.round(dlage / 3600) + i18n.tr(" hours ago")
+            age = i18n.tr("%1 hours ago").arg(Math.round(dlage / 3600))
         else
-            age = Math.round(dlage / 86400) + i18n.tr(" days ago")
+            age = i18n.tr("%1 days ago").arg(Math.round(dlage / 86400))
 
         return age
     }

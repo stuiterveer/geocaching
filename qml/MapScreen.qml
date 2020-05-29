@@ -197,7 +197,7 @@ Page {
                         Label {
                             width: units.gu(5)
                             horizontalAlignment: Text.AlignRight
-                            text: i18n.tr("Cache Name: ")
+                            text: i18n.tr("Cache Name") + ": "
                         }
 
                         Rectangle {
@@ -215,7 +215,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Label.AlignRight
-                            text: i18n.tr("Cache Location: ")
+                            text: i18n.tr("Cache Location") + ": "
                         }
 
                         Text {
@@ -226,7 +226,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Text.AlignRight
-                            text: i18n.tr("Cache Type: ")
+                            text: i18n.tr("Cache Type") + ": "
                         }
 
                         Text {
@@ -237,7 +237,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Text.AlignRight
-                            text: i18n.tr("Cache ID: ")
+                            text: i18n.tr("Cache ID") + ": "
                         }
 
                         Text {
@@ -248,7 +248,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Text.AlignRight
-                            text: i18n.tr("Distance: ")
+                            text: i18n.tr("Distance") + ": "
                         }
 
                         Text {
@@ -259,7 +259,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Text.AlignRight
-                            text: i18n.tr("Difficulty: ")
+                            text: i18n.tr("Difficulty") + ": "
                         }
 
                         Text {
@@ -270,7 +270,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Text.AlignRight
-                            text: i18n.tr("Terrain: ")
+                            text: i18n.tr("Terrain") + ": "
                         }
 
                         Text {
@@ -306,7 +306,7 @@ Page {
                         anchors.top: sepRect.bottom
                         anchors.left: parent.left
                         width: parent.width / 2
-                        text: i18n.tr("Stored in device: ") + showAge(dlage)
+                        text: i18n.tr("Stored in device") + ": " + showAge(dlage)
                     }
 
                     Image {
@@ -450,11 +450,11 @@ Page {
         var age = 0
 
         if(dlage < 3600)
-            age = Math.round(dlage / 60) + i18n.tr(" minutes ago")
+            age = i18n.tr("%1 minutes ago").arg(Math.round(dlage / 60))
         else if(dlage < 86400)
-            age = Math.round(dlage / 3600) + i18n.tr(" hours ago")
+            age = i18n.tr("%1 hours ago").arg(Math.round(dlage / 3600))
         else
-            age = Math.round(dlage / 86400) + i18n.tr(" days ago")
+            age = i18n.tr("%1 days ago").arg(Math.round(dlage / 86400))
 
         return age
     }
