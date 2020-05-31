@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Romanian <ro@li.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Caută o memorie cache ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Căutați o cache după codul GC"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Căutare"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Distribuie %1 cu un contact"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Selectați URL-ul pentru a-l pune în clipboard"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Link copiat în clipboard!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Autentificați-vă vizita în %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Astăzi"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Ieri"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Jurnal de text"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Trimite jurnal"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Jurnalul a fost trimis cu succes."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Busolă"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Navigare"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Vizitarea jurnalului"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Deschis în browser"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Distribuie memoria cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Nume Cache"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Cache Type"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Mărimea cache-ului"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "ID de memorie cache"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Distanţă"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Dificultate"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Teren"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Proprietar"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Ascuns"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Ultima găsită"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Locația în cache"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "februarie"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "strica"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Aprilie"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Mai"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Iunie"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "iulie"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "august"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "septembrie"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "octombrie"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "noiembrie"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "decembrie"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "acum %1 minute"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 ore în urmă"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 zile în urmă"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Nume de utilizator"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Parola"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Autentificare"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Vă rugăm să așteptați, încercând să vă autentificați."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Logare acceptată"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Detaliile de conectare sunt incorecte, încercați din nou."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Nu te-ai autentificat."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "În așteptarea remedierii GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Afișați căutarea"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Descarcă Cache-uri"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "Blocare GPS"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Mai multe detalii"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Stocat în dispozitiv"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

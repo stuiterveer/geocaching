@@ -15,13 +15,13 @@ Page {
 
     header: PageHeader {
         id: listHeader
-        title: "Waiting for GPS fix..."
+        title: i18n.tr("Waiting for GPS fix...")
 
         trailingActionBar {
             actions: [
                 Action {
                     iconSource: findColorPaletteSearch()
-                    text: "Show Search"
+                    text: i18n.tr("Show Search")
 
                     function findColorPaletteSearch(){
                         if(theme.palette.normal.base != "#cdcdcd"){
@@ -40,7 +40,7 @@ Page {
                 },
                 Action {
                     iconSource: findColorPaletteDownload()
-                    text: "Download Caches"
+                    text: i18n.tr("Download Caches")
 
                     function findColorPaletteDownload(){
                         if(theme.palette.normal.base != "#cdcdcd"){
@@ -67,7 +67,7 @@ Page {
                 Action {
                     id: gps
                     iconSource: findColorPaletteGpsTarget()
-                    text: "GPS Lock"
+                    text: i18n.tr("GPS Lock")
 
 
                     onTriggered: gpsToggle()
@@ -197,7 +197,7 @@ Page {
                         Label {
                             width: units.gu(5)
                             horizontalAlignment: Text.AlignRight
-                            text: "Cache Name: "
+                            text: i18n.tr("Cache Name") + ": "
                         }
 
                         Rectangle {
@@ -215,7 +215,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Label.AlignRight
-                            text: "Cache Location: "
+                            text: i18n.tr("Cache Location") + ": "
                         }
 
                         Text {
@@ -226,7 +226,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Text.AlignRight
-                            text: "Cache Type: "
+                            text: i18n.tr("Cache Type") + ": "
                         }
 
                         Text {
@@ -237,7 +237,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Text.AlignRight
-                            text: "Cache ID: "
+                            text: i18n.tr("Cache ID") + ": "
                         }
 
                         Text {
@@ -248,7 +248,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Text.AlignRight
-                            text: "Distance: "
+                            text: i18n.tr("Distance") + ": "
                         }
 
                         Text {
@@ -259,7 +259,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Text.AlignRight
-                            text: "Difficulty: "
+                            text: i18n.tr("Difficulty") + ": "
                         }
 
                         Text {
@@ -270,7 +270,7 @@ Page {
 
                         Label {
                             horizontalAlignment: Text.AlignRight
-                            text: "Terrain: "
+                            text: i18n.tr("Terrain") + ": "
                         }
 
                         Text {
@@ -283,7 +283,7 @@ Page {
                     Button {
                         id: moreDetails
                         anchors.top: gridLayout.bottom
-                        text: "More Details"
+                        text: i18n.tr("More Details")
                         width: parent.width
                         color: "#3eb34f"
                         onClicked: {
@@ -306,7 +306,7 @@ Page {
                         anchors.top: sepRect.bottom
                         anchors.left: parent.left
                         width: parent.width / 2
-                        text: "Stored in device: " + showAge(dlage)
+                        text: i18n.tr("Stored in device") + ": " + showAge(dlage)
                     }
 
                     Image {
@@ -450,11 +450,11 @@ Page {
         var age = 0
 
         if(dlage < 3600)
-            age = Math.round(dlage / 60) + " minutes ago"
+            age = i18n.tr("%1 minutes ago").arg(Math.round(dlage / 60))
         else if(dlage < 86400)
-            age = Math.round(dlage / 3600) + " hours ago"
+            age = i18n.tr("%1 hours ago").arg(Math.round(dlage / 3600))
         else
-            age = Math.round(dlage / 86400) + " days ago"
+            age = i18n.tr("%1 days ago").arg(Math.round(dlage / 86400))
 
         return age
     }

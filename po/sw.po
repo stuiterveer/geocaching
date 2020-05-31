@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Swahili <sw@li.org>\n"
+"Language: sw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Tafuta kache ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Tafuta kache kwa nambari ya GC"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Tafuta"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Shiriki %1 na mawasiliano"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Chagua url kuiweka kwenye clipboard"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Kiunga kilichonakiliwa kwa clipboard!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Ingia ziara yako kwa %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Leo"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Jana"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Nakala ya Ingia"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Peana Ingia"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Log iliwasilishwa kwa mafanikio."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Kampasi"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Urambazaji"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Ingia Ziara"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Fungua katika Kivinjari"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Shiriki Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Jina la Cache"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Aina ya Cache"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Saizi ya kache"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Kitambulisho cha Cache"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Umbali"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Ugumu"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Mtaro"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Mmiliki"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Siri"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Iliyopatikana Mwisho"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Mahali pa Cache"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Feb"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Mar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Aprili"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Mei"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Jun"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Aug"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Sep"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Okt"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Novemba"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Desemba"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 dakika zilizopita"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 masaa yaliyopita"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 siku zilizopita"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Jina la mtumiaji"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Nywila"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Ingia"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Tafadhali subiri, jaribu kuingia."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Ingia limekubaliwa"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Maelezo ya kuingia sio sahihi, jaribu tena."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Haikuingia."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Inasubiri fix ya GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Onyesha Utaftaji"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Pakua Hati"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "Kioo cha GPS"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Maelezo Zaidi"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Imehifadhiwa kwenye kifaa"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Kuingia"

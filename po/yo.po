@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Yoruba <yo@li.org>\n"
+"Language: yo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Wa kaadi ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Wa fun kaṣe nipasẹ koodu GC"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Ṣewadii"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Pin %1 pẹlu olubasọrọ kan"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Yan url lati fi sii agekuru naa"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Ọna asopọ dakọ si agekuru!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Wọle si abẹwo rẹ si %1_"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Loni"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Lana"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Wọle Wọle"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Fi orukọ silẹ"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Wọle ti gbekalẹ ni ifijišẹ."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Kompasi"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Lilọ kiri"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Wọle Wọle"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Ṣi ni Burausa"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Pin Kaṣe"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Orukọ kaṣe"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Iru Kaṣe"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Iwọn kaṣe"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Kaadi ID"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Ijinna"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Ìsòro"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Ilẹ oju"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Eni"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Farasin"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Igba ikẹhin"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Ipo kaṣe"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Oṣu keji"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Mar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Oṣu Kẹrin"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Oṣu Karun"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Oṣu Kẹta"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Oṣu Kẹjọ"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Oṣu Kẹsan"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Oṣu Kẹwa"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Oṣu kọkanla"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Oṣu kejila"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 iṣẹju sẹhin"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 wakati sẹhin"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 ọjọ seyin"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Olumulo"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Ọrọ aṣina"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Wo ile"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Jọwọ duro, igbiyanju lati wọle."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Buwolu wọle"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Awọn alaye ti nwọle ko tọ, gbiyanju lẹẹkansi."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Ko wọle"
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "N duro de ipo GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Fihan Ṣiṣawari"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Ṣe igbasilẹ Awọn ọkọ ayọkẹlẹ"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "Titiipa GPS"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Awọn alaye diẹ sii"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Ti o fipamọ sinu ẹrọ"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Iwa lori ilẹ"

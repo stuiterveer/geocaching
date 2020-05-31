@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Macedonian <mk@li.org>\n"
+"Language: mk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Пребарај за кеш ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Пребарувајте за кеш со GC-код"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Пребарај"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Споделете %1 со контакт"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Изберете ја адресата за да ја ставите во клипбордот"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Врска копирана во таблата со исечоци!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Пријавете ја вашата посета на %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Денес"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Вчера"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Текст на дневник"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Поднесете лог"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Дневникот беше доставен успешно."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Компас"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Навигација"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Посета на дневник"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Отворена во прелистувачот"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Сподели Кеш"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Име на кешот"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Тип на кеш"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Големина на кешот"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "ID на кешот"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Растојание"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Тешкотија"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Терен"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Сопственик"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Скриен"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Последно најдено"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Локација на кешот"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Јан"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Февруари"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Март"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Април"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Мај"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Јуни"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Јули"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Август"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Сеп"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Октомври"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Ноември"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Декември"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "пред %1 минути"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "пред %1 часа"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 денови предходно"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Корисничко име"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Лозинка"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Логирај Се"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Ве молиме почекајте, обидувајќи се да се најавите."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Пријавување е прифатено"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Деталите за најавување се неточни, обидете се повторно."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Не сте најавени"
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Чекајќи го поправањето на GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Покажи пребарување"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Преземи кеши"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS заклучување"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Повеќе детали"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Зачувана во уредот"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Гео-настава"

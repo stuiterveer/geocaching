@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Kurdish <ku@li.org>\n"
+"Language: ku\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Li cache-yê bigerin ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Ji hêla kodê GC-ê ve cache-ê digerin"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Gerr"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Bi têkiliyek %1 re parve bikin"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Url hilbijêrin da ku wî di quncikê drav de"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Zencîreyê kopî li clipboard hatî kopîkirin!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Serdana xweya %1 binivîse"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Îro"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Do"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Nivîsar Log"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Log şandin"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Log bi serkeftî hate şandin."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Hêlrêker"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Rêserbirinî"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Serdana Log"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Li Browser vekin"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Cache parve bikin"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Navê Cache"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Tîpa Cache"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Mezinahiya Cache"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Nasnameya Cache"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Dûrî"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Astengî"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Erd"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Xwedî"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Veşartî"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Last dîtin"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Cache Location"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Sibê"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Mar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Nîsan"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Gulan"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Jun"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Tebax"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Sep"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Oct"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Nov"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Dec"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 deqîqe berê"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 demjimêr berî"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 roj berê"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Nav"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Şîfre"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Têketin"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Ji kerema xwe, bisekine, hewl dide ku têkevê."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Têketin qebûl kirin"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Hûrguliyên têketinê şaş in, dîsa biceribînin."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Ne têketî ye."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Li benda çareserkirina GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Lê Bigere"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Caches daxistin"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS Lock"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "More Details"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Di cîhazê de hate hilanîn"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Tamil <ta@li.org>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "ஒரு கேச் தேடு ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "ஒரு கேச் அதன் ஜி.சி குறியீட்டால் தேடுங்கள்"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "தேடல்"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "ஒரு தொடர்புடன் %1 ஐப் பகிரவும்"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "கிளிப்போர்டில் வைக்க url ஐத் தேர்ந்தெடுக்கவும்"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "இணைப்பு கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "உங்கள் வருகையை %1 இல் பதிவுசெய்க"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "இன்று"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "நேற்று"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "பதிவு உரை"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "பதிவைச் சமர்ப்பிக்கவும்"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "பதிவு வெற்றிகரமாக சமர்ப்பிக்கப்பட்டது."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "திசைகாட்டி"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "வழிசெலுத்தல்"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "பதிவு வருகை"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "உலாவியில் திறக்கவும்"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "கேச் பகிரவும்"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "கேச் பெயர்"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "கேச் வகை"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "கேச் அளவு"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "கேச் ஐடி"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "தூரம்"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "சிரமம்"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "நிலப்பரப்பு"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "உரிமையாளர்"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "மறைக்கப்பட்டுள்ளது"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "கடைசியாக கிடைத்தது"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "கேச் இருப்பிடம்"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "ஜன"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "பிப்"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "மார்"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "ஏப்ரல்"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "மே"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "ஜூன்"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "ஜூலை"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "ஆக"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "செப்"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "அக்"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "நவ"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "டிச"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 நிமிடங்களுக்கு முன்பு"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 மணி நேரத்திற்க்கு முன்பு"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 நாட்களுக்கு முன்பு"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "பயனர்பெயர்"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "உள்நுழைய"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "உள்நுழைய முயற்சிக்க தயவுசெய்து காத்திருங்கள்."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "உள்நுழைவு ஏற்றுக்கொள்ளப்பட்டது"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "உள்நுழைவு விவரங்கள் தவறானவை, மீண்டும் முயற்சிக்கவும்."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "உள்நுழையவில்லை."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "ஜி.பி.எஸ் பிழைத்திருத்தத்திற்காக காத்திருக்கிறது ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "தேடலைக் காட்டு"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "தற்காலிக சேமிப்புகளைப் பதிவிறக்குக"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "ஜி.பி.எஸ் பூட்டு"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "கூடுதல் தகவல்கள்"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "சாதனத்தில் சேமிக்கப்படுகிறது"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "ஜியோகாச்சிங்"

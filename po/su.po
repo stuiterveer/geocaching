@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Sundanese <su@li.org>\n"
+"Language: su\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Milarian cache ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Milarian cache ku éta kodeu GC"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Milarian"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Bagikeun %1 sareng kontak"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Pilih url pikeun nempatkeun éta dina clipboard"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Link ditiron ka clipboard!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Log kunjungan anjeun ka %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Dinten ayeuna"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Kamari"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Téks Log"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Lebetkeun Log"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Log suksés dikintunkeun."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Kompas"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Napigasi"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Log Didatangan"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Dibuka dina Browser"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Bagikeun Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Ngaran Cache"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Jenis Cache"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Ukuran cache"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "ID cache"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Jarak"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Hésé"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Terrain"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Anu gaduh"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Disumputkeun"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Kapanggih"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Cache Lokasi"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Peb"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Mar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Apr"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Mei"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Jun"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Aug"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Sep"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Oct"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Nov"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Dec"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 menit katukang"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 sababaraha jam ka pengker"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 dinten ka pengker"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Username"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Kecap aksés"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Lebet"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Punten antosan, nyobian log in."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Ditampi login"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Rincian login henteu salah, cobian deui."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Henteu ka lebet."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Ngantosan GPS fix ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Témbongkeun Milarian"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Download Cache"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS Kunci"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Langkung Rincianna"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Disimpen dina alat"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

@@ -23,7 +23,7 @@ Page {
         TextField {
             id: login
             Layout.fillWidth: true
-            placeholderText: "Username"
+            placeholderText: i18n.tr("Username")
         }
 
         onVisibleChanged: {
@@ -36,7 +36,7 @@ Page {
         TextField {
             id: password
             Layout.fillWidth: true
-            placeholderText: "Password"
+            placeholderText: i18n.tr("Password")
             echoMode: TextInput.PasswordEchoOnEdit
         }
 
@@ -48,21 +48,21 @@ Page {
         Button {
             id: proccessButton
             Layout.fillWidth: true
-            text: "Login"
+            text: i18n.tr("Login")
             color: "#3EB34F"
             onClicked: {
                 busyIndicator.running = true
                 proccessButton.enabled = false
-                data.text = "Please wait, attempting to log in."
+                data.text = i18n.tr("Please wait, attempting to log in.")
                 pytest.call("util.gclogin", [login.text, password.text], function(results) {
                     proccessButton.enabled = true
                     busyIndicator.running = false
                     if(results[0] == 1)
                     {
-                        data.text = "Login accepted"
+                        data.text = i18n.tr("Login accepted")
                         mainView.loadMap()
                     } else {
-                        data.text = "Login details are incorrect, try again."
+                        data.text = i18n.tr("Login details are incorrect, try again.")
                     }
                 })
             }
@@ -70,7 +70,7 @@ Page {
 
         TextArea {
             id: data
-            text: "Not logged in."
+            text: i18n.tr("Not logged in.")
             readOnly: true
             Layout.fillWidth: true
         }

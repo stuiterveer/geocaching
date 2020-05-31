@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Samoan <sm@li.org>\n"
+"Language: sm\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Saili mo se cache ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Saili se cache i le GC code"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Saili"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Faasoa %1 ma se fesoʻotaʻiga"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Filifili url e tuu i totonu o le laupapa"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Lisi na kopiina i le laupapa laupapa!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Faʻamau lau asiasiga i %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Le asō"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Ananafi"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Ogalaau Tusitusiga"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Auina Log"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Ole ogalaau na lafoina ma le manuia."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Tapasa"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Sailiga"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Ogalaau Asiasi"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Tatala i totonu ole Browser"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Faasoa Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Cache Igoa"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Ituaiga Cache"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Cache tele"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Cache ID"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Mamao"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Faigata"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Teritori"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Tagata e ana"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Natia"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Maua mulimuli"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Cache Nofoaga"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Ianuari"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Fep"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Mati"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Aperila"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Mae"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Iuni"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Iulai"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Aukuso"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Setema"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Oketopa"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Novema"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Tesema"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 minute ua mavae"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 itula talu ai"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 aso talu ai"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Igoa Igoa"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Numera e le iloa e sesi"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Ulufale"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Faʻamolemole faʻatali, taumafai e ulufale i totonu."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Ua talia le ulufale o le ulufale"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Lisi faʻamatalaga e le saʻo, toe taumafai."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "E leʻo i totonu"
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Faatali mo le GPS faaleleia ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Faʻaali Suʻesuʻega"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Sii mai ia Sapalai"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "Loka GPS"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Sili auiliiliga"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Teuina i masini"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Khmer <km@li.org>\n"
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "ស្វែងរកឃ្លាំងសម្ងាត់ ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "ស្វែងរកឃ្លាំងសម្ងាត់ដោយលេខកូដជីស៊ី"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "ស្វែងរក"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "ចែករំលែក %1 ជាមួយទំនាក់ទំនង"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "ជ្រើសរើស url ដើម្បីដាក់វានៅក្នុងឃ្លិបបត"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "បានចម្លងតំណទៅក្ដារតម្បៀតខ្ទាស់!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "ចុះឈ្មោះដំណើរទស្សនកិច្ចរបស់អ្នកទៅ %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "ថ្ងៃនេះ"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "ម្សិលមិញ"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "អត្ថបទកំណត់ហេតុ"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "ដាក់ស្នើកំណត់ហេតុ"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "កំណត់ហេតុត្រូវបានដាក់ស្នើដោយជោគជ័យ។"
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "ត្រីវិស័យ"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "នាវាចរណ៍"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "ចូលទស្សនា"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "បើកក្នុងកម្មវិធីអ៊ីនធឺណិត"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "ចែករំលែកឃ្លាំងសម្ងាត់"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "ឈ្មោះឃ្លាំងសម្ងាត់"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "ប្រភេទឃ្លាំងសម្ងាត់"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "ទំហំឃ្លាំងសម្ងាត់"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "លេខសម្គាល់ឃ្លាំងសម្ងាត់"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "ចម្ងាយ"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "ភាពលំបាក"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "ភូមិសាស្ត្រ"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "ម្ចាស់"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "លាក់"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "រកឃើញចុងក្រោយ"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "ទីតាំងឃ្លាំងសម្ងាត់"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "មករា"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "ខែកុម្ភៈ"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "មីនា"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "មេសា"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "ឧសភា"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "មិថុនា"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "ខែកក្កដា"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "សីហា"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "កញ្ញា"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "តុលា"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "វិច្ឆិកា"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "ធ្នូ"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 នាទីមុន"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 ច្រើន​ម៉ោង​កន្លងទៅ"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 ថ្ងៃ​មុន"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "ឈ្មោះ​អ្នកប្រើប្រាស់"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "ពាក្យសម្ងាត់"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "ចូល"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "សូមរង់ចាំដោយព្យាយាមចូល។"
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "បានចូល"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "ព័ត៌មានលំអិតចូលមិនត្រឹមត្រូវព្យាយាមម្តងទៀត។"
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "មិន​បាន​ចូល​ទេ។"
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "កំពុងរង់ចាំការជួសជុលជីភីអេស ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "បង្ហាញការស្វែងរក"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "ទាញយកឃ្លាំងសម្ងាត់"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "ជីភីអេសចាក់សោ"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "ព័ត៌មានលំអិត"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "បានរក្សាទុកនៅក្នុងឧបករណ៍"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "ភូមិសាស្ត្រ"

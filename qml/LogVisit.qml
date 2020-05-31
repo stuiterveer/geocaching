@@ -13,7 +13,7 @@ Page {
     height: parent.height
 
     header: PageHeader {
-        title: "Log your vitsit to " + cacheid
+        title: i18n.tr("Log your visit to %1").arg(cacheid)
     }
 
     ComboBox {
@@ -125,7 +125,7 @@ Page {
         anchors.right: parent.right
         width: parent.width / 2
         height: units.gu(5)
-        model: ["Today", "Yesterday"]
+        model: [i18n.tr("Today"), i18n.tr("Yesterday")]
         font.pixelSize: units.gu(3.5)
 
         delegate: ItemDelegate {
@@ -207,7 +207,7 @@ Page {
         width: parent.width
         font.pixelSize: units.gu(3.5)
         height: units.gu(20)
-        placeholderText: "Log Text"
+        placeholderText: i18n.tr("Log Text")
         textFormat: TextArea.PlainText
     }
 
@@ -218,7 +218,7 @@ Page {
         height: units.gu(5)
         width: parent.width
         Layout.fillWidth: true
-        text: "Submit Log"
+        text: i18n.tr("Submit Log")
         color: "#3EB34F"
         enabled: false
         onClicked: {
@@ -239,7 +239,7 @@ Page {
                 proccessButton.enabled = true
                 busyIndicator.running = false
                 if(results == true) {
-                    toast.show("Log was submitted successfully.")
+                    toast.show(i18n.tr("Log was submitted successfully."))
                     stack.pop()
                     return
                 }

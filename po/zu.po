@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Zulu <zu@li.org>\n"
+"Language: zu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Sesha i-cache ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Sesha i-cache yikhodi ye-GC"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Sesha"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Yabelana %1 nomuntu oxhumana naye"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Khetha i-url ukuyifaka kubhodi yokunameka"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Isixhumanisi sikopishelwe ebhodini lokunamathisela!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Ngena ukuvakasha kwakho ku-"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Namuhla"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Izolo"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Umbhalo welog"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Thumela Ukungena"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "I-Log ihanjiswe ngempumelelo."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Ikhampasi"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Ukuzula"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Ngena Ukuvakasha"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Vula kusiphequluli"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Yabelana nge-Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Igama le-Cache"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Uhlobo lwe-Cache"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Ubukhulu be-Cache"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Umazisi we-Cache"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Ibanga"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Ubunzima"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "I-Terrain"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Umnikazi"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Kufihliwe"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Kutholakale Ukugcina"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Indawo Yenqolobane"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Feb"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Mar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Eph"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Meyi"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Jun"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Aug"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "USep"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Oct"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Novemba"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Dec"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 imizuzu edlule"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 amahora adlule"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 izinsuku ezedlule"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Igama lomsebenzisi"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Iphasiwedi"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Ngena ngemvume"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Sicela ulinde, izama ukungena ngemvume."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Ukungena kwamukelwe"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Imininingwane yokungena ayilungile, zama futhi."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Akungene ngemvume."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Ilinde ukulungiswa kwe-GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Khombisa Ukucinga"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Landa ama-Cache"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "I-GPS Lock"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Imininingwane Ngaphezulu"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Igcinwe kudivayisi"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "UGeocaching"

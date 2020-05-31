@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Kannada <kn@li.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "ಸಂಗ್ರಹಕ್ಕಾಗಿ ಹುಡುಕಿ ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "ಸಂಗ್ರಹಕ್ಕಾಗಿ ಅದರ ಜಿಸಿ ಕೋಡ್ ಮೂಲಕ ಹುಡುಕಿ"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "ಹುಡುಕಿ Kannada"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "ಸಂಪರ್ಕದೊಂದಿಗೆ %1 ಹಂಚಿಕೊಳ್ಳಿ"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ನಲ್ಲಿ ಇರಿಸಲು url ಆಯ್ಕೆಮಾಡಿ"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "ಲಿಂಕ್ ಅನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "%1 ಗೆ ನಿಮ್ಮ ಭೇಟಿಯನ್ನು ಲಾಗ್ ಮಾಡಿ"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "ಇಂದು"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "ನಿನ್ನೆ"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "ಲಾಗ್ ಪಠ್ಯ"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "ಲಾಗ್ ಸಲ್ಲಿಸಿ"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "ಲಾಗ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "ದಿಕ್ಸೂಚಿ"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "ಸಂಚರಣೆ"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "ಲಾಗ್ ಭೇಟಿ"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "ಬ್ರೌಸರ್ ತೆರೆಯಿರಿ"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "ಸಂಗ್ರಹವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "ಸಂಗ್ರಹ ಹೆಸರು"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "ಸಂಗ್ರಹ ಪ್ರಕಾರ"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "ಸಂಗ್ರಹ ಗಾತ್ರ"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "ಸಂಗ್ರಹ ID"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "ದೂರ"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "ತೊಂದರೆ"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "ಭೂ ಪ್ರದೇಶ"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "ಮಾಲೀಕ"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "ಮರೆಮಾಡಲಾಗಿದೆ"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "ಕೊನೆಯದಾಗಿ ಕಂಡುಬಂದಿದೆ"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "ಸಂಗ್ರಹ ಸ್ಥಳ"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "ಜನ"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "ಫೆಬ್ರವರಿ"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "ಮಾರ್ಚ್"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "ಎಪ್ರಿಲ್"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "ಮೇ"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "ಜೂನ್"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "ಜುಲೈ"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "ಆಗಸ್ಟ್"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "ಸೆಪ್ಟೆಂಬರ್"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "ಅಕ್ಟೋಬರ್"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "ನವೆಂಬರ್"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "ಡಿಸೆಂಬರ್"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 ನಿಮಿಷಗಳ ಹಿಂದೆ"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 ಗಂಟೆಗಳ ಹಿಂದೆ"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 ದಿನಗಳ ಹಿಂದೆ"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "ಬಳಕೆದಾರ ಹೆಸರು"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "ಗುಪ್ತಪದ"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "ಲಾಗಿನ್ ಮಾಡಿ"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "ದಯವಿಟ್ಟು ನಿರೀಕ್ಷಿಸಿ, ಲಾಗ್ ಇನ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದೆ."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "ಲಾಗಿನ್ ಸ್ವೀಕರಿಸಲಾಗಿದೆ"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "ಲಾಗಿನ್ ವಿವರಗಳು ತಪ್ಪಾಗಿದೆ, ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "ಲಾಗ್ ಇನ್ ಆಗಿಲ್ಲ."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "ಜಿಪಿಎಸ್ ಫಿಕ್ಸ್ಗಾಗಿ ಕಾಯಲಾಗುತ್ತಿದೆ ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "ಹುಡುಕಾಟವನ್ನು ತೋರಿಸಿ"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "ಸಂಗ್ರಹಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "ಜಿಪಿಎಸ್ ಲಾಕ್"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "ಸಾಧನದಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "ಜಿಯೋಕಾಚಿಂಗ್"

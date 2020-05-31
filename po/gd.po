@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Scottish Gaelic <gd@li.org>\n"
+"Language: gd\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Lorg tasgadan ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Lorg tasgadan leis a ’chòd GC aige"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Rannsaich"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Roinn %1 le fios"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Tagh url airson a chuir anns a ’bhòrd bhidio"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Ceangal air a chopaigeadh chun a ’bhòrd bhidio!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Log a-steach do chuairt gu %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "An-diugh"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "An-dè"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Teacs Log"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Cuir a-steach Log"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Chaidh Log a chuir a-steach gu soirbheachail."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Compass"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Seòladaireachd"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Tadhal air Log"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Fosgail ann am brobhsair"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Roinn Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Ainm tasgadan"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Seòrsa tasgadan"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Meud tasgadan"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "ID tasgadan"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Astar"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Duilgheadas"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Talamh"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Sealbhadair"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Falaichte"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Fhuaras mu dheireadh"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Suidheachadh tasgadan"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan."
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Gearran"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Mar."
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Aib"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "A &#39;Chèitean"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Jun"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Lùnastal"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Septembar"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Dàmhair"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Samhain"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Dùbhlachd"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 mionaid air ais"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 uair a thìde air ais"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 latha air ais"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Ainm-cleachdaidh"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Facal-faire"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Log a-steach"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Fuirich ort, a ’feuchainn ri logadh a-steach."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Glacadh a-steach"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Tha mion-fhiosrachadh logadh a-steach ceàrr, feuch ris a-rithist."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Gun logadh a-steach."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "A ’feitheamh ri fuasgladh GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Seall Rannsachadh"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Luchdaich sìos cèidsichean"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "Lock GPS"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Barrachd mion-fhiosrachaidh"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Air a stòradh san inneal"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

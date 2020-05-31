@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Sindhi <sd@li.org>\n"
+"Language: sd\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "ڪيش کي ڳولهيو ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "ان جو جي سي ڪوڊ آهي ڪيچ جي ڳولا ڪريو"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "ڳولا"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "شيئر ڪريو %1 هڪ رابطو سان"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "ڪلپ بورڊ ۾ رکڻ لاءِ يو آر ايل چونڊيو"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "لنڪ ڪلپ بورڊ ڏانهن نقل ڪيو ويو!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "پنهنجي آمد %1 تي داخل ٿيو"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "ا."
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "ڪالهه"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "لاگ ٽيڪسٽ"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "جمع ڪريو"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "لاگ ڪاميابي سان جمع ڪيو ويو."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "ڪمپاس"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "نيويگيشن"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "لاگ جو دورو ڪريو"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "برائوزر ۾ کوليو"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "ڪيش کي ورهايو"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "ڪيش جو نالو"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "ڪيش جو قسم"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "ڪيش جي ماپ"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "ڪيش آئي ڊي"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "مفاصلو"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "تڪليف"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "جاگرافي"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "مالڪ"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "لِڪائي"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "آخري لڌو"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "ڪيش جو هنڌ"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "جنوري"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "فيبروري"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "مارچ"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "اپريل"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "مئي"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "جون"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "جولاءِ"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "آگسٽ"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "سيپٽمبر"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "آڪٽوبر"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "نومبر"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "ڊسمبر"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 منٽ اڳ"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 ڪلاڪ اڳ"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 ڏينهن اڳ"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "کاتي جو نالو"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "پاسورڊ"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "لاگ ان"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "مهرباني ڪري انتظار ڪريو ، لاگ ان ٿيڻ جي ڪوشش ڪئي وئي آهي."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "لاگ ان قبول ٿي ويا"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "لاگ ان جا تفصيل غلط آهن ، ٻيهر ڪوشش ڪريو."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "لاگ ان ڪونه ٿيو آهي."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "جي پي ايس فڪسنگ لاءِ انتظار ڪري رهيو آهي ۔۔۔"
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "ڏيکاريو ڳولا"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "ڪيچ ڊائون لوڊ ڪريو"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "جي پي ايس لاڪ"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "وڌيڪ تفصيل"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "ڊوائيس ۾ محفوظ ٿيل"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

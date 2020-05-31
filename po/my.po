@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Burmese <my@li.org>\n"
+"Language: my\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "cache ကိုရှာပါ။"
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "၎င်းသည် GC ကုဒ်အားဖြင့် cache ကိုရှာဖွေပါ"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "ရှာပါ"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "%1 အားဆက်သွယ်ရန်နှင့်မျှဝေပါ"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "clipboard ၌ထည့်ရန် url ကိုရွေးချယ်ပါ"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Link ကို clipboard မှကူးယူ!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "သင်၏လည်ပတ်မှုကို %1 သို့ log လုပ်ပါ။"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "ဒီနေ့"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "မနေ့က"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "စာသား Log"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "တင်သွင်းပါ"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "မှတ်တမ်းကိုအောင်မြင်စွာတင်သွင်းခဲ့သည်။"
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "သံလိုက်အိမ်မြှောင်"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "လမ်းကြောင်း"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Log Visit"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Browser တွင်ဖွင့်ပါ"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "မျှဝေရန် Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Cache အမည်"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Cache အမျိုးအစား"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Cache အရွယ်အစား"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Cache အိုင်ဒီ"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "အကွာအဝေး"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "ခက်ခဲသည်"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "မြေပြင်"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "ပိုင်ရှင်"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "ဝှက်ထား"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "နောက်ဆုံးတွေ့ရှိသည်"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Cache တည်နေရာ"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "ဇန်နဝါရီ"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "ဖေဖော်ဝါရီ"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "မတ်"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr ".ပြီလ"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "မေလ"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "ဇွန်"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "ဇူလိုင်လ"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Augဂုတ်"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "စက်တင်ဘာ"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "အောက်တိုဘာ"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "နိုဝင်ဘာ"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "ဒီဇင်ဘာ"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 လွန်ခဲ့သောမိနစ်အနည်းငယ်က"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 နာရီအကြာ"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 ရက်အနည်းငယ်က"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "အသုံးပြုသူအမည်"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "စကားဝှက်"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "လော့ဂ်အင်"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "ကျေးဇူးပြု၍ ခဏစောင့်ပါ၊ log in လုပ်ရန်ကြိုးစားပါ"
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "ဝင်ခွင့်ကိုလက်ခံခဲ့သည်"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Login အသေးစိတ်အချက်အလက်များမမှန်ကန်ပါ၊ ထပ်မံကြိုးစားပါ။"
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "log in ဝင်မထားပါ"
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "GPS ပြင်ဆင်မှုကိုစောင့်နေသည် ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "ရှာဖွေမှုပြပါ"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Cache များကို Download လုပ်ပါ"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS Lock"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "အသေးစိတ်များ"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "ကိရိယာထဲမှာသိမ်းထားတဲ့"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

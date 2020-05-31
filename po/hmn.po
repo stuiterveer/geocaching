@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Hmong <hmn@li.org>\n"
+"Language: hmn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Nrhiav rau lub cache ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Nrhiav rau lub cache los ntawm nws GC code"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Tshawb Fawb"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Qhia %1 nrog rau kev sib cuag"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Xaiv qhov url los tso rau hauv daim ntawv txiav"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Txuas tau theej rau ntawv los teev cia!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Nkag mus ntsib %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Hnub no"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Nag hmo"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Cov Ntawv Sau Ntawv Nkag"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Xa Ntawv Log"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Cav tau xa tawm tiav lawm."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Compass"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Kev Nkoj Tawm"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Nkag Mus Saib"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Qhib hauv Browser"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Qhia Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Cache Lub Npe"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Cache Hom"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Cache Loj"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Cache ID"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Qhov deb"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Nyuaj"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Teb"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Tus tswv tsev"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Muab zais"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Kawg Pom"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Chaw Cache"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Lub Ib Hlis"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Lub ob hlis ntuj"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Lub peb hlis ntuj"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Plaub Hlis Ntuj"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Lub 5 Hlis"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Lub Rau Hli"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Lub yim hli ntuj"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Nthuav"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Lub kaum hli ntuj"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Nov"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Dec"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 feeb dhau los"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 teev dhau los"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 hnub dhau los"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Lub npe neeg siv"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Lo lus zais"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "ID nkag mus"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Thov tos, sim nkag mus."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Nkag mus txais"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Cov ncauj lus nkag tsis yog, sim dua."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Tsis nyob hauv."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Tos GPS txhim kho ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Saib Tshawb"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Download Kwv Txhiaj"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS Muab Tub"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Cov Lus Qhia Ntxiv"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Muab cia rau hauv ntaus ntawv"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-30 10:42+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Catalan <ca@li.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Cercar una memòria cau ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Cercar un cau pel mateix codi de GC"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Cerca"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Compartir %1 amb un contacte"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Seleccionar URL per posar-lo al porta-retalls"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Enllaç copiat a al porta-retalls!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Escriu el teu visita a %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "avui"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "ahir"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "de registre de text"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "presentar Entrada"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Registre s'ha enviat correctament."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Brúixola"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "navegació"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "registre de la visita"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Oberta al navegador"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "compartir memòria cau"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "nom memòria cau"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "tipus memòria cau"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Mida de memòria cau"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "identificació memòria cau"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "distància"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "dificultat"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "terreny"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "propietari"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "ocult"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "passat va trobar"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Ubicació de memòria cau"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "febrer"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "desfigurar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "abril"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "maig"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "juny"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "juliol"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "agost"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "setembre"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "octubre"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "novembre"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "desembre"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 fa uns minuts"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 Fa hores"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 fa uns dies"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Nom d'usuari"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "contrasenya"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "iniciar Sessió"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Si us plau, intentar començar la sessió."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Inicia sessió acceptada"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "dades d'accés són incorrectes-ho a provar."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "No estàs autenticat."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "A l'espera de posició GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "mostrar Cercar"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "descàrrega caixets"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "bloqueig GPS"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Més detalls"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Emmagatzemat al dispositiu"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

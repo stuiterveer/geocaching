@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-30 10:37+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Azerbaijani <az@li.org>\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "bir cache üçün axtarış ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "bunun nin GC kodu ilə bir cache üçün axtarış"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "axtarış"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Bir əlaqə ilə Share %1"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "panoya qoymaq üçün url seçin"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Link panoya kopyalanır!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Sizin səfəriniz üçün daxil olun %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "hazırda"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "dünən"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "log Text"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Giriş təqdim"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Log uğurla təqdim edilmişdir."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "kompas"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "naviqasiya"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "log Ziyarət"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Browser açın"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Share Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "cache Adı"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "cache növü"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "cache Size"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "cache ID"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "məsafə"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "çətinlik"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Ərazi"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "sahib"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "gizli"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "son TAPILDI"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "cache Yer"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Feb"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Mar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Apr"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Bilər"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Jun"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Aug"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Sep"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Oct"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Nov"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Dec"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 dəqiqə əvvəl"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 bir neçə saat əvvəl"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 günlər əvvəl"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "İstifadəçi adı"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "parol"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Daxil ol"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "daxil etmək üçün cəhd, gözləyin."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Login qəbul"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Giriş məlumat səhvdir, yenidən cəhd edin."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Daxil olmamısınız."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "GPS düzeltme gözləyir ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Show Search"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Download önbelleğe"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS Lock"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Daha ətraflı"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "cihaz saxlanılır"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

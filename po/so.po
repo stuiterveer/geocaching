@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Somali <so@li.org>\n"
+"Language: so\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Baadh raadinta ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Raadi khasnad waa GC code"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Raadin"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "La wadaag %1 xiriir"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Xulo url si aad ugu dhejiso khaanadaha"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Xiriirinta ayaa lagu soo guuriyey galka qoraalka!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Diiwaan geli booqashadaada %1_"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Maanta"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Shalay"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Qor qoraalka"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Gudbi Diiwaanka"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Diiwaanka si guul ah ayaa loo gudbiyay."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Kombuyuutar"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Jihada"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Tag Booqo"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Ku fur Browser"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "La wadaag Kaararka"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Magaca Kaararka"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Nooca kaararka ah"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Cabbirka Kaararka"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Aqoonsiga Kaarka"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Fogaanta"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Dhibaato"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Dhulbahante"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Milkiilaha"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Qarsoon"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Ugu Dambeeyay"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Goobta Kaararka"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Feb"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Mar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Apr"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Laga yaabaa"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Jun"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Ogast"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Sebtember"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Oktoobar"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Nof"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Dec"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 daqiiqo kahor"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 saac kahor"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 maalmood kahor"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Adeegsade"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Furaha"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Soo gal"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Fadlan sug, iskuday inaad soo gasho."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Galitaanka waa la aqbalay"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Faahfaahinta soo galitaanku waa khalad, mar labaad isku day."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Ma galin"
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Sugitaanka hagaajinta GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Muuji Raadin"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Soo dejiso Gawaarida"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS Lock"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Faahfaahin dheeraad ah"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Qalabka lagu keydiyey"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

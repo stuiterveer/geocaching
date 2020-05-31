@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Thai <th@li.org>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "ค้นหาแคช ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "ค้นหาแคชโดยใช้รหัส GC"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "ค้นหา"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "แบ่งปัน %1 กับผู้ติดต่อ"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "เลือก url เพื่อใส่ไว้ในคลิปบอร์ด"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "ลิงก์คัดลอกไปยังคลิปบอร์ด!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "เข้าสู่ระบบของคุณเพื่อ %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "ในวันนี้"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "เมื่อวาน"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "ข้อความบันทึก"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "ส่งบันทึก"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "ส่งบันทึกสำเร็จแล้ว"
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "เข็มทิศ"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "การเดินเรือ"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "เข้าสู่ระบบเข้าสู่ระบบ"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "เปิดในเบราว์เซอร์"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "แชร์แคช"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "ชื่อแคช"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "ประเภทแคช"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "ขนาดแคช"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "รหัสแคช"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "ระยะทาง"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "ความยาก"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "ภูมิประเทศ"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "เจ้าของ"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "ซ่อนเร้น"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "พบครั้งล่าสุด"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "ตำแหน่งแคช"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "ม.ค."
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "กุมภาพันธ์"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "ทำลาย"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "เมษายน"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "อาจ"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "มิถุนายน"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "กรกฎาคม"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "สิงหาคม"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "กันยายน"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "ตุลาคม"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "พฤศจิกายน"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "ธันวาคม"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 นาทีที่แล้ว"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 ชั่วโมงที่แล้ว"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 วันที่ผ่านมา"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "ชื่อผู้ใช้"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "รหัสผ่าน"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "เข้าสู่ระบบ"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "กรุณารอสักครู่กำลังพยายามเข้าสู่ระบบ"
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "ยอมรับการลงชื่อเข้าใช้"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "รายละเอียดการเข้าสู่ระบบไม่ถูกต้องลองอีกครั้ง"
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "ไม่ได้เข้าสู่ระบบ"
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "กำลังรอการแก้ไข GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "แสดงการค้นหา"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "ดาวน์โหลดแคช"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "ล็อค GPS"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "รายละเอียดเพิ่มเติม"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "เก็บไว้ในอุปกรณ์"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "geocaching"

@@ -22,7 +22,7 @@ def check_db():
                        "dltime INTEGER, cachename TEXT, cacheowner TEXT, " +
                        "cacheurl TEXT, cachesize TEXT, cachetype TEXT, lat REAL, lon REAL, " +
                        "diff REAL, terr REAL, hidden INTEGER, lastfound INTEGER, " +
-                       "short TEXT, body TEXT, hint TEXT, found INTEGER)")
+                       "short TEXT, body TEXT, hint TEXT, found INTEGER NOT NULL)")
 
         cursor.execute("CREATE TABLE IF NOT EXISTS attributes " +
                        "(cacheid TEXT NOT NULL, attribute TEXT NOT NULL)")
@@ -54,7 +54,7 @@ def check_db():
 
     cursor = conn.cursor()
     try:
-        cursor.execute("ALTER TABLE geocaches ADD COLUMN found INTEGER")
+        cursor.execute("ALTER TABLE geocaches ADD COLUMN found INTEGER NOT NULL")
         conn.commit()
     except sqlite3.OperationalError:
         pass
@@ -95,7 +95,7 @@ def add_to_db(conn, cache, attributes):
                        (cache.dltime, cache.cachename, cache.cacheowner, cache.cacheurl, \
                        cache.cachesize, cache.cachetype, cache.lat, cache.lon, \
                        cache.diff, cache.terr, cache.lastfound, cache.short, cache.body, \
-                       cache.hint, cache.cacheid, cache.found))
+                       cache.hint, cache.found, cache.cacheid))
     else:
         cursor.execute("INSERT INTO geocaches (cacheid, dltime, cachename, cacheowner, " +
                        "cacheurl, cachesize, cachetype, lat, lon, diff, terr, lastfound, " +

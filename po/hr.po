@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:08+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Traži predmemoriju ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Pretražite predmemoriju prema GC kodu"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "traži"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Podijelite %1 s kontaktom"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Odaberite URL da biste ga stavili u međuspremnik"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Veza je kopirana u međuspremnik!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Prijavite se u %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Danas"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Jučer"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Tekst dnevnika"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Pošaljite dnevnik"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Zapisnik je uspješno poslan."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Kompas"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "navigacija"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Dnevni posjet"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Otvori u pretraživaču"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Podijelite predmemoriju"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Naziv predmemorije"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Vrsta predmemorije"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Veličina predmemorije"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "ID predmemorije"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Udaljenost"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "teškoća"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Teren"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Vlasnik"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Skriven"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Zadnje pronađeno"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Lokacija predmemorije"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "veljače"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "pokvariti"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "travnja"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "svibanj"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "lipnja"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "srpnja"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "kolovoz"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "rujna"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "listopada"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "studeni"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "prosinca"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "prije %1 minuta"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 Satima prije"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "prije %1 dana"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Korisničko ime"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Lozinka"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Prijaviti se"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Pričekajte, pokušajte se prijaviti."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Prijava je prihvaćena"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Podaci za prijavu nisu točni, pokušajte ponovo."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Niste prijavljeni."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Čeka se ispravka za GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Prikaži pretraživanje"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Preuzmite predmemorije"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS zaključavanje"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Više detalja"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Pohranjuje se u uređaj"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

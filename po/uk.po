@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Пошук кешу ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Шукайте кеш за GC-кодом"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Пошук"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Поділіться %1 із контактом"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Виберіть URL, щоб помістити його в буфер обміну"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Посилання скопійовано у буфер обміну!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Зареєструйте свій візит до %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Сьогодні"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Вчора"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Текст журналу"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Надіслати журнал"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Журнал успішно надіслано."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Компас"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Навігація"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Візит до журналу"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Відкрити в браузері"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Поділитися кешем"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Назва кешу"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Тип кешу"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Розмір кешу"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Ідентифікатор кешу"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Відстань"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Складність"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Місцевість"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Власник"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Приховано"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Останній знайдений"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Місце кешу"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Січ"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Лют"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Мар"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Квітень"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Може"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Червень"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Лип"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Серпень"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Вересень"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Жовт"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Лис"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Груд"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 хвилин тому"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 годин тому"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 днів тому"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Ім&#39;я користувача"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Пароль"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Вхід"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Зачекайте, намагаючись увійти."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Вхід прийнято"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Дані для входу невірні. Повторіть спробу."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Не ввійшли в систему."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Чекаємо виправлення GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Показати пошук"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Завантажити кеші"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "Блокування GPS"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Детальніше"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Зберігається в пристрої"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Геокешинг"

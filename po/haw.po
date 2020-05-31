@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Hawaiian <haw@li.org>\n"
+"Language: haw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "E huli i kahi cache ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "E ʻimi no kahi cache ma ke ʻano he GC code"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Huli"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Kaʻana %1 me kahi leka"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Koho i ka url e waiho i ka lola"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Hoʻonohonoho ʻia e hoʻopili ai i ka palupalu!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "E kipa i kāu kipa ʻana i %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "I kēia lā"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Kahi ano"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "ʻ Textlelo Huaʻōlelo"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Kauka Logau"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Ua hoʻopōmaikaʻi maikaʻiʻo Log."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Kāohi"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Kelepona"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Kāhea Hele"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Wehe i nā Pūnaewele"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Kaʻana like Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Kāhea inoa"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "ʻ .lelo Cache"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "ʻOkoʻa Cache"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Cache ID"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Holoholo"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Hoʻopilikia"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Terrain"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Ka mea nona"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Ua hūnā"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "ʻIke ʻia"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Wahi a Cache"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Ian"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Feberuari"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Mar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "ʻApelila"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Mei"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Jun"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Aug"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Sep"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "ʻOkopa"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Nov"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Poʻa"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 mau minuke i hala"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 hola i hala"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 nā lā i hala"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Kāu inoa"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Hua huna"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Kaukaʻi Pūnaewele"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "E kali iki, ke ʻimi nei e komo."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Ua taliaina"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "ʻAʻole hewa nā ʻōlelo kikoʻī, hoʻāʻo hou."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "ʻAʻole paʻa."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "E kali ana no ka hoʻoponopono ʻana o GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Hōʻike ʻimi"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Hoʻoiho i nā kāʻei"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "Kiki Pūnaewele"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Nā kikoʻī hou aku"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Ua hali ʻia ma nā polokalamu"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "ʻAuhauʻauhau"

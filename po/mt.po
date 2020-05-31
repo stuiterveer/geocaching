@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Maltese <mt@li.org>\n"
+"Language: mt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Fittex għal cache ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Fittex għal cache permezz tal-kodiċi GC"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Fittex"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Aqsam %1 ma &#39;kuntatt"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Agħżel url biex tpoġġih fil-clipboard"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Link ikkuppjata mal-clipboard!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Idħol iż-żjara tiegħek f&#39;%1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Illum"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Ilbieraħ"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Log Test"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Issottometti Log"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Il-ġurnal ġie sottomess b’suċċess."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Boxxla"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Navigazzjoni"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Żjara fil-Log"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Iftaħ fil-Browser"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Share Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Isem tal-Cache"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Tip ta ’Cache"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Daqs tal-Cache"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "ID tal-Cache"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Distanza"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Diffikultà"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Terreni"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Sidha"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Moħbija"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "L-Aħħar misjuba"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Post Cache"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Frar"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Mar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Apr"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Mejju"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Ġunju"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Awissu"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Sett"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Ottubru"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Nov"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Dic"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 minuti ilu"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 siegħa ilu"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 jiem ilu"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Username"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Password"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Idħol"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Jekk jogħġbok stenna, tipprova tidħol."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Id-dħul aċċettat"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Id-dettalji tal-login mhumiex korretti, erġa &#39;erġa&#39;."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Mhux dħalt."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Stennija biex tiffissa GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Uri tiftix"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Niżżel il-Caches"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS Lock"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Iktar dettalji"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Maħżuna fl-apparat"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

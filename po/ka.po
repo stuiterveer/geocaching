@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Georgian <ka@li.org>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "მოძებნეთ ქეში ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "მოძებნეთ ქეში, მისი GC კოდით"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "ძებნა"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "გაუზიარეთ %1 კონტაქტს"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "აირჩიეთ url, რომ ის ბუფერში ჩასვათ"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "ბმული გადაწერა ბუფერში!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "შეხვიდეთ თქვენი ვიზიტით %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "დღეს"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Გუშინ"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "ჟურნალის ტექსტი"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "გაგზავნეთ ჟურნალი"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "ჟურნალის წარდგენა წარმატებით დასრულდა."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Კომპასი"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "ნავიგაცია"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "შესვლა ვიზიტი"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "გახსნა ბროუზერი"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "გააზიარეთ ქეში"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "ქეში სახელი"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "ქეში ტიპი"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "ქეში ზომა"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "ქეში ID"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "მანძილი"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "სირთულე"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "რელიეფი"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "მეპატრონე"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "დამალული"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "ბოლო ნაპოვნია"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "ქეში მდებარეობისთვის"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "იან"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "თებ"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "მარ"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "აპრილი"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "მაისი"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "ივნ"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "იული"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "აგვისტო"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "სექტ"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "ოქტომბერი"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "ნოემბერი"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "დეკ"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 წუთის წინ"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 საათის წინ"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 რამოდენიმე დღის წინ"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "ნიკი"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "პაროლი"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Შესვლა"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "გთხოვთ დაელოდოთ, შესვლის მცდელობა."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "შესვლა მიიღეს"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "შესვლის დეტალები არასწორია, სცადეთ ხელახლა."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Არ ხართ შესული სიტემაში."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "დაელოდება GPS დაფიქსირებას ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "ძებნა ძებნა"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "ჩამოტვირთეთ Caches"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS ჩაკეტვა"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Უფრო ვრცლად"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "ინახება მოწყობილობაში"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "ჯეოსინგი"

@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Odia <or@li.org>\n"
+"Language: or\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "ଏକ କ୍ୟାଚ୍ ପାଇଁ ଖୋଜ ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "ଏହାର GC କୋଡ୍ ଦ୍ୱାରା ଏକ କ୍ୟାଚ୍ ଖୋଜ |"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "ସନ୍ଧାନ କର |"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "ଏକ ସମ୍ପର୍କ ସହିତ %1 ଅଂଶୀଦାର କରନ୍ତୁ |"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "ଏହାକୁ କ୍ଲିପବୋର୍ଡରେ ରଖିବା ପାଇଁ url ଚୟନ କରନ୍ତୁ |"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "ଲିଙ୍କ୍ କ୍ଲିପବୋର୍ଡରେ କପି ହୋଇଛି!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "%1 କୁ ଆପଣଙ୍କର ଭ୍ରମଣ ଲଗ୍ କରନ୍ତୁ |"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "ଆଜି |"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "ଗତକାଲି"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "ଲଗ୍ ଟେକ୍ସଟ୍ |"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "ଲଗ୍ ଦାଖଲ କରନ୍ତୁ |"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "ଲଗ ସଫଳତାର ସହିତ ଦାଖଲ ହେଲା |"
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "କମ୍ପାସ୍ |"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "ନାଭିଗେସନ୍"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "ଲଗ୍ ପରିଦର୍ଶନ |"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "ବ୍ରାଉଜରରେ ଖୋଲନ୍ତୁ |"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "କ୍ୟାଚ୍ ଅଂଶୀଦାର କରନ୍ତୁ |"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "କ୍ୟାଚ୍ ନାମ"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "କ୍ୟାଚ୍ ପ୍ରକାର |"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "କ୍ୟାଚ୍ ଆକାର |"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "କ୍ୟାଚ୍ ID"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "ଦୂରତା |"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "ଅସୁବିଧା"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "ଭୂମି"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "ମାଲିକ"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "ଲୁକ୍କାୟିତ |"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "ଶେଷ ମିଳିଲା |"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "କ୍ୟାଚ୍ ଅବସ୍ଥାନ"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "ଜାନୁଆରୀ"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "ଫେବୃଆରୀ"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "ମାର୍ଚ୍ଚ"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "ଏପ୍ରିଲ୍"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "ମେ"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "ଜୁନ୍ |"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "ଜୁଲାଇ"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "ଅଗଷ୍ଟ"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "ସେପ୍ଟେମ୍ବର"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "ଅକ୍ଟୋବର"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "ନଭେମ୍ବର"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "ଡିସେମ୍ବର"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 ମିନିଟ୍ ପୂର୍ବରୁ"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 ଘଣ୍ଟା ପୂର୍ବରୁ |"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 ଦିନ ପୂର୍ବରୁ"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "ଉପଯୋଗକର୍ତ୍ତା ନାମ"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "ପାସୱାର୍ଡ"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "ଭିତରକୁ ଯାଉ"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "ଲଗ୍ ଇନ୍ କରିବାକୁ ଚେଷ୍ଟା କରି ଦୟାକରି ଅପେକ୍ଷା କରନ୍ତୁ |"
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "ଲଗଇନ୍ ଗ୍ରହଣ କରାଯାଇଛି |"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "ଲଗଇନ୍ ବିବରଣୀ ଭୁଲ୍, ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ |"
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "ଲଗ୍ ଇନ୍ ହୋଇନାହିଁ |"
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "ଜିପିଏସ୍ ଫିକ୍ସ ପାଇଁ ଅପେକ୍ଷା ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "ସନ୍ଧାନ ଦେଖାନ୍ତୁ |"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "କ୍ୟାଚ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ |"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "ଜିପିଏସ୍ ଲକ୍ |"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "ଅଧିକ ବିବରଣୀ"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "ଡିଭାଇସରେ ଗଚ୍ଛିତ |"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "ଜିଓଚିଂ |"

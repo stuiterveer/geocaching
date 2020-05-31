@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Irish <ga@li.org>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Cuardaigh taisce ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Cuardaigh taisce de réir a chóid GC"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Cuardaigh"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Comhroinn %1 le teagmháil"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Roghnaigh url chun é a chur sa ghearrthaisce"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Nasc cóipeáilte chuig an gearrthaisce!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Logáil do chuairt ar %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Inniu"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Inné"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Téacs Loga"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Cuir Logáil isteach"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Cuireadh logáil isteach go rathúil."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Compás"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Loingseoireacht"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Cuairt Logála"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Oscail sa Bhrabhsálaí"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Comhroinn Taisce"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Ainm Taisce"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Cineál Taisce"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Méid an taisce"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Aitheantas taisce"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Fad"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Deacracht"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Tír-raon"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Úinéir"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "I bhfolach"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Aimsíodh Last"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Suíomh Taisce"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Ean"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Feabh"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Márta"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Aib"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Bealtaine"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Meitheamh"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Iúil"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Lúnasa"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Meán Fómhair"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Deireadh Fómhair"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Samhain"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Nollaig"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 nóiméad ó shin"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 uair an chloig ó shin"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 Laethanta ó shin"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Ainm úsáideora"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Pasfhocal"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Logáil isteach"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Fan le do thoil, ag iarraidh logáil isteach."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Glactar le logáil isteach"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Tá sonraí logála isteach mícheart, bain triail eile as."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Gan logáil isteach."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Ag fanacht le socrú GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Taispeáin Cuardaigh"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Íoslódáil Caches"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "Glasáil GPS"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Tuilleadh Sonraí"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Stóráilte sa ghaireas"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

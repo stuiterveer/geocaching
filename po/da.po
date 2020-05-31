@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:09+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Danish <da@li.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Søg efter en cache ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Søg efter en cache efter dets GC-kode"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Søg"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Del %1 med en kontakt"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Vælg url for at lægge den på udklipsholderen"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Link kopieret til udklipsholder!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Log dit besøg på %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "I dag"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "I går"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Log tekst"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Indsend log"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Log blev sendt med succes."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Kompas"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Navigation"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Logbesøg"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Åbn i browseren"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Del cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Cache-navn"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Cache-type"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Cache-størrelse"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "Cache-id"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Afstand"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Vanskelighed"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Terræn"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Ejer"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Skjult"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Sidst fundet"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Cache-placering"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "februar"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "mar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "april"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Kan"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "juni"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "juli"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "august"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "september"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "oktober"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "november"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "december"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 minutter siden"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 timer siden"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 dage siden"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Brugernavn"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Adgangskode"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Log på"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Vent venligst, forsøg på at logge ind."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Login accepteres"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Login-oplysningerne er forkerte, prøv igen."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Ikke logget ind."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Venter på GPS-fix ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Vis søgning"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Download cacher"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS-lås"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Flere detaljer"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Gemt i enheden"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

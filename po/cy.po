@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Welsh <cy@li.org>\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Chwilio am storfa ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Chwilio am storfa yn ôl ei god GC"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Chwilio"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Rhannwch %1 gyda chyswllt"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Dewiswch url i&#39;w roi yn y clipfwrdd"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Copïwyd y ddolen i&#39;r clipfwrdd!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Mewngofnodwch eich ymweliad â %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Heddiw"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Ddoe"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Testun Log"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Cyflwyno Log"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Cyflwynwyd log yn llwyddiannus."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Cwmpawd"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Llywio"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Ymweliad Log"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Ar agor yn y Porwr"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Rhannu Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Enw Cache"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Math o storfa"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Maint Cache"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "ID storfa"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Pellter"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Anhawster"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Tirwedd"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Perchennog"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Cudd"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Wedi&#39;i ddarganfod ddiwethaf"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Lleoliad Cache"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Ion"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Chwef"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "Maw"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Ebrill"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Mai"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Meh"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "Gorff"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "Awst"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "Medi"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "Hyd"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Tach"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "Rhag"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 munud yn ôl"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 Oriau yn ôl"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 diwrnod yn ôl"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Enw defnyddiwr"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Cyfrinair"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Mewngofnodi"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Arhoswch, gan geisio mewngofnodi."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Derbynnir mewngofnodi"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Mae manylion mewngofnodi yn anghywir, rhowch gynnig arall arni."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Heb fewngofnodi."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Aros am atgyweiriad GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Dangos Chwilio"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Dadlwythwch Caches"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "Lock GPS"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Mwy o fanylion"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Wedi&#39;i storio yn y ddyfais"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geogelcio"

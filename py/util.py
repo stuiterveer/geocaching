@@ -170,7 +170,7 @@ def get_row(conn, cacheid):
     cacheid = cacheid.upper()
     ret = sqlite.get_row(conn, cacheid)
 
-    if ret != None and ret[0] != "":
+    if ret is not None and ret[0] != "":
         g_arr = geocache.GeoCache()
         g_arr.cacheid = ret[0]
         g_arr.dltime = ret[1]
@@ -188,6 +188,7 @@ def get_row(conn, cacheid):
         g_arr.short = ret[13]
         g_arr.body = htmlcode.cache_images(ret[14], SESSION)
         g_arr.hint = ret[15].replace("<br>", "\n")
+        g_arr.found = ret[16]
         row = g_arr
 
     else:
@@ -220,9 +221,8 @@ def clean_up(var):
         date_format = "%Y-%m-%d"
         if "/" in var:
             date_format = "%m/%d/%Y"
-        else:
-            if " " in var:
-                date_format = "%d %b %y"
+        elif " " in var:
+            date_format = "%d %b %y"
         try:
             var = time.mktime(datetime.datetime.strptime(var, date_format).timetuple())
         except:
@@ -243,7 +243,7 @@ def refresh_cache(cacheid):
         print("Failed to update cache details, are we logged in?")
         return
 
-    lat, lon, short, body, hint, attributes = ret
+    lat, lon, short, body, hint, attributes, found = ret
     dltime = int(time.time())
 
     g_arr.dltime = dltime
@@ -252,6 +252,7 @@ def refresh_cache(cacheid):
     g_arr.short = short
     g_arr.body = body
     g_arr.hint = hint
+    g_arr.found = found
 
     sqlite.add_to_db(conn, g_arr, attributes)
 
@@ -282,7 +283,7 @@ def dl_cache(cacheid):
         print("bombed out, are we still logged in?")
         return "bombed out, are we still logged in?"
 
-    if data.find("icon-found") != -1:
+    if data.find("<strong id=\"ctl00_ContentBody_GeoNav_logText\">Found It!</strong>") != -1:
         found = 1
     else:
         found = 0
@@ -400,7 +401,7 @@ def get_cache_list(lat, lon):
 
     loc = htmlcode.decdeg2dm(lat, lon)
     url = "https://www.geocaching.com/play/search?lat=" + str(lat) + "&lng=" + str(lon) + \
-          "&origin=" + loc + "&radius=100km&f=2&o=2&sort=Distance&asc=True"
+          "&origin=" + loc + "&radius=100km&o=2&sort=Distance&asc=True"
 
     print(url)
     conn = sqlite.check_db()
@@ -433,7 +434,7 @@ def get_cache_list(lat, lon):
             dltime = 0
             found = 0
 
-            if row.find("icon-found") != -1:
+            if row.find("cache-types.svg#icon-found") != -1:
                 found = 1
 
             cacheid = row.split('data-id="', 1)[1].split('"', 1)[0].strip()
@@ -462,8 +463,7 @@ def get_cache_list(lat, lon):
                     print("Failed to update cache details, are we logged in?")
                     return
 
-                lat, lon, short, body, hint, attributes = ret
-                dltime = int(time.time())
+                lat, lon, short, body, hint, attributes, found = ret
             else:
                 print(cacheid + ": Already exists in the db, skipping...")
                 lat = cache.lat
@@ -471,13 +471,11 @@ def get_cache_list(lat, lon):
                 short = cache.short
                 body = cache.body
                 hint = cache.hint
-                dltime = cache.dltime
-                found = cache.found
                 attributes = sqlite.get_attributes(conn, cacheid)
 
             g_arr = geocache.GeoCache()
             g_arr.cacheid = cacheid
-            g_arr.dltime = dltime
+            g_arr.dltime = int(time.time())
             g_arr.cachename = cachename
             g_arr.cacheowner = cacheowner
             g_arr.cachesize = cachesize
@@ -527,6 +525,11 @@ def get_cache_page(conn, cacheid, url):
         hint = data.split('<div id="div_hint" class="span-8 WrapFix">', 1)[1]
         hint = hint.split('</div>', 1)[0].strip()
 
+        if data.find("<strong id=\"ctl00_ContentBody_GeoNav_logText\">Found It!</strong>") != -1:
+            found = 1
+        else:
+            found = 0
+
         attributes = []
 
         tmpstr = data.split('<div class="WidgetBody">', 1)[1]
@@ -553,7 +556,7 @@ def get_cache_page(conn, cacheid, url):
         print(error)
         return None
 
-    return [float(lat), float(lon), short, body, hint, attributes]
+    return [float(lat), float(lon), short, body, hint, attributes, found]
 
 def get_more_logs(index, size, user_token):
     """ download more logbook entries """
@@ -687,7 +690,7 @@ def get_image(conn, imageid):
     ret = cursor.fetchone()
     cursor.close()
 
-    if ret != None and ret[0] != "":
+    if ret is not None and ret[0] != "":
         image = images.Images()
         image.cacheid = ret[0]
         image.accountid = ret[1]
@@ -791,7 +794,7 @@ def get_user(conn, accountid):
     ret = cursor.fetchone()
     cursor.close()
 
-    if ret != None and ret[0] != "":
+    if ret is not None and ret[0] != "":
         user = users.Users()
         user.accountid = ret[0]
         user.username = ret[1]
@@ -814,7 +817,7 @@ def get_log(conn, logid):
     ret = cursor.fetchone()
     cursor.close()
 
-    if ret != None and ret[0] != "":
+    if ret is not None and ret[0] != "":
         l_b = logbook.LogBook()
         l_b.cacheid = ret[0]
         l_b.logid = ret[1]

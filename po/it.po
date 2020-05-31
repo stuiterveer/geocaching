@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Italian <it@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Cerca una cache ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Cerca una cache tramite il suo codice GC"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "Ricerca"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Condividi %1 con un contatto"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Seleziona url per inserirlo negli appunti"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Link copiato negli appunti!"
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Registra la tua visita su %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "Oggi"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Ieri"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "Registro del testo"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "Invia registro"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Il log è stato inviato correttamente."
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "Bussola"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "Navigazione"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "Log Visita"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Apri nel browser"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Condividi cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "Nome cache"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "Tipo di cache"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "Dimensione della cache"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "ID cache"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "Distanza"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "Difficoltà"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "Terreno"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "Proprietario"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "Nascosto"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "Ultimo trovato"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "Posizione della cache"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "Jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "febbraio"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "mar"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "aprile"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "Maggio"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "giugno"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "luglio"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "agosto"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "settembre"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "ottobre"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "novembre"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "dicembre"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 minuti fa"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 ore fa"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 giorni fa"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Nome utente"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "Parola d&#39;ordine"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "Accesso"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Attendere, tentando di accedere."
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Accesso accettato"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "I dettagli di accesso sono errati, riprova."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Accesso non effettuato."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "In attesa di correzione GPS ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Mostra ricerca"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "Scarica cache"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "Blocco GPS"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Più dettagli"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Memorizzato nel dispositivo"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "Geocaching"

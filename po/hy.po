@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the geocaching.evilbunny package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: geocaching.evilbunny\n"
+"Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"POT-Creation-Date: 2020-05-29 12:35+0000\n"
+"PO-Revision-Date: 2020-05-30 10:33+0000\n"
+"Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
+"Language-Team: Armenian <hy@li.org>\n"
+"Language: hy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr "Որոնել թաքստոցից ..."
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr "Որոնել պահոցն է, որ դա GC օրենսգրքի"
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr "որոնել"
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr "Share %1 հետ շփման"
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr "Ընտրեք url հասցեն տեղադրել այն clipboard"
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
+msgstr "Հղումը պատճենված է clipboard."
+
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
+msgstr "Գեղեցկության մրցույթ Ձեր այցը %1"
+
+#: ../qml/LogVisit.qml:128
+msgid "Today"
+msgstr "այսօր"
+
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
+msgstr "Երեկ"
+
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
+msgstr "տեղեկամատյան Տեքստը"
+
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
+msgstr "ներկայացնել Մուտք"
+
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
+msgstr "Log էր ներկայացվել հաջողությամբ:"
+
+#: ../qml/Details.qml:92
+msgid "Compass"
+msgstr "կողմնացույց"
+
+#: ../qml/Details.qml:117
+msgid "Navigation"
+msgstr "նավարկություն"
+
+#: ../qml/Details.qml:142
+msgid "Log Visit"
+msgstr "տեղեկամատյան Այցելել"
+
+#: ../qml/Details.qml:167
+msgid "Open in Browser"
+msgstr "Բացել դիտարկչում"
+
+#: ../qml/Details.qml:192
+msgid "Share Cache"
+msgstr "Share Cache"
+
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+msgid "Cache Name"
+msgstr "cache Անունը"
+
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+msgid "Cache Type"
+msgstr "cache տեսակը"
+
+#: ../qml/Details.qml:274
+msgid "Cache Size"
+msgstr "cache Չափ"
+
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+msgid "Cache ID"
+msgstr "cache ID"
+
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+msgid "Distance"
+msgstr "հեռավորություն"
+
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+msgid "Difficulty"
+msgstr "դժվարություն"
+
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+msgid "Terrain"
+msgstr "տեղանք"
+
+#: ../qml/Details.qml:324
+msgid "Owner"
+msgstr "սեփականատեր"
+
+#: ../qml/Details.qml:334
+msgid "Hidden"
+msgstr "թաքուն"
+
+#: ../qml/Details.qml:344
+msgid "Last Found"
+msgstr "վերջին գտնվել"
+
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+msgid "Cache Location"
+msgstr "cache Որտեղից"
+
+#: ../qml/Details.qml:738
+msgid "Jan"
+msgstr "jan"
+
+#: ../qml/Details.qml:738
+msgid "Feb"
+msgstr "Feb"
+
+#: ../qml/Details.qml:738
+msgid "Mar"
+msgstr "ապականել"
+
+#: ../qml/Details.qml:738
+msgid "Apr"
+msgstr "Ապրիլ"
+
+#: ../qml/Details.qml:738
+msgid "May"
+msgstr "մայիս"
+
+#: ../qml/Details.qml:738
+msgid "Jun"
+msgstr "Հուն"
+
+#: ../qml/Details.qml:739
+msgid "Jul"
+msgstr "jul"
+
+#: ../qml/Details.qml:739
+msgid "Aug"
+msgstr "օգս"
+
+#: ../qml/Details.qml:739
+msgid "Sep"
+msgstr "sep"
+
+#: ../qml/Details.qml:739
+msgid "Oct"
+msgstr "հոկ"
+
+#: ../qml/Details.qml:739
+msgid "Nov"
+msgstr "Նոյ"
+
+#: ../qml/Details.qml:739
+msgid "Dec"
+msgstr "dec"
+
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+msgid "%1 minutes ago"
+msgstr "%1 րոպե առաջ"
+
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+msgid "%1 hours ago"
+msgstr "%1 ժամեր առաջ"
+
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+msgid "%1 days ago"
+msgstr "%1 օրեր առաջ"
+
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
+msgstr "Օգտագործողի անունը"
+
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
+msgstr "գաղտնաբառ"
+
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
+msgstr "լոգին"
+
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
+msgstr "Խնդրում ենք սպասել, փորձում է մուտք գործել:"
+
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
+msgstr "Մուտք ընդունված"
+
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
+msgstr "Մուտքի մանրամասները սխալ, փորձեք կրկին."
+
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
+msgstr "Մուտք չեք գործել համակարգ."
+
+#: ../qml/MapScreen.qml:18
+msgid "Waiting for GPS fix..."
+msgstr "Սպասում է GPS fix ..."
+
+#: ../qml/MapScreen.qml:24
+msgid "Show Search"
+msgstr "Ցույց տալ Որոնել"
+
+#: ../qml/MapScreen.qml:43
+msgid "Download Caches"
+msgstr "բեռնել Քեշեր"
+
+#: ../qml/MapScreen.qml:70
+msgid "GPS Lock"
+msgstr "GPS Lock"
+
+#: ../qml/MapScreen.qml:286
+msgid "More Details"
+msgstr "Ավելի մանրամասն"
+
+#: ../qml/MapScreen.qml:309
+msgid "Stored in device"
+msgstr "Պահվում է սարքում"
+
+#: geocaching.desktop.in.h:1
+msgid "Geocaching"
+msgstr "GPS- Քեշինգ"
