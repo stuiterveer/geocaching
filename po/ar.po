@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: geocaching.evilbunny\n"
 "Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
 "POT-Creation-Date: 2020-05-29 12:35+0000\n"
-"PO-Revision-Date: 2020-05-31 03:18+0000\n"
+"PO-Revision-Date: 2020-05-30 10:31+0000\n"
 "Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
-"Language-Team: French <fr@li.org>\n"
-"Language: fr\n"
+"Language-Team: Arabic <ar@li.org>\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,229 +20,229 @@ msgstr ""
 
 #: ../qml/Search.qml:15
 msgid "Search for a cache..."
-msgstr "Rechercher un cache ..."
+msgstr "بحث عن مخبأ ..."
 
 #: ../qml/Search.qml:30
 msgid "Search for a cache by it's GC code"
-msgstr "Rechercher un cache par son code GC"
+msgstr "بحث عن مخبأ من قبل انها رمز GC"
 
 #: ../qml/Search.qml:43
 msgid "Search"
-msgstr "Chercher"
+msgstr "بحث"
 
 #: ../qml/Share.qml:18
 msgid "Share %1 with a contact"
-msgstr "Partagez %1 avec un contact"
+msgstr "حصة %1 مع جهة اتصال"
 
 #: ../qml/Share.qml:27
 msgid "Select url to put it in the clipboard"
-msgstr "Sélectionnez l&#39;URL pour le mettre dans le presse-papiers"
+msgstr "اختر رابط وضعه في الحافظة"
 
 #: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
 #: ../qml/Share.qml:74
 msgid "Link copied to clipboard!"
-msgstr "Lien copié dans le presse-papiers!"
+msgstr "تم نسخ الرابط إلى الحافظة!"
 
 #: ../qml/LogVisit.qml:16
 msgid "Log your visit to %1"
-msgstr "Enregistrez votre visite à %1"
+msgstr "سجل زيارتك ل%1"
 
 #: ../qml/LogVisit.qml:128
 msgid "Today"
-msgstr "Aujourd&#39;hui"
+msgstr "اليوم"
 
 #: ../qml/LogVisit.qml:128
 msgid "Yesterday"
-msgstr "Hier"
+msgstr "في الامس"
 
 #: ../qml/LogVisit.qml:210
 msgid "Log Text"
-msgstr "Texte du journal"
+msgstr "نص دخول"
 
 #: ../qml/LogVisit.qml:221
 msgid "Submit Log"
-msgstr "Soumettre le journal"
+msgstr "إرسال دخول"
 
 #: ../qml/LogVisit.qml:242
 msgid "Log was submitted successfully."
-msgstr "Le journal a été soumis avec succès."
+msgstr "قدم السجل بنجاح."
 
 #: ../qml/Details.qml:92
 msgid "Compass"
-msgstr "Boussole"
+msgstr "بوصلة"
 
 #: ../qml/Details.qml:117
 msgid "Navigation"
-msgstr "La navigation"
+msgstr "التنقل"
 
 #: ../qml/Details.qml:142
 msgid "Log Visit"
-msgstr "Visite du journal"
+msgstr "سجل زيارة"
 
 #: ../qml/Details.qml:167
 msgid "Open in Browser"
-msgstr "Ouvrir dans le navigateur"
+msgstr "فتح في المستعرض"
 
 #: ../qml/Details.qml:192
 msgid "Share Cache"
-msgstr "Partager le cache"
+msgstr "حصة الكاش"
 
 #: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
 msgid "Cache Name"
-msgstr "Nom du cache"
+msgstr "اسم مخبأ"
 
 #: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
 msgid "Cache Type"
-msgstr "Type de cache"
+msgstr "مخبأ نوع"
 
 #: ../qml/Details.qml:274
 msgid "Cache Size"
-msgstr "Taille du cache"
+msgstr "حجم ذاكرة التخزين المؤقت"
 
 #: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
 msgid "Cache ID"
-msgstr "ID de cache"
+msgstr "مخبأ ID"
 
 #: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
 msgid "Distance"
-msgstr "Distance"
+msgstr "مسافة"
 
 #: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
 msgid "Difficulty"
-msgstr "Difficulté"
+msgstr "صعوبة"
 
 #: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
 msgid "Terrain"
-msgstr "Terrain"
+msgstr "تضاريس"
 
 #: ../qml/Details.qml:324
 msgid "Owner"
-msgstr "Propriétaire"
+msgstr "صاحب"
 
 #: ../qml/Details.qml:334
 msgid "Hidden"
-msgstr "Caché"
+msgstr "مخفي"
 
 #: ../qml/Details.qml:344
 msgid "Last Found"
-msgstr "Dernière découverte"
+msgstr "وجدت الماضي"
 
 #: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
 msgid "Cache Location"
-msgstr "Emplacement du cache"
+msgstr "مخبأ الموقع"
 
 #: ../qml/Details.qml:738
 msgid "Jan"
-msgstr "Jan"
+msgstr "يناير"
 
 #: ../qml/Details.qml:738
 msgid "Feb"
-msgstr "fév"
+msgstr "فبراير"
 
 #: ../qml/Details.qml:738
 msgid "Mar"
-msgstr "Mar"
+msgstr "مارس"
 
 #: ../qml/Details.qml:738
 msgid "Apr"
-msgstr "avr"
+msgstr "أبريل"
 
 #: ../qml/Details.qml:738
 msgid "May"
-msgstr "Mai"
+msgstr "مايو"
 
 #: ../qml/Details.qml:738
 msgid "Jun"
-msgstr "Juin"
+msgstr "يونيو"
 
 #: ../qml/Details.qml:739
 msgid "Jul"
-msgstr "juil"
+msgstr "يوليو"
 
 #: ../qml/Details.qml:739
 msgid "Aug"
-msgstr "Août"
+msgstr "أغسطس"
 
 #: ../qml/Details.qml:739
 msgid "Sep"
-msgstr "SEP"
+msgstr "سبتمبر"
 
 #: ../qml/Details.qml:739
 msgid "Oct"
-msgstr "oct"
+msgstr "أكتوبر"
 
 #: ../qml/Details.qml:739
 msgid "Nov"
-msgstr "nov"
+msgstr "نوفمبر"
 
 #: ../qml/Details.qml:739
 msgid "Dec"
-msgstr "déc"
+msgstr "ديسمبر"
 
 #: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
 msgid "%1 minutes ago"
-msgstr "%1 il y a quelques minutes"
+msgstr "%1 دقائق مضت"
 
 #: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
 msgid "%1 hours ago"
-msgstr "%1 il y a des heures"
+msgstr "%1 منذ ساعات"
 
 #: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
 msgid "%1 days ago"
-msgstr "%1 il y a quelques jours"
+msgstr "%1 أيام مضت"
 
 #: ../qml/AuthScreen.qml:26
 msgid "Username"
-msgstr "Nom d&#39;utilisateur"
+msgstr "اسم المستخدم"
 
 #: ../qml/AuthScreen.qml:39
 msgid "Password"
-msgstr "Mot de passe"
+msgstr "كلمه السر"
 
 #: ../qml/AuthScreen.qml:51
 msgid "Login"
-msgstr "S&#39;identifier"
+msgstr "تسجيل الدخول"
 
 #: ../qml/AuthScreen.qml:56
 msgid "Please wait, attempting to log in."
-msgstr "Veuillez patienter, essayez de vous connecter."
+msgstr "يرجى الانتظار، في محاولة لتسجيل الدخول."
 
 #: ../qml/AuthScreen.qml:62
 msgid "Login accepted"
-msgstr "Login accepté"
+msgstr "تسجيل الدخول مقبولة"
 
 #: ../qml/AuthScreen.qml:65
 msgid "Login details are incorrect, try again."
-msgstr "Les informations de connexion sont incorrectes, réessayez."
+msgstr "تفاصيل تسجيل الدخول غير صحيحة، حاول مرة أخرى."
 
 #: ../qml/AuthScreen.qml:73
 msgid "Not logged in."
-msgstr "Pas connecté."
+msgstr "لم تقم بتسجيل الدخول."
 
 #: ../qml/MapScreen.qml:18
 msgid "Waiting for GPS fix..."
-msgstr "En attente de correction GPS ..."
+msgstr "تنتظر الإصلاح GPS ..."
 
 #: ../qml/MapScreen.qml:24
 msgid "Show Search"
-msgstr "Afficher la recherche"
+msgstr "مشاهدة البحث"
 
 #: ../qml/MapScreen.qml:43
 msgid "Download Caches"
-msgstr "Télécharger les caches"
+msgstr "تحميل المخابئ"
 
 #: ../qml/MapScreen.qml:70
 msgid "GPS Lock"
-msgstr "Verrouillage GPS"
+msgstr "GPS قفل"
 
 #: ../qml/MapScreen.qml:286
 msgid "More Details"
-msgstr "Plus de détails"
+msgstr "المزيد من التفاصيل"
 
 #: ../qml/MapScreen.qml:309
 msgid "Stored in device"
-msgstr "Stocké dans l&#39;appareil"
+msgstr "المخزنة في الجهاز"
 
 #: geocaching.desktop.in.h:1
 msgid "Geocaching"
-msgstr "Géocaching"
+msgstr "غيوكاشينغ"

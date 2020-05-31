@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: geocaching.evilbunny\n"
 "Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
 "POT-Creation-Date: 2020-05-29 12:35+0000\n"
-"PO-Revision-Date: 2020-05-31 03:18+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
 "Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
-"Language-Team: French <fr@li.org>\n"
-"Language: fr\n"
+"Language-Team: Yiddish <yi@li.org>\n"
+"Language: yi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,116 +20,116 @@ msgstr ""
 
 #: ../qml/Search.qml:15
 msgid "Search for a cache..."
-msgstr "Rechercher un cache ..."
+msgstr "זוך אַ קאַש ..."
 
 #: ../qml/Search.qml:30
 msgid "Search for a cache by it's GC code"
-msgstr "Rechercher un cache par son code GC"
+msgstr "זוכן פֿאַר אַ קאַש דורך די GC קאָד"
 
 #: ../qml/Search.qml:43
 msgid "Search"
-msgstr "Chercher"
+msgstr "זוך"
 
 #: ../qml/Share.qml:18
 msgid "Share %1 with a contact"
-msgstr "Partagez %1 avec un contact"
+msgstr "שער %1 מיט אַ קאָנטאַקט"
 
 #: ../qml/Share.qml:27
 msgid "Select url to put it in the clipboard"
-msgstr "Sélectionnez l&#39;URL pour le mettre dans le presse-papiers"
+msgstr "סעלעקטירן URL צו לייגן עס אין די קליפּבאָרד"
 
 #: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
 #: ../qml/Share.qml:74
 msgid "Link copied to clipboard!"
-msgstr "Lien copié dans le presse-papiers!"
+msgstr "לינק קאַפּיד צו קליפּבאָרד!"
 
 #: ../qml/LogVisit.qml:16
 msgid "Log your visit to %1"
-msgstr "Enregistrez votre visite à %1"
+msgstr "קלאָץ דיין וויזיט צו %1"
 
 #: ../qml/LogVisit.qml:128
 msgid "Today"
-msgstr "Aujourd&#39;hui"
+msgstr "היינט"
 
 #: ../qml/LogVisit.qml:128
 msgid "Yesterday"
-msgstr "Hier"
+msgstr "נעכטן"
 
 #: ../qml/LogVisit.qml:210
 msgid "Log Text"
-msgstr "Texte du journal"
+msgstr "קלאָץ טעקסט"
 
 #: ../qml/LogVisit.qml:221
 msgid "Submit Log"
-msgstr "Soumettre le journal"
+msgstr "פאָרלייגן קלאָץ"
 
 #: ../qml/LogVisit.qml:242
 msgid "Log was submitted successfully."
-msgstr "Le journal a été soumis avec succès."
+msgstr "קלאָץ איז געווען דערלאנגט הצלחה."
 
 #: ../qml/Details.qml:92
 msgid "Compass"
-msgstr "Boussole"
+msgstr "קאָמפּאַס"
 
 #: ../qml/Details.qml:117
 msgid "Navigation"
-msgstr "La navigation"
+msgstr "נאַוויגאַציע"
 
 #: ../qml/Details.qml:142
 msgid "Log Visit"
-msgstr "Visite du journal"
+msgstr "קלאָץ וויזיט"
 
 #: ../qml/Details.qml:167
 msgid "Open in Browser"
-msgstr "Ouvrir dans le navigateur"
+msgstr "עפֿן אין בלעטערער"
 
 #: ../qml/Details.qml:192
 msgid "Share Cache"
-msgstr "Partager le cache"
+msgstr "שער קאַש"
 
 #: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
 msgid "Cache Name"
-msgstr "Nom du cache"
+msgstr "קאַש נאָמען"
 
 #: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
 msgid "Cache Type"
-msgstr "Type de cache"
+msgstr "קאַש טיפּ"
 
 #: ../qml/Details.qml:274
 msgid "Cache Size"
-msgstr "Taille du cache"
+msgstr "קאַש גרייס"
 
 #: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
 msgid "Cache ID"
-msgstr "ID de cache"
+msgstr "קאַש שייַן"
 
 #: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
 msgid "Distance"
-msgstr "Distance"
+msgstr "דיסטאַנסע"
 
 #: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
 msgid "Difficulty"
-msgstr "Difficulté"
+msgstr "שוועריקייט"
 
 #: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
 msgid "Terrain"
-msgstr "Terrain"
+msgstr "טעריין"
 
 #: ../qml/Details.qml:324
 msgid "Owner"
-msgstr "Propriétaire"
+msgstr "באַזיצער"
 
 #: ../qml/Details.qml:334
 msgid "Hidden"
-msgstr "Caché"
+msgstr "פאַרבאָרגן"
 
 #: ../qml/Details.qml:344
 msgid "Last Found"
-msgstr "Dernière découverte"
+msgstr "לעצטע געפונען"
 
 #: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
 msgid "Cache Location"
-msgstr "Emplacement du cache"
+msgstr "קאַש אָרט"
 
 #: ../qml/Details.qml:738
 msgid "Jan"
@@ -137,7 +137,7 @@ msgstr "Jan"
 
 #: ../qml/Details.qml:738
 msgid "Feb"
-msgstr "fév"
+msgstr "פעברואר"
 
 #: ../qml/Details.qml:738
 msgid "Mar"
@@ -145,104 +145,104 @@ msgstr "Mar"
 
 #: ../qml/Details.qml:738
 msgid "Apr"
-msgstr "avr"
+msgstr "אפריל"
 
 #: ../qml/Details.qml:738
 msgid "May"
-msgstr "Mai"
+msgstr "מאי"
 
 #: ../qml/Details.qml:738
 msgid "Jun"
-msgstr "Juin"
+msgstr "יוני"
 
 #: ../qml/Details.qml:739
 msgid "Jul"
-msgstr "juil"
+msgstr "Jul"
 
 #: ../qml/Details.qml:739
 msgid "Aug"
-msgstr "Août"
+msgstr "אויגוסט"
 
 #: ../qml/Details.qml:739
 msgid "Sep"
-msgstr "SEP"
+msgstr "סעפטעמבער"
 
 #: ../qml/Details.qml:739
 msgid "Oct"
-msgstr "oct"
+msgstr "אקטאבער"
 
 #: ../qml/Details.qml:739
 msgid "Nov"
-msgstr "nov"
+msgstr "נאוועמבער"
 
 #: ../qml/Details.qml:739
 msgid "Dec"
-msgstr "déc"
+msgstr "דעצ"
 
 #: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
 msgid "%1 minutes ago"
-msgstr "%1 il y a quelques minutes"
+msgstr "%1 מינוט צוריק"
 
 #: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
 msgid "%1 hours ago"
-msgstr "%1 il y a des heures"
+msgstr "%1 שעה צוריק"
 
 #: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
 msgid "%1 days ago"
-msgstr "%1 il y a quelques jours"
+msgstr "%1 טעג צוריק"
 
 #: ../qml/AuthScreen.qml:26
 msgid "Username"
-msgstr "Nom d&#39;utilisateur"
+msgstr "נאמען"
 
 #: ../qml/AuthScreen.qml:39
 msgid "Password"
-msgstr "Mot de passe"
+msgstr "שפּריכוואָרט"
 
 #: ../qml/AuthScreen.qml:51
 msgid "Login"
-msgstr "S&#39;identifier"
+msgstr "צייכן אריין"
 
 #: ../qml/AuthScreen.qml:56
 msgid "Please wait, attempting to log in."
-msgstr "Veuillez patienter, essayez de vous connecter."
+msgstr "ביטע וואַרטן, טריינג צו אַרייַנלאָגירן זיך."
 
 #: ../qml/AuthScreen.qml:62
 msgid "Login accepted"
-msgstr "Login accepté"
+msgstr "לאָגין אנגענומען"
 
 #: ../qml/AuthScreen.qml:65
 msgid "Login details are incorrect, try again."
-msgstr "Les informations de connexion sont incorrectes, réessayez."
+msgstr "לאָגין דעטאַילס זענען פאַלש, פּרובירן ווידער."
 
 #: ../qml/AuthScreen.qml:73
 msgid "Not logged in."
-msgstr "Pas connecté."
+msgstr "ניט לאָגד אין."
 
 #: ../qml/MapScreen.qml:18
 msgid "Waiting for GPS fix..."
-msgstr "En attente de correction GPS ..."
+msgstr "ווארטן אויף גפּס פאַרריכטן ..."
 
 #: ../qml/MapScreen.qml:24
 msgid "Show Search"
-msgstr "Afficher la recherche"
+msgstr "ווייַזן זוך"
 
 #: ../qml/MapScreen.qml:43
 msgid "Download Caches"
-msgstr "Télécharger les caches"
+msgstr "אראפקאפיע קאַטשעס"
 
 #: ../qml/MapScreen.qml:70
 msgid "GPS Lock"
-msgstr "Verrouillage GPS"
+msgstr "גפּס לאַק"
 
 #: ../qml/MapScreen.qml:286
 msgid "More Details"
-msgstr "Plus de détails"
+msgstr "מער דעטאלן"
 
 #: ../qml/MapScreen.qml:309
 msgid "Stored in device"
-msgstr "Stocké dans l&#39;appareil"
+msgstr "סטאָרד אין מיטל"
 
 #: geocaching.desktop.in.h:1
 msgid "Geocaching"
-msgstr "Géocaching"
+msgstr "געאָקאַטשינג"

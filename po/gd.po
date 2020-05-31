@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: geocaching.evilbunny\n"
 "Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
 "POT-Creation-Date: 2020-05-29 12:35+0000\n"
-"PO-Revision-Date: 2020-05-31 03:18+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
 "Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
-"Language-Team: French <fr@li.org>\n"
-"Language: fr\n"
+"Language-Team: Scottish Gaelic <gd@li.org>\n"
+"Language: gd\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,229 +20,229 @@ msgstr ""
 
 #: ../qml/Search.qml:15
 msgid "Search for a cache..."
-msgstr "Rechercher un cache ..."
+msgstr "Lorg tasgadan ..."
 
 #: ../qml/Search.qml:30
 msgid "Search for a cache by it's GC code"
-msgstr "Rechercher un cache par son code GC"
+msgstr "Lorg tasgadan leis a ’chòd GC aige"
 
 #: ../qml/Search.qml:43
 msgid "Search"
-msgstr "Chercher"
+msgstr "Rannsaich"
 
 #: ../qml/Share.qml:18
 msgid "Share %1 with a contact"
-msgstr "Partagez %1 avec un contact"
+msgstr "Roinn %1 le fios"
 
 #: ../qml/Share.qml:27
 msgid "Select url to put it in the clipboard"
-msgstr "Sélectionnez l&#39;URL pour le mettre dans le presse-papiers"
+msgstr "Tagh url airson a chuir anns a ’bhòrd bhidio"
 
 #: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
 #: ../qml/Share.qml:74
 msgid "Link copied to clipboard!"
-msgstr "Lien copié dans le presse-papiers!"
+msgstr "Ceangal air a chopaigeadh chun a ’bhòrd bhidio!"
 
 #: ../qml/LogVisit.qml:16
 msgid "Log your visit to %1"
-msgstr "Enregistrez votre visite à %1"
+msgstr "Log a-steach do chuairt gu %1"
 
 #: ../qml/LogVisit.qml:128
 msgid "Today"
-msgstr "Aujourd&#39;hui"
+msgstr "An-diugh"
 
 #: ../qml/LogVisit.qml:128
 msgid "Yesterday"
-msgstr "Hier"
+msgstr "An-dè"
 
 #: ../qml/LogVisit.qml:210
 msgid "Log Text"
-msgstr "Texte du journal"
+msgstr "Teacs Log"
 
 #: ../qml/LogVisit.qml:221
 msgid "Submit Log"
-msgstr "Soumettre le journal"
+msgstr "Cuir a-steach Log"
 
 #: ../qml/LogVisit.qml:242
 msgid "Log was submitted successfully."
-msgstr "Le journal a été soumis avec succès."
+msgstr "Chaidh Log a chuir a-steach gu soirbheachail."
 
 #: ../qml/Details.qml:92
 msgid "Compass"
-msgstr "Boussole"
+msgstr "Compass"
 
 #: ../qml/Details.qml:117
 msgid "Navigation"
-msgstr "La navigation"
+msgstr "Seòladaireachd"
 
 #: ../qml/Details.qml:142
 msgid "Log Visit"
-msgstr "Visite du journal"
+msgstr "Tadhal air Log"
 
 #: ../qml/Details.qml:167
 msgid "Open in Browser"
-msgstr "Ouvrir dans le navigateur"
+msgstr "Fosgail ann am brobhsair"
 
 #: ../qml/Details.qml:192
 msgid "Share Cache"
-msgstr "Partager le cache"
+msgstr "Roinn Cache"
 
 #: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
 msgid "Cache Name"
-msgstr "Nom du cache"
+msgstr "Ainm tasgadan"
 
 #: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
 msgid "Cache Type"
-msgstr "Type de cache"
+msgstr "Seòrsa tasgadan"
 
 #: ../qml/Details.qml:274
 msgid "Cache Size"
-msgstr "Taille du cache"
+msgstr "Meud tasgadan"
 
 #: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
 msgid "Cache ID"
-msgstr "ID de cache"
+msgstr "ID tasgadan"
 
 #: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
 msgid "Distance"
-msgstr "Distance"
+msgstr "Astar"
 
 #: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
 msgid "Difficulty"
-msgstr "Difficulté"
+msgstr "Duilgheadas"
 
 #: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
 msgid "Terrain"
-msgstr "Terrain"
+msgstr "Talamh"
 
 #: ../qml/Details.qml:324
 msgid "Owner"
-msgstr "Propriétaire"
+msgstr "Sealbhadair"
 
 #: ../qml/Details.qml:334
 msgid "Hidden"
-msgstr "Caché"
+msgstr "Falaichte"
 
 #: ../qml/Details.qml:344
 msgid "Last Found"
-msgstr "Dernière découverte"
+msgstr "Fhuaras mu dheireadh"
 
 #: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
 msgid "Cache Location"
-msgstr "Emplacement du cache"
+msgstr "Suidheachadh tasgadan"
 
 #: ../qml/Details.qml:738
 msgid "Jan"
-msgstr "Jan"
+msgstr "Jan."
 
 #: ../qml/Details.qml:738
 msgid "Feb"
-msgstr "fév"
+msgstr "Gearran"
 
 #: ../qml/Details.qml:738
 msgid "Mar"
-msgstr "Mar"
+msgstr "Mar."
 
 #: ../qml/Details.qml:738
 msgid "Apr"
-msgstr "avr"
+msgstr "Aib"
 
 #: ../qml/Details.qml:738
 msgid "May"
-msgstr "Mai"
+msgstr "A &#39;Chèitean"
 
 #: ../qml/Details.qml:738
 msgid "Jun"
-msgstr "Juin"
+msgstr "Jun"
 
 #: ../qml/Details.qml:739
 msgid "Jul"
-msgstr "juil"
+msgstr "Jul"
 
 #: ../qml/Details.qml:739
 msgid "Aug"
-msgstr "Août"
+msgstr "Lùnastal"
 
 #: ../qml/Details.qml:739
 msgid "Sep"
-msgstr "SEP"
+msgstr "Septembar"
 
 #: ../qml/Details.qml:739
 msgid "Oct"
-msgstr "oct"
+msgstr "Dàmhair"
 
 #: ../qml/Details.qml:739
 msgid "Nov"
-msgstr "nov"
+msgstr "Samhain"
 
 #: ../qml/Details.qml:739
 msgid "Dec"
-msgstr "déc"
+msgstr "Dùbhlachd"
 
 #: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
 msgid "%1 minutes ago"
-msgstr "%1 il y a quelques minutes"
+msgstr "%1 mionaid air ais"
 
 #: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
 msgid "%1 hours ago"
-msgstr "%1 il y a des heures"
+msgstr "%1 uair a thìde air ais"
 
 #: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
 msgid "%1 days ago"
-msgstr "%1 il y a quelques jours"
+msgstr "%1 latha air ais"
 
 #: ../qml/AuthScreen.qml:26
 msgid "Username"
-msgstr "Nom d&#39;utilisateur"
+msgstr "Ainm-cleachdaidh"
 
 #: ../qml/AuthScreen.qml:39
 msgid "Password"
-msgstr "Mot de passe"
+msgstr "Facal-faire"
 
 #: ../qml/AuthScreen.qml:51
 msgid "Login"
-msgstr "S&#39;identifier"
+msgstr "Log a-steach"
 
 #: ../qml/AuthScreen.qml:56
 msgid "Please wait, attempting to log in."
-msgstr "Veuillez patienter, essayez de vous connecter."
+msgstr "Fuirich ort, a ’feuchainn ri logadh a-steach."
 
 #: ../qml/AuthScreen.qml:62
 msgid "Login accepted"
-msgstr "Login accepté"
+msgstr "Glacadh a-steach"
 
 #: ../qml/AuthScreen.qml:65
 msgid "Login details are incorrect, try again."
-msgstr "Les informations de connexion sont incorrectes, réessayez."
+msgstr "Tha mion-fhiosrachadh logadh a-steach ceàrr, feuch ris a-rithist."
 
 #: ../qml/AuthScreen.qml:73
 msgid "Not logged in."
-msgstr "Pas connecté."
+msgstr "Gun logadh a-steach."
 
 #: ../qml/MapScreen.qml:18
 msgid "Waiting for GPS fix..."
-msgstr "En attente de correction GPS ..."
+msgstr "A ’feitheamh ri fuasgladh GPS ..."
 
 #: ../qml/MapScreen.qml:24
 msgid "Show Search"
-msgstr "Afficher la recherche"
+msgstr "Seall Rannsachadh"
 
 #: ../qml/MapScreen.qml:43
 msgid "Download Caches"
-msgstr "Télécharger les caches"
+msgstr "Luchdaich sìos cèidsichean"
 
 #: ../qml/MapScreen.qml:70
 msgid "GPS Lock"
-msgstr "Verrouillage GPS"
+msgstr "Lock GPS"
 
 #: ../qml/MapScreen.qml:286
 msgid "More Details"
-msgstr "Plus de détails"
+msgstr "Barrachd mion-fhiosrachaidh"
 
 #: ../qml/MapScreen.qml:309
 msgid "Stored in device"
-msgstr "Stocké dans l&#39;appareil"
+msgstr "Air a stòradh san inneal"
 
 #: geocaching.desktop.in.h:1
 msgid "Geocaching"
-msgstr "Géocaching"
+msgstr "Geocaching"

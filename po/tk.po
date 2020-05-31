@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: geocaching.evilbunny\n"
 "Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
 "POT-Creation-Date: 2020-05-29 12:35+0000\n"
-"PO-Revision-Date: 2020-05-31 03:18+0000\n"
+"PO-Revision-Date: 2020-05-31 03:21+0000\n"
 "Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
-"Language-Team: French <fr@li.org>\n"
-"Language: fr\n"
+"Language-Team: Turkmen <tk@li.org>\n"
+"Language: tk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,96 +20,96 @@ msgstr ""
 
 #: ../qml/Search.qml:15
 msgid "Search for a cache..."
-msgstr "Rechercher un cache ..."
+msgstr "Keş gözläň ..."
 
 #: ../qml/Search.qml:30
 msgid "Search for a cache by it's GC code"
-msgstr "Rechercher un cache par son code GC"
+msgstr "GC kody bilen keş gözläň"
 
 #: ../qml/Search.qml:43
 msgid "Search"
-msgstr "Chercher"
+msgstr "Gözlemek"
 
 #: ../qml/Share.qml:18
 msgid "Share %1 with a contact"
-msgstr "Partagez %1 avec un contact"
+msgstr "%1 kontakt bilen paýlaşyň"
 
 #: ../qml/Share.qml:27
 msgid "Select url to put it in the clipboard"
-msgstr "Sélectionnez l&#39;URL pour le mettre dans le presse-papiers"
+msgstr "Buferde goýmak üçin url saýlaň"
 
 #: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
 #: ../qml/Share.qml:74
 msgid "Link copied to clipboard!"
-msgstr "Lien copié dans le presse-papiers!"
+msgstr "Baglanyşyk paneli göçürildi!"
 
 #: ../qml/LogVisit.qml:16
 msgid "Log your visit to %1"
-msgstr "Enregistrez votre visite à %1"
+msgstr "Saparyňyzy %1 ýazyň"
 
 #: ../qml/LogVisit.qml:128
 msgid "Today"
-msgstr "Aujourd&#39;hui"
+msgstr "Bu gün"
 
 #: ../qml/LogVisit.qml:128
 msgid "Yesterday"
-msgstr "Hier"
+msgstr "Düýn"
 
 #: ../qml/LogVisit.qml:210
 msgid "Log Text"
-msgstr "Texte du journal"
+msgstr "Teksti hasaba al"
 
 #: ../qml/LogVisit.qml:221
 msgid "Submit Log"
-msgstr "Soumettre le journal"
+msgstr "Logurnal iber"
 
 #: ../qml/LogVisit.qml:242
 msgid "Log was submitted successfully."
-msgstr "Le journal a été soumis avec succès."
+msgstr "Logurnal üstünlikli tabşyryldy."
 
 #: ../qml/Details.qml:92
 msgid "Compass"
-msgstr "Boussole"
+msgstr "Kompas"
 
 #: ../qml/Details.qml:117
 msgid "Navigation"
-msgstr "La navigation"
+msgstr "Nawigasiýa"
 
 #: ../qml/Details.qml:142
 msgid "Log Visit"
-msgstr "Visite du journal"
+msgstr "Girmek"
 
 #: ../qml/Details.qml:167
 msgid "Open in Browser"
-msgstr "Ouvrir dans le navigateur"
+msgstr "Brauzerde açyň"
 
 #: ../qml/Details.qml:192
 msgid "Share Cache"
-msgstr "Partager le cache"
+msgstr "Keş paýlaşyň"
 
 #: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
 msgid "Cache Name"
-msgstr "Nom du cache"
+msgstr "Keşiň ady"
 
 #: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
 msgid "Cache Type"
-msgstr "Type de cache"
+msgstr "Keş görnüşi"
 
 #: ../qml/Details.qml:274
 msgid "Cache Size"
-msgstr "Taille du cache"
+msgstr "Keş ölçegi"
 
 #: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
 msgid "Cache ID"
-msgstr "ID de cache"
+msgstr "Keş ID"
 
 #: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
 msgid "Distance"
-msgstr "Distance"
+msgstr "Aralyk"
 
 #: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
 msgid "Difficulty"
-msgstr "Difficulté"
+msgstr "Kynçylyk"
 
 #: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
 msgid "Terrain"
@@ -117,132 +117,132 @@ msgstr "Terrain"
 
 #: ../qml/Details.qml:324
 msgid "Owner"
-msgstr "Propriétaire"
+msgstr "Eýesi"
 
 #: ../qml/Details.qml:334
 msgid "Hidden"
-msgstr "Caché"
+msgstr "Gizlenen"
 
 #: ../qml/Details.qml:344
 msgid "Last Found"
-msgstr "Dernière découverte"
+msgstr "Iň soňky tapyldy"
 
 #: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
 msgid "Cache Location"
-msgstr "Emplacement du cache"
+msgstr "Keş ýeri"
 
 #: ../qml/Details.qml:738
 msgid "Jan"
-msgstr "Jan"
+msgstr ".An"
 
 #: ../qml/Details.qml:738
 msgid "Feb"
-msgstr "fév"
+msgstr "Fewral"
 
 #: ../qml/Details.qml:738
 msgid "Mar"
-msgstr "Mar"
+msgstr "Mart"
 
 #: ../qml/Details.qml:738
 msgid "Apr"
-msgstr "avr"
+msgstr "Apr"
 
 #: ../qml/Details.qml:738
 msgid "May"
-msgstr "Mai"
+msgstr "Maý"
 
 #: ../qml/Details.qml:738
 msgid "Jun"
-msgstr "Juin"
+msgstr "Iýun"
 
 #: ../qml/Details.qml:739
 msgid "Jul"
-msgstr "juil"
+msgstr "Iýul"
 
 #: ../qml/Details.qml:739
 msgid "Aug"
-msgstr "Août"
+msgstr "Awgust"
 
 #: ../qml/Details.qml:739
 msgid "Sep"
-msgstr "SEP"
+msgstr "Sentýabr"
 
 #: ../qml/Details.qml:739
 msgid "Oct"
-msgstr "oct"
+msgstr "Okt."
 
 #: ../qml/Details.qml:739
 msgid "Nov"
-msgstr "nov"
+msgstr "Noýabr"
 
 #: ../qml/Details.qml:739
 msgid "Dec"
-msgstr "déc"
+msgstr "Dek"
 
 #: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
 msgid "%1 minutes ago"
-msgstr "%1 il y a quelques minutes"
+msgstr "%1 minut öň"
 
 #: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
 msgid "%1 hours ago"
-msgstr "%1 il y a des heures"
+msgstr "%1 sagat öň"
 
 #: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
 msgid "%1 days ago"
-msgstr "%1 il y a quelques jours"
+msgstr "%1 gün öň"
 
 #: ../qml/AuthScreen.qml:26
 msgid "Username"
-msgstr "Nom d&#39;utilisateur"
+msgstr "Ulanyjy ady"
 
 #: ../qml/AuthScreen.qml:39
 msgid "Password"
-msgstr "Mot de passe"
+msgstr "Parol"
 
 #: ../qml/AuthScreen.qml:51
 msgid "Login"
-msgstr "S&#39;identifier"
+msgstr "Giriş"
 
 #: ../qml/AuthScreen.qml:56
 msgid "Please wait, attempting to log in."
-msgstr "Veuillez patienter, essayez de vous connecter."
+msgstr "Girmäge synanyşyp, garaşyň."
 
 #: ../qml/AuthScreen.qml:62
 msgid "Login accepted"
-msgstr "Login accepté"
+msgstr "Giriş kabul edildi"
 
 #: ../qml/AuthScreen.qml:65
 msgid "Login details are incorrect, try again."
-msgstr "Les informations de connexion sont incorrectes, réessayez."
+msgstr "Giriş jikme-jiklikleri nädogry, gaýtadan synanyşyň."
 
 #: ../qml/AuthScreen.qml:73
 msgid "Not logged in."
-msgstr "Pas connecté."
+msgstr "Sessiýa açylmady"
 
 #: ../qml/MapScreen.qml:18
 msgid "Waiting for GPS fix..."
-msgstr "En attente de correction GPS ..."
+msgstr "GPS düzedişine garaşýarys ..."
 
 #: ../qml/MapScreen.qml:24
 msgid "Show Search"
-msgstr "Afficher la recherche"
+msgstr "Gözleg görkez"
 
 #: ../qml/MapScreen.qml:43
 msgid "Download Caches"
-msgstr "Télécharger les caches"
+msgstr "Keşleri göçürip alyň"
 
 #: ../qml/MapScreen.qml:70
 msgid "GPS Lock"
-msgstr "Verrouillage GPS"
+msgstr "GPS gulpy"
 
 #: ../qml/MapScreen.qml:286
 msgid "More Details"
-msgstr "Plus de détails"
+msgstr "Has giňişleýin maglumat"
 
 #: ../qml/MapScreen.qml:309
 msgid "Stored in device"
-msgstr "Stocké dans l&#39;appareil"
+msgstr "Enjamda saklanýar"
 
 #: geocaching.desktop.in.h:1
 msgid "Geocaching"
-msgstr "Géocaching"
+msgstr "Geokaching"

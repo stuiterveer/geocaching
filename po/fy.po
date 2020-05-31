@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: geocaching.evilbunny\n"
 "Report-Msgid-Bugs-To: <https://github.com/evilbunny2008/geocaching/issues>\n"
 "POT-Creation-Date: 2020-05-29 12:35+0000\n"
-"PO-Revision-Date: 2020-05-31 03:18+0000\n"
+"PO-Revision-Date: 2020-05-31 03:20+0000\n"
 "Last-Translator: <https://github.com/evilbunny2008/geocaching/issues>\n"
-"Language-Team: French <fr@li.org>\n"
-"Language: fr\n"
+"Language-Team: Western Frisian <fy@li.org>\n"
+"Language: fy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,116 +20,116 @@ msgstr ""
 
 #: ../qml/Search.qml:15
 msgid "Search for a cache..."
-msgstr "Rechercher un cache ..."
+msgstr "Sykje nei in cache ..."
 
 #: ../qml/Search.qml:30
 msgid "Search for a cache by it's GC code"
-msgstr "Rechercher un cache par son code GC"
+msgstr "Sykje nei in cache troch de GC-koade"
 
 #: ../qml/Search.qml:43
 msgid "Search"
-msgstr "Chercher"
+msgstr "Sykje"
 
 #: ../qml/Share.qml:18
 msgid "Share %1 with a contact"
-msgstr "Partagez %1 avec un contact"
+msgstr "Diel %1 mei in kontaktpersoan"
 
 #: ../qml/Share.qml:27
 msgid "Select url to put it in the clipboard"
-msgstr "Sélectionnez l&#39;URL pour le mettre dans le presse-papiers"
+msgstr "Selektearje url om it yn it klamboerd te pleatsen"
 
 #: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
 #: ../qml/Share.qml:74
 msgid "Link copied to clipboard!"
-msgstr "Lien copié dans le presse-papiers!"
+msgstr "Link kopieare nei klamboerd!"
 
 #: ../qml/LogVisit.qml:16
 msgid "Log your visit to %1"
-msgstr "Enregistrez votre visite à %1"
+msgstr "Logje jo besyk oan %1"
 
 #: ../qml/LogVisit.qml:128
 msgid "Today"
-msgstr "Aujourd&#39;hui"
+msgstr "Hjoed"
 
 #: ../qml/LogVisit.qml:128
 msgid "Yesterday"
-msgstr "Hier"
+msgstr "Juster"
 
 #: ../qml/LogVisit.qml:210
 msgid "Log Text"
-msgstr "Texte du journal"
+msgstr "Logtekst"
 
 #: ../qml/LogVisit.qml:221
 msgid "Submit Log"
-msgstr "Soumettre le journal"
+msgstr "Yntsjinje log"
 
 #: ../qml/LogVisit.qml:242
 msgid "Log was submitted successfully."
-msgstr "Le journal a été soumis avec succès."
+msgstr "Log is mei súkses yntsjinne."
 
 #: ../qml/Details.qml:92
 msgid "Compass"
-msgstr "Boussole"
+msgstr "Kompas"
 
 #: ../qml/Details.qml:117
 msgid "Navigation"
-msgstr "La navigation"
+msgstr "Navigaasje"
 
 #: ../qml/Details.qml:142
 msgid "Log Visit"
-msgstr "Visite du journal"
+msgstr "Logbesite"
 
 #: ../qml/Details.qml:167
 msgid "Open in Browser"
-msgstr "Ouvrir dans le navigateur"
+msgstr "Iepenje yn browser"
 
 #: ../qml/Details.qml:192
 msgid "Share Cache"
-msgstr "Partager le cache"
+msgstr "Cache diele"
 
 #: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
 msgid "Cache Name"
-msgstr "Nom du cache"
+msgstr "Cache Namme"
 
 #: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
 msgid "Cache Type"
-msgstr "Type de cache"
+msgstr "Cache-type"
 
 #: ../qml/Details.qml:274
 msgid "Cache Size"
-msgstr "Taille du cache"
+msgstr "Cache grutte"
 
 #: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
 msgid "Cache ID"
-msgstr "ID de cache"
+msgstr "Cache ID"
 
 #: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
 msgid "Distance"
-msgstr "Distance"
+msgstr "Ôfstân"
 
 #: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
 msgid "Difficulty"
-msgstr "Difficulté"
+msgstr "Swierrichheid"
 
 #: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
 msgid "Terrain"
-msgstr "Terrain"
+msgstr "Terrein"
 
 #: ../qml/Details.qml:324
 msgid "Owner"
-msgstr "Propriétaire"
+msgstr "Eigner"
 
 #: ../qml/Details.qml:334
 msgid "Hidden"
-msgstr "Caché"
+msgstr "Ferburgen"
 
 #: ../qml/Details.qml:344
 msgid "Last Found"
-msgstr "Dernière découverte"
+msgstr "Lêste fûn"
 
 #: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
 msgid "Cache Location"
-msgstr "Emplacement du cache"
+msgstr "Cache Lokaasje"
 
 #: ../qml/Details.qml:738
 msgid "Jan"
@@ -137,7 +137,7 @@ msgstr "Jan"
 
 #: ../qml/Details.qml:738
 msgid "Feb"
-msgstr "fév"
+msgstr "Feb"
 
 #: ../qml/Details.qml:738
 msgid "Mar"
@@ -145,104 +145,104 @@ msgstr "Mar"
 
 #: ../qml/Details.qml:738
 msgid "Apr"
-msgstr "avr"
+msgstr "Apr"
 
 #: ../qml/Details.qml:738
 msgid "May"
-msgstr "Mai"
+msgstr "Meie"
 
 #: ../qml/Details.qml:738
 msgid "Jun"
-msgstr "Juin"
+msgstr "Jun"
 
 #: ../qml/Details.qml:739
 msgid "Jul"
-msgstr "juil"
+msgstr "Jul"
 
 #: ../qml/Details.qml:739
 msgid "Aug"
-msgstr "Août"
+msgstr "Aug"
 
 #: ../qml/Details.qml:739
 msgid "Sep"
-msgstr "SEP"
+msgstr "Sep"
 
 #: ../qml/Details.qml:739
 msgid "Oct"
-msgstr "oct"
+msgstr "Okt"
 
 #: ../qml/Details.qml:739
 msgid "Nov"
-msgstr "nov"
+msgstr "Nov"
 
 #: ../qml/Details.qml:739
 msgid "Dec"
-msgstr "déc"
+msgstr "Dec"
 
 #: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
 msgid "%1 minutes ago"
-msgstr "%1 il y a quelques minutes"
+msgstr "%1 minuten lyn"
 
 #: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
 msgid "%1 hours ago"
-msgstr "%1 il y a des heures"
+msgstr "%1 oeren lyn"
 
 #: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
 msgid "%1 days ago"
-msgstr "%1 il y a quelques jours"
+msgstr "%1 dagen lyn"
 
 #: ../qml/AuthScreen.qml:26
 msgid "Username"
-msgstr "Nom d&#39;utilisateur"
+msgstr "Brûkersnamme"
 
 #: ../qml/AuthScreen.qml:39
 msgid "Password"
-msgstr "Mot de passe"
+msgstr "Wachtwurd"
 
 #: ../qml/AuthScreen.qml:51
 msgid "Login"
-msgstr "S&#39;identifier"
+msgstr "Oanmelde"
 
 #: ../qml/AuthScreen.qml:56
 msgid "Please wait, attempting to log in."
-msgstr "Veuillez patienter, essayez de vous connecter."
+msgstr "Wachtsje asjebleaft, besykje te oanmelden."
 
 #: ../qml/AuthScreen.qml:62
 msgid "Login accepted"
-msgstr "Login accepté"
+msgstr "Login aksepteare"
 
 #: ../qml/AuthScreen.qml:65
 msgid "Login details are incorrect, try again."
-msgstr "Les informations de connexion sont incorrectes, réessayez."
+msgstr "Ynloggegevens binne ferkeard, besykje it opnij."
 
 #: ../qml/AuthScreen.qml:73
 msgid "Not logged in."
-msgstr "Pas connecté."
+msgstr "Net ynlogd."
 
 #: ../qml/MapScreen.qml:18
 msgid "Waiting for GPS fix..."
-msgstr "En attente de correction GPS ..."
+msgstr "Wachtsje op GPS-fix ..."
 
 #: ../qml/MapScreen.qml:24
 msgid "Show Search"
-msgstr "Afficher la recherche"
+msgstr "Syk sjen litte"
 
 #: ../qml/MapScreen.qml:43
 msgid "Download Caches"
-msgstr "Télécharger les caches"
+msgstr "Caches downloade"
 
 #: ../qml/MapScreen.qml:70
 msgid "GPS Lock"
-msgstr "Verrouillage GPS"
+msgstr "GPS-lock"
 
 #: ../qml/MapScreen.qml:286
 msgid "More Details"
-msgstr "Plus de détails"
+msgstr "Mear details"
 
 #: ../qml/MapScreen.qml:309
 msgid "Stored in device"
-msgstr "Stocké dans l&#39;appareil"
+msgstr "Bewarre yn apparaat"
 
 #: geocaching.desktop.in.h:1
 msgid "Geocaching"
-msgstr "Géocaching"
+msgstr "Geocaching"
