@@ -24,7 +24,7 @@ msgstr "Suche nach einem Cache ..."
 
 #: ../qml/Search.qml:30
 msgid "Search for a cache by it's GC code"
-msgstr "Suchen Sie nach einem Cache anhand des GC-Codes"
+msgstr "Suche nach einem Cache anhand des GC-Codes"
 
 #: ../qml/Search.qml:43
 msgid "Search"
@@ -32,11 +32,11 @@ msgstr "Suche"
 
 #: ../qml/Share.qml:18
 msgid "Share %1 with a contact"
-msgstr "Teilen Sie %1 mit einem Kontakt"
+msgstr "Teile %1 mit einem Kontakt"
 
 #: ../qml/Share.qml:27
 msgid "Select url to put it in the clipboard"
-msgstr "Wählen Sie die URL aus, um sie in die Zwischenablage zu legen"
+msgstr "URL in die Zwischenablage kopieren"
 
 #: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
 #: ../qml/Share.qml:74
@@ -45,7 +45,7 @@ msgstr "Link in die Zwischenablage kopiert!"
 
 #: ../qml/LogVisit.qml:16
 msgid "Log your visit to %1"
-msgstr "Protokollieren Sie Ihren Besuch bei %1"
+msgstr "Besuch bei %1 loggen"
 
 #: ../qml/LogVisit.qml:128
 msgid "Today"
@@ -57,15 +57,15 @@ msgstr "Gestern"
 
 #: ../qml/LogVisit.qml:210
 msgid "Log Text"
-msgstr "Protokolltext"
+msgstr "Logtext"
 
 #: ../qml/LogVisit.qml:221
 msgid "Submit Log"
-msgstr "Protokoll senden"
+msgstr "Log senden"
 
 #: ../qml/LogVisit.qml:242
 msgid "Log was submitted successfully."
-msgstr "Protokoll wurde erfolgreich übermittelt."
+msgstr "Log wurde erfolgreich übermittelt."
 
 #: ../qml/Details.qml:92
 msgid "Compass"
@@ -77,7 +77,7 @@ msgstr "Navigation"
 
 #: ../qml/Details.qml:142
 msgid "Log Visit"
-msgstr "Protokollbesuch"
+msgstr "Besuch loggen"
 
 #: ../qml/Details.qml:167
 msgid "Open in Browser"
@@ -85,7 +85,7 @@ msgstr "Im Browser öffnen"
 
 #: ../qml/Details.qml:192
 msgid "Share Cache"
-msgstr "Cache freigeben"
+msgstr "Cache teilen"
 
 #: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
 msgid "Cache Name"
@@ -113,11 +113,11 @@ msgstr "Schwierigkeit"
 
 #: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
 msgid "Terrain"
-msgstr "Terrain"
+msgstr "Gelände"
 
 #: ../qml/Details.qml:324
 msgid "Owner"
-msgstr "Inhaber"
+msgstr "Besitzer"
 
 #: ../qml/Details.qml:334
 msgid "Hidden"
@@ -129,27 +129,27 @@ msgstr "Zuletzt gefunden"
 
 #: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
 msgid "Cache Location"
-msgstr "Cache-Speicherort"
+msgstr "Cache-Position"
 
 #: ../qml/Details.qml:738
 msgid "Jan"
-msgstr "Jan."
+msgstr "Jan"
 
 #: ../qml/Details.qml:738
 msgid "Feb"
-msgstr "Feb."
+msgstr "Feb"
 
 #: ../qml/Details.qml:738
 msgid "Mar"
-msgstr "Beschädigen"
+msgstr "Mär"
 
 #: ../qml/Details.qml:738
 msgid "Apr"
-msgstr "Apr."
+msgstr "Apr"
 
 #: ../qml/Details.qml:738
 msgid "May"
-msgstr "Kann"
+msgstr "Mai"
 
 #: ../qml/Details.qml:738
 msgid "Jun"
@@ -165,31 +165,31 @@ msgstr "Aug."
 
 #: ../qml/Details.qml:739
 msgid "Sep"
-msgstr "Sep."
+msgstr "Sep"
 
 #: ../qml/Details.qml:739
 msgid "Oct"
-msgstr "Okt."
+msgstr "Okt"
 
 #: ../qml/Details.qml:739
 msgid "Nov"
-msgstr "Nov."
+msgstr "Nov"
 
 #: ../qml/Details.qml:739
 msgid "Dec"
-msgstr "Dez."
+msgstr "Dez"
 
 #: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
 msgid "%1 minutes ago"
-msgstr "%1 Vor ein paar Minuten"
+msgstr "Vor %1 Minuten"
 
 #: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
 msgid "%1 hours ago"
-msgstr "%1 Vor Stunden"
+msgstr "Vor %1 Stunden"
 
 #: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
 msgid "%1 days ago"
-msgstr "%1 Vor Tagen"
+msgstr "Vor %1 Tagen"
 
 #: ../qml/AuthScreen.qml:26
 msgid "Username"
@@ -205,15 +205,15 @@ msgstr "Anmeldung"
 
 #: ../qml/AuthScreen.qml:56
 msgid "Please wait, attempting to log in."
-msgstr "Bitte warten Sie und versuchen Sie sich anzumelden."
+msgstr "Bitte warten, während versucht wird sich anzumelden."
 
 #: ../qml/AuthScreen.qml:62
 msgid "Login accepted"
-msgstr "Login akzeptiert"
+msgstr "Login erfolgreich"
 
 #: ../qml/AuthScreen.qml:65
 msgid "Login details are incorrect, try again."
-msgstr "Die Anmeldedaten sind falsch. Versuchen Sie es erneut."
+msgstr "Die Anmeldedaten sind falsch, versuchen Sie es erneut."
 
 #: ../qml/AuthScreen.qml:73
 msgid "Not logged in."
@@ -221,7 +221,7 @@ msgstr "Nicht eingeloggt."
 
 #: ../qml/MapScreen.qml:18
 msgid "Waiting for GPS fix..."
-msgstr "Warten auf GPS-Fix ..."
+msgstr "Warten auf GPS-Position"
 
 #: ../qml/MapScreen.qml:24
 msgid "Show Search"
@@ -241,7 +241,7 @@ msgstr "Mehr Details"
 
 #: ../qml/MapScreen.qml:309
 msgid "Stored in device"
-msgstr "Im Gerät gespeichert"
+msgstr "Auf dem Gerät gespeichert"
 
 #: geocaching.desktop.in.h:1
 msgid "Geocaching"
