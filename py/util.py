@@ -8,12 +8,12 @@ import math
 from html.parser import HTMLParser
 from html import unescape
 import json
+import mysqlite
 import files
 import htmlcode
 import geocache
 import images
 import logbook
-import sqlite
 import users
 
 SESSION = files.get_session()
@@ -101,7 +101,7 @@ def logvisit(cacheid, logtype, logdate, logtext):
         # response = SESSION.post(url, data=data)
         # print(response.html)
     except Exception as error:
-        print("line 157")
+        print("line 104")
         print(error)
         return error
 
@@ -148,7 +148,7 @@ def do_auth(username, password):
     data['ReturnUrl'] = ""
 
     response = SESSION.post(url, data=data)
-
+    print("line=151")
     return response
 
 def is_logged_in():
@@ -168,7 +168,7 @@ def get_row(conn, cacheid):
     """ get a geocache from the database """
 
     cacheid = cacheid.upper()
-    ret = sqlite.get_row(conn, cacheid)
+    ret = mysqlite.get_row(conn, cacheid)
 
     if ret is not None and ret[0] != "":
         g_arr = geocache.GeoCache()
@@ -200,8 +200,8 @@ def get_json_attributes(cacheid):
     """ get attributes for a cache """
 
     cacheid = cacheid.upper()
-    conn = sqlite.check_db()
-    a_out = sqlite.get_attributes(conn, cacheid)
+    conn = mysqlite.check_db()
+    a_out = mysqlite.get_attributes(conn, cacheid)
     close_db(conn)
 
     return json.dumps(a_out)
@@ -235,7 +235,7 @@ def refresh_cache(cacheid):
     """ Update the stored cache info with new data if it exists """
 
     cacheid = cacheid.upper()
-    conn = sqlite.check_db()
+    conn = mysqlite.check_db()
     g_arr = get_row(conn, cacheid)
 
     ret = get_cache_page(conn, cacheid, g_arr.cacheurl)
@@ -254,19 +254,19 @@ def refresh_cache(cacheid):
     g_arr.hint = hint
     g_arr.found = found
 
-    sqlite.add_to_db(conn, g_arr, attributes)
+    mysqlite.add_to_db(conn, g_arr, attributes)
 
 def delete_cache(cacheid):
     """Remove deleted caches from the database"""
 
-    conn = sqlite.check_db()
-    sqlite.delete_row(conn, cacheid)
+    conn = mysqlite.check_db()
+    mysqlite.delete_row(conn, cacheid)
 
 def dl_cache(cacheid):
     """ Download and parse a cache page """
 
     cacheid = cacheid.upper()
-    conn = sqlite.check_db()
+    conn = mysqlite.check_db()
     cache_url = "https://www.geocaching.com/geocache/" + cacheid
     print(cache_url)
 
@@ -374,7 +374,7 @@ def dl_cache(cacheid):
     g_arr.hint = hint
     g_arr.found = found
 
-    sqlite.add_to_db(conn, g_arr, attributes)
+    mysqlite.add_to_db(conn, g_arr, attributes)
 
     close_db(conn)
 
@@ -404,7 +404,7 @@ def get_cache_list(lat, lon):
           "&origin=" + loc + "&radius=100km&o=2&sort=Distance&asc=True"
 
     print(url)
-    conn = sqlite.check_db()
+    conn = mysqlite.check_db()
 
     try:
         html = SESSION.get(url)
@@ -471,7 +471,7 @@ def get_cache_list(lat, lon):
                 short = cache.short
                 body = cache.body
                 hint = cache.hint
-                attributes = sqlite.get_attributes(conn, cacheid)
+                attributes = mysqlite.get_attributes(conn, cacheid)
 
             g_arr = geocache.GeoCache()
             g_arr.cacheid = cacheid
@@ -492,7 +492,7 @@ def get_cache_list(lat, lon):
             g_arr.hint = hint
             g_arr.found = found
 
-            sqlite.add_to_db(conn, g_arr, attributes)
+            mysqlite.add_to_db(conn, g_arr, attributes)
         except Exception as error:
             print("459 - Failed to parse cache info.")
             print(error)
@@ -732,7 +732,7 @@ def get_images(conn, logid):
 
 def get_json_user(accountid):
     """ get user details from DB """
-    conn = sqlite.check_db()
+    conn = mysqlite.check_db()
     user = get_user(conn, accountid)
     close_db(conn)
 
@@ -742,7 +742,7 @@ def get_json_logs(cacheid):
     """ returns logs in json format """
 
     cacheid = cacheid.upper()
-    conn = sqlite.check_db()
+    conn = mysqlite.check_db()
     g_l = get_logs(conn, cacheid)
     close_db(conn)
 
@@ -836,7 +836,7 @@ def get_log(conn, logid):
 
 def get_markers():
     """ Get all marker locations from the sqlite db """
-    conn = sqlite.check_db()
+    conn = mysqlite.check_db()
     cursor = conn.cursor()
 
     cursor.execute("SELECT * FROM geocaches")
@@ -880,7 +880,7 @@ def get_json_row(cacheid):
     """ return a row as json """
 
     cacheid = cacheid.upper()
-    conn = sqlite.check_db()
+    conn = mysqlite.check_db()
     g_c = get_row(conn, cacheid)
     close_db(conn)
 
