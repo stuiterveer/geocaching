@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: geocaching.evilbunny\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-01 02:20+0000\n"
+"POT-Creation-Date: 2023-03-17 04:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,53 +17,32 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Search.qml:15
-msgid "Search for a cache..."
+#: ../qml/AuthScreen.qml:26
+msgid "Username"
 msgstr ""
 
-#: ../qml/Search.qml:30
-msgid "Search for a cache by it's GC code"
+#: ../qml/AuthScreen.qml:39
+msgid "Password"
 msgstr ""
 
-#: ../qml/Search.qml:43
-msgid "Search"
+#: ../qml/AuthScreen.qml:51
+msgid "Login"
 msgstr ""
 
-#: ../qml/Share.qml:18
-msgid "Share %1 with a contact"
+#: ../qml/AuthScreen.qml:56
+msgid "Please wait, attempting to log in."
 msgstr ""
 
-#: ../qml/Share.qml:27
-msgid "Select url to put it in the clipboard"
+#: ../qml/AuthScreen.qml:62
+msgid "Login accepted"
 msgstr ""
 
-#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
-#: ../qml/Share.qml:74
-msgid "Link copied to clipboard!"
+#: ../qml/AuthScreen.qml:65
+msgid "Login details are incorrect, try again."
 msgstr ""
 
-#: ../qml/LogVisit.qml:16
-msgid "Log your visit to %1"
-msgstr ""
-
-#: ../qml/LogVisit.qml:128
-msgid "Today"
-msgstr ""
-
-#: ../qml/LogVisit.qml:128
-msgid "Yesterday"
-msgstr ""
-
-#: ../qml/LogVisit.qml:210
-msgid "Log Text"
-msgstr ""
-
-#: ../qml/LogVisit.qml:221
-msgid "Submit Log"
-msgstr ""
-
-#: ../qml/LogVisit.qml:242
-msgid "Log was submitted successfully."
+#: ../qml/AuthScreen.qml:73
+msgid "Not logged in."
 msgstr ""
 
 #: ../qml/Details.qml:92
@@ -190,32 +169,28 @@ msgstr ""
 msgid "%1 days ago"
 msgstr ""
 
-#: ../qml/AuthScreen.qml:26
-msgid "Username"
+#: ../qml/LogVisit.qml:16
+msgid "Log your visit to %1"
 msgstr ""
 
-#: ../qml/AuthScreen.qml:39
-msgid "Password"
+#: ../qml/LogVisit.qml:128
+msgid "Today"
 msgstr ""
 
-#: ../qml/AuthScreen.qml:51
-msgid "Login"
+#: ../qml/LogVisit.qml:128
+msgid "Yesterday"
 msgstr ""
 
-#: ../qml/AuthScreen.qml:56
-msgid "Please wait, attempting to log in."
+#: ../qml/LogVisit.qml:210
+msgid "Log Text"
 msgstr ""
 
-#: ../qml/AuthScreen.qml:62
-msgid "Login accepted"
+#: ../qml/LogVisit.qml:221
+msgid "Submit Log"
 msgstr ""
 
-#: ../qml/AuthScreen.qml:65
-msgid "Login details are incorrect, try again."
-msgstr ""
-
-#: ../qml/AuthScreen.qml:73
-msgid "Not logged in."
+#: ../qml/LogVisit.qml:242
+msgid "Log was submitted successfully."
 msgstr ""
 
 #: ../qml/MapScreen.qml:18
@@ -240,6 +215,31 @@ msgstr ""
 
 #: ../qml/MapScreen.qml:309
 msgid "Stored in device"
+msgstr ""
+
+#: ../qml/Search.qml:15
+msgid "Search for a cache..."
+msgstr ""
+
+#: ../qml/Search.qml:30
+msgid "Search for a cache by it's GC code"
+msgstr ""
+
+#: ../qml/Search.qml:43
+msgid "Search"
+msgstr ""
+
+#: ../qml/Share.qml:18
+msgid "Share %1 with a contact"
+msgstr ""
+
+#: ../qml/Share.qml:27
+msgid "Select url to put it in the clipboard"
+msgstr ""
+
+#: ../qml/Share.qml:38 ../qml/Share.qml:50 ../qml/Share.qml:62
+#: ../qml/Share.qml:74
+msgid "Link copied to clipboard!"
 msgstr ""
 
 #: geocaching.desktop.in.h:1
