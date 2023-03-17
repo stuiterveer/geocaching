@@ -289,9 +289,10 @@ def dl_cache(cacheid):
         found = 0
 
     print("Found cacheid: " + cacheid)
-    cachename = data.split('<span id="ctl00_ContentBody_CacheName">', 1)[1]
+    cachename = data.split("ctl00_ContentBody_CacheName", 1)[1]
+    cachename = cachename.split('>', 1)[1]
     cachename = cachename.split('</span>', 1)[0].strip()
-    cachesize = data.split('" title="Size: ', 1)[1].split(' ', 1)[0].strip()
+    cachesize = data.split('" title="Size: ', 1)[1].split('"', 1)[0].strip()
 
     cacheowner = data.split('<div id="ctl00_ContentBody_mcd1">', 1)[1]
     cacheowner = cacheowner.split('">', 1)[1].split('</a>', 1)[0].strip()
