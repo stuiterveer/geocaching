@@ -5,8 +5,8 @@ import QtQuick 2.9
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.2
 import QtQuick.Window 2.2
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Themes 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Themes 1.3
 
 Page {
     id: mapPage
