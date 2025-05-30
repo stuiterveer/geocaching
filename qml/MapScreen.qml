@@ -87,7 +87,7 @@ Page {
         //     name: "osm.mapping.providersrepository.disabled"
         //     value: true
         // }
-        // PluginParameter { name: "osm.mapping.custom.host"; value: "https://map.fosm.org/" }
+        PluginParameter { name: "osm.mapping.custom.host"; value: "https://tile.openstreetmap.org/" }
         // PluginParameter { name: "osm.mapping.copyright"; value: "&copy; by <a href='https://fosm.org'>FOSM.org and contributors</a>" }
     }
 
@@ -105,7 +105,7 @@ Page {
         property int jitterThreshold: 30
 
         plugin: osmMapPlugin
-        // activeMapType: supportedMapTypes[supportedMapTypes.length - 1]
+        activeMapType: supportedMapTypes[supportedMapTypes.length - 1]
 
         width: parent.width
         height: parent.height
