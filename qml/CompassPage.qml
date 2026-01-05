@@ -7,7 +7,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Window 2.2
 import QtSensors 5.9
 import QtSensors 5.9 as Sensors
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Page {
     id: compassPage

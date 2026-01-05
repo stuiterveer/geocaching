@@ -5,7 +5,7 @@ import QtQuick.Controls 2.1
 import QtQuick.Layouts 1.1
 import QtQuick.Window 2.2
 import QtSystemInfo 5.0
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 MainView {
     id: mainView
