@@ -11,6 +11,6 @@
         }
     },
     "version": "0.0.15",
-    "maintainer": "Evil Bunny <evilbunny@evilbunny.org>",
+    "maintainer": "stuiterveer <admin@stuiterveer.com>",
     "framework" : "ubuntu-sdk-20.04"
 }
