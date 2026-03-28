@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: geocaching.evilbunny\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 04:59+0000\n"
+"POT-Creation-Date: 2026-03-28 20:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,11 +65,11 @@ msgstr ""
 msgid "Share Cache"
 msgstr ""
 
-#: ../qml/Details.qml:251 ../qml/MapScreen.qml:200
+#: ../qml/Details.qml:251 ../qml/MapScreen.qml:208
 msgid "Cache Name"
 msgstr ""
 
-#: ../qml/Details.qml:264 ../qml/MapScreen.qml:229
+#: ../qml/Details.qml:264 ../qml/MapScreen.qml:237
 msgid "Cache Type"
 msgstr ""
 
@@ -77,19 +77,19 @@ msgstr ""
 msgid "Cache Size"
 msgstr ""
 
-#: ../qml/Details.qml:284 ../qml/MapScreen.qml:240
+#: ../qml/Details.qml:284 ../qml/MapScreen.qml:248
 msgid "Cache ID"
 msgstr ""
 
-#: ../qml/Details.qml:294 ../qml/MapScreen.qml:251
+#: ../qml/Details.qml:294 ../qml/MapScreen.qml:259
 msgid "Distance"
 msgstr ""
 
-#: ../qml/Details.qml:304 ../qml/MapScreen.qml:262
+#: ../qml/Details.qml:304 ../qml/MapScreen.qml:270
 msgid "Difficulty"
 msgstr ""
 
-#: ../qml/Details.qml:314 ../qml/MapScreen.qml:273
+#: ../qml/Details.qml:314 ../qml/MapScreen.qml:281
 msgid "Terrain"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgstr ""
 msgid "Last Found"
 msgstr ""
 
-#: ../qml/Details.qml:354 ../qml/MapScreen.qml:218
+#: ../qml/Details.qml:354 ../qml/MapScreen.qml:226
 msgid "Cache Location"
 msgstr ""
 
@@ -157,15 +157,15 @@ msgstr ""
 msgid "Dec"
 msgstr ""
 
-#: ../qml/Details.qml:782 ../qml/MapScreen.qml:453
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:461
 msgid "%1 minutes ago"
 msgstr ""
 
-#: ../qml/Details.qml:784 ../qml/MapScreen.qml:455
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:463
 msgid "%1 hours ago"
 msgstr ""
 
-#: ../qml/Details.qml:786 ../qml/MapScreen.qml:457
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:465
 msgid "%1 days ago"
 msgstr ""
 
@@ -209,11 +209,11 @@ msgstr ""
 msgid "GPS Lock"
 msgstr ""
 
-#: ../qml/MapScreen.qml:286
+#: ../qml/MapScreen.qml:294
 msgid "More Details"
 msgstr ""
 
-#: ../qml/MapScreen.qml:309
+#: ../qml/MapScreen.qml:317
 msgid "Stored in device"
 msgstr ""
 
