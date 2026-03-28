@@ -411,6 +411,8 @@ Page {
                 pytest.call("files.save_config", [map.center.latitude, map.center.longitude, map.zoomLevel, gpsLock], function(results) {})
             }
         }
+
+        onCopyrightLinkActivated: Qt.openUrlExternally(link)
     }
 
     ListModel {

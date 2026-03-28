@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: geocaching.evilbunny\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-28 20:48+0000\n"
+"POT-Creation-Date: 2026-03-28 20:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,15 +157,15 @@ msgstr ""
 msgid "Dec"
 msgstr ""
 
-#: ../qml/Details.qml:782 ../qml/MapScreen.qml:461
+#: ../qml/Details.qml:782 ../qml/MapScreen.qml:463
 msgid "%1 minutes ago"
 msgstr ""
 
-#: ../qml/Details.qml:784 ../qml/MapScreen.qml:463
+#: ../qml/Details.qml:784 ../qml/MapScreen.qml:465
 msgid "%1 hours ago"
 msgstr ""
 
-#: ../qml/Details.qml:786 ../qml/MapScreen.qml:465
+#: ../qml/Details.qml:786 ../qml/MapScreen.qml:467
 msgid "%1 days ago"
 msgstr ""
 
