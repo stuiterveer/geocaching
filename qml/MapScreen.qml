@@ -55,9 +55,6 @@ Page {
 
                     onTriggered: {
                         busyIndicator.running = true
-                        // var nw = map.toCoordinate(Qt.point(0, 0));
-                        // var se = map.toCoordinate(Qt.point(map.width, map.height));
-                        // pytest.call("util.get_cache_list2", [nw.latitude, nw.longitude, se.latitude, se.longitude, map.center.latitude, map.center.longitude], function(results) {
                         pytest.call("util.get_cache_list", [map.center.latitude, map.center.longitude], function(results) {
                             updateMap(map.center.latitude, map.center.longitude)
                             busyIndicator.running = false
