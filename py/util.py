@@ -516,10 +516,10 @@ def get_cache_page(conn, cacheid, url):
             attributes.append(line)
             print("attribute == " + line)
 
-        tmpstr = "{" + data.split('initialLogs = {', 1)[1]
-        tmpstr = tmpstr.split('};', 1)[0] + "}"
+        tmpstr = data.split('<h2 class="h3" id="LoggedVisits">', 1)[1]
+        tmpstr = tmpstr.split('</h2>', 1)[0]
+        total_rows = int(tmpstr.split(' Logged Visits')[0].strip())
         user_token = data.split("userToken = '", 1)[1].split("';", 1)[0].strip()
-        save_logs(conn, cacheid, tmpstr, user_token)
 
     except Exception as error:
         print("734 - Failed to download cache details, most likely not logged in.")
@@ -547,24 +547,19 @@ def get_more_logs(index, size, user_token):
 
     return None
 
-def save_logs(conn, cacheid, logstr, user_token):
+def save_logs(conn, cacheid, total_rows, user_token):
     """ Save logs to the database """
 
     cacheid = cacheid.upper()
-    json_object = json.loads(logstr)
-    page_info = json_object['pageInfo']
-    size = page_info['size']
-    total_rows = page_info['totalRows']
+    size = 25
     pages = math.ceil(total_rows / size)
     if pages > 5:
         pages = 5
-    json_array = json_object['data']
 
-    for i in range(1, pages + 1):
-        if i > 1:
-            json_array = get_more_logs(i, size, user_token)
-            if json_array is None:
-                return
+    for i in range(1, pages):
+        json_array = get_more_logs(i, size, user_token)
+        if json_array is None:
+            return
 
         for log in json_array:
             l_b = logbook.LogBook()
