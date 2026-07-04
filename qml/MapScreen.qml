@@ -175,7 +175,7 @@ Page {
                     parent: marker
                     anchors.fill: parent
 
-                    onPressed: {
+                    onClicked: {
                         console.log("marker " + title + " was clicked, lat: " + coordinate.latitude + ", lon: " + coordinate.longitude)
                         cacheid = title
                         map.center = coordinate
@@ -364,6 +364,7 @@ Page {
             acceptedButtons: Qt.LeftButton | Qt.RightButton
             parent: map
             anchors.fill: parent
+            propagateComposedEvents: true
 
             property variant lastCoordinate
 
