@@ -815,7 +815,7 @@ def get_markers():
         # print(row[startcol + 1])
         g_c.cacheid = row[startcol + 1]
         g_c.dltime = int(time.time()) - int(row[startcol + 2])
-        g_c.cachename = html.unescape(row[startcol + 3])
+        g_c.cachename = row[startcol + 3]
         g_c.cacheowner = row[startcol + 4]
         g_c.cacheurl = row[startcol + 5]
         g_c.cachesize = row[startcol + 6]
