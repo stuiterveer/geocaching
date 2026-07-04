@@ -251,7 +251,7 @@ Page {
                         text: i18n.tr("Cache Name") + ": "
                     }
 
-                    Text {
+                    Label {
                         id: headingText
                         width: units.gu(5)
                         wrapMode: Text.Wrap
@@ -264,7 +264,7 @@ Page {
                         text: i18n.tr("Cache Type") + ": "
                     }
 
-                    Text {
+                    Label {
                         width: parent.width
                         id: typeText
                     }
@@ -274,7 +274,7 @@ Page {
                         text: i18n.tr("Cache Size") + ": "
                     }
 
-                    Text {
+                    Label {
                         width: parent.width
                         id: sizeText
                     }
@@ -284,7 +284,7 @@ Page {
                         text: i18n.tr("Cache ID") + ": "
                     }
 
-                    Text {
+                    Label {
                         width: parent.width
                         id: cacheidText
                     }
@@ -294,7 +294,7 @@ Page {
                         text: i18n.tr("Distance") + ": "
                     }
 
-                    Text {
+                    Label {
                         width: parent.width
                         id: distanceText
                     }
@@ -304,7 +304,7 @@ Page {
                         text: i18n.tr("Difficulty") + ": "
                     }
 
-                    Text {
+                    Label {
                         width: parent.width
                         id: diffText
                     }
@@ -314,7 +314,7 @@ Page {
                         text: i18n.tr("Terrain") + ": "
                     }
 
-                    Text {
+                    Label {
                         width: parent.width
                         id: terrText
                     }
@@ -324,7 +324,7 @@ Page {
                         text: i18n.tr("Owner") + ": "
                     }
 
-                    Text {
+                    Label {
                         width: parent.width
                         id: ownerText
                     }
@@ -334,7 +334,7 @@ Page {
                         text: i18n.tr("Hidden") + ": "
                     }
 
-                    Text {
+                    Label {
                         width: parent.width
                         id: hiddenText
                     }
@@ -344,7 +344,7 @@ Page {
                         text: i18n.tr("Last Found") + ": "
                     }
 
-                    Text {
+                    Label {
                         width: parent.width
                         id: lastFoundText
                     }
@@ -354,7 +354,7 @@ Page {
                         text: i18n.tr("Cache Location") + ": "
                     }
 
-                    Text {
+                    Label {
                         width: parent.width
                         id: locText
                     }
@@ -578,14 +578,14 @@ Page {
         GridLayout {
             columns: 3
 
-            Text {
+            Label {
                 Layout.columnSpan: 3
                 text: username
                 font.pixelSize: units.gu(2.5)
                 font.bold: true
             }
 
-            Text {
+            Label {
                 id: metaCol
                 text: metacol
                 font.pixelSize: units.gu(2)
@@ -601,7 +601,7 @@ Page {
                 color: fnfcolor
             }
 
-            Text {
+            Label {
                 text: logtext
                 font.pixelSize: units.gu(2)
                 Layout.maximumWidth: units.gu(33)

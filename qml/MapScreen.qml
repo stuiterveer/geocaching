@@ -205,17 +205,11 @@ Page {
                             text: i18n.tr("Cache Name") + ": "
                         }
 
-                        Rectangle {
-                            clip: true
-                            width: units.gu(22)
-                            height: headingText.height
-
-                            Label {
-                                id: headingText
-                                width: parent.width
-                                text: heading
-                                font.bold: true
-                            }
+                        Label {
+                            id: headingText
+                            width: parent.width
+                            text: heading
+                            font.bold: true
                         }
 
                         Label {
@@ -223,7 +217,7 @@ Page {
                             text: i18n.tr("Cache Location") + ": "
                         }
 
-                        Text {
+                        Label {
                             width: parent.width
                             id: locText
                             text: from_decimal(lat, "lat") + " - " + from_decimal(lon, "lon")
@@ -234,7 +228,7 @@ Page {
                             text: i18n.tr("Cache Type") + ": "
                         }
 
-                        Text {
+                        Label {
                             width: parent.width
                             id: typeText
                             text: type
@@ -245,7 +239,7 @@ Page {
                             text: i18n.tr("Cache ID") + ": "
                         }
 
-                        Text {
+                        Label {
                             width: parent.width
                             id: cacheidText
                             text: title
@@ -256,7 +250,7 @@ Page {
                             text: i18n.tr("Distance") + ": "
                         }
 
-                        Text {
+                        Label {
                             width: parent.width
                             id: distanceText
                             text: dist
@@ -267,7 +261,7 @@ Page {
                             text: i18n.tr("Difficulty") + ": "
                         }
 
-                        Text {
+                        Label {
                             width: parent.width
                             id: diffText
                             text: diff + "/5"
@@ -278,7 +272,7 @@ Page {
                             text: i18n.tr("Terrain") + ": "
                         }
 
-                        Text {
+                        Label {
                             width: parent.width
                             id: terrText
                             text: terr + "/5"

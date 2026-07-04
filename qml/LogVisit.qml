@@ -58,7 +58,7 @@ Page {
             }
         }
 
-        contentItem: Text {
+        contentItem: Label {
             leftPadding: 0
             rightPadding: control.indicator.width + control.spacing
 
@@ -130,7 +130,7 @@ Page {
 
         delegate: ItemDelegate {
             width: control2.width
-            contentItem: Text {
+            contentItem: Label {
                 text: modelData
                 font.pixelSize: units.gu(3.5)
                 elide: Text.ElideRight
@@ -162,7 +162,7 @@ Page {
             }
         }
 
-        contentItem: Text {
+        contentItem: Label {
             leftPadding: 0
             rightPadding: control2.indicator.width + control2.spacing
 

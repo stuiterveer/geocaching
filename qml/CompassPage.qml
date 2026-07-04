@@ -19,7 +19,7 @@ Page {
 
     property var coord1
 
-    Text {
+    Label {
         width: parent.width
         anchors.top: compassHeader.bottom
         horizontalAlignment: Text.AlignHCenter
@@ -28,7 +28,7 @@ Page {
         font.pixelSize: units.gu(3)
     }
 
-    Text {
+    Label {
         width: parent.width
         anchors.top: locText.bottom
         horizontalAlignment: Text.AlignHCenter
@@ -46,7 +46,7 @@ Page {
         anchors.margins: units.gu(1) / 3
     }
 
-    Text {
+    Label {
         horizontalAlignment: Text.AlignLeft
         anchors.top: sepRect.bottom
         anchors.left: parent.left
@@ -55,7 +55,7 @@ Page {
         font.pixelSize: units.gu(5)
     }
 
-    Text {
+    Label {
         horizontalAlignment: Text.AlignRight
         anchors.top: sepRect.bottom
         anchors.right: parent.right
@@ -72,7 +72,7 @@ Page {
         height: units.gu(40)
     }
 
-    Text {
+    Label {
         width: parent.width
         horizontalAlignment: Text.AlignHCenter
         anchors.bottom: parent.bottom
