@@ -383,11 +383,24 @@ def dl_cache(cacheid):
 def get_cache_list(lat, lon):
     """ Search for the nearest 50 unfound caches not owned by the app """
 
-    loc = htmlcode.decdeg2dm(lat, lon)
-    url = "https://www.geocaching.com/play/search?lat=" + str(lat) + "&lng=" + str(lon) + \
-          "&origin=" + loc + "&radius=100km&o=2&sort=Distance&asc=True"
+    cachetypeLookup = {
+        2: 'traditional',
+        3: 'multi',
+        4: 'virtual',
+        6: 'event',
+        8: 'mystery',
+        5: 'letterbox',
+        11: 'webcam',
+        13: 'cito',
+        137: 'earthcache',
+        453: 'mega',
+        1858: 'wherigo',
+        7005: 'giga'
+    }
 
-    print(url)
+    loc = htmlcode.decdeg2dm(lat, lon)
+    url = "https://www.geocaching.com/_next/data/release-20260702.1.3681/en/play/map.json?hf=1&lat=" + str(lat) + "&lng=" + str(lon)
+
     conn = mysqlite.check_db()
 
     try:
@@ -398,89 +411,62 @@ def get_cache_list(lat, lon):
         print(error)
         return None
 
-    if 'isLoggedIn: false' in data:
+    if '__N_REDIRECT' in data:
         print("bombed out, are we still logged in?")
         return None
 
-    data = data.split('<tbody id="geocaches">', 1)[1].split("</tbody>", 1)[0].strip()
-    rows = data.split('<tr  data-rownumber="')
-    for row in rows:
-        try:
-            row = row.strip()
-            if row == "":
-                continue
+    data = json.loads(data)
+    results = data['pageProps']['searchResults']['results']
+    i = 0
 
-            lat = 0.0
-            lon = 0.0
-            short = ""
-            body = ""
-            hint = ""
-            dltime = 0
-            found = 0
+    while i < 50:
+        lat = 0.0
+        lon = 0.0
+        short = ""
+        body = ""
+        hint = ""
+        dltime = 0
+        found = 0
 
-            if row.find("cache-types.svg#icon-found") != -1:
-                found = 1
+        g_arr = geocache.GeoCache()
+        g_arr.cacheid = results[i]['code']
+        g_arr.dltime = int(time.time())
+        g_arr.cachename = results[i]['name']
+        g_arr.cacheowner = results[i]['owner']['username']
+        g_arr.cachesize = str(results[i]['containerType'])
+        g_arr.cacheurl = 'https://www.geocaching.com' + results[i]['detailsUrl']
+        g_arr.cachetype = cachetypeLookup[results[i]['geocacheType']]
 
-            cacheid = row.split('data-id="', 1)[1].split('"', 1)[0].strip()
-            print("Found cacheid: " + cacheid)
-            cachename = row.split('data-name="', 1)[1].split('"', 1)[0].strip()
-            cachesize = row.split('data-column="ContainerSize">', 1)[1].split('</td>', 1)[0].strip()
+        cache = get_row(conn, g_arr.cacheid)
+        if cache is None or (cache.lat == 0.0 and cache.lon == 0.0):
+            ret = get_cache_page(conn, g_arr.cacheid, g_arr.cacheurl)
+            if ret is None:
+                print("Failed to update cache details, are we logged in?")
+                return
 
-            cacheowner = row.split('<span class="owner">', 1)[1].split('</span>', 1)[0].strip()
-            cachetype = row.split('<span class="cache-details">', 1)[1].split('|', 1)[0].strip()
+            lat, lon, short, body, hint, attributes, found = ret
+        else:
+            print(g_arr.cacheid + ": Already exists in the db, skipping...")
+            lat = cache.lat
+            lon = cache.lon
+            short = cache.short
+            body = cache.body
+            hint = cache.hint
+            attributes = mysqlite.get_attributes(conn, g_arr.cacheid)
 
-            diff = row.split('data-column="Difficulty">', 1)[1].split('</td>', 1)[0].strip()
-            diff = float(diff)
-            terr = row.split('data-column="Terrain">', 1)[1].split('</td>', 1)[0].strip()
-            terr = float(terr)
-            hidden = row.split('data-column="PlaceDate">', 1)[1].split('</td>', 1)[0].strip()
-            hidden = clean_up(hidden)
-            lastfound = row.split('data-column="DateLastVisited">', 1)[1].split('</td>', 1)[0].strip()
-            lastfound = clean_up(lastfound)
-            cacheurl = "https://www.geocaching.com" + row.split('<a href="', 1)[1]
-            cacheurl = cacheurl.split('"', 1)[0].strip()
+        g_arr.lat = float(lat)
+        g_arr.lon = float(lon)
+        g_arr.diff = float(results[i]['difficulty'])
+        g_arr.terr = float(results[i]['terrain'])
+        g_arr.hidden = results[i]['placedDate']
+        g_arr.lastfound = results[i]['lastFoundDate']
+        g_arr.short = short
+        g_arr.body = body
+        g_arr.hint = hint
+        g_arr.found = found
+        mysqlite.add_to_db(conn, g_arr, attributes)
 
-            cache = get_row(conn, cacheid)
-            if cache is None or (cache.lat == 0.0 and cache.lon == 0.0):
-                ret = get_cache_page(conn, cacheid, cacheurl)
-                if ret is None:
-                    print("Failed to update cache details, are we logged in?")
-                    return
-
-                lat, lon, short, body, hint, attributes, found = ret
-            else:
-                print(cacheid + ": Already exists in the db, skipping...")
-                lat = cache.lat
-                lon = cache.lon
-                short = cache.short
-                body = cache.body
-                hint = cache.hint
-                attributes = mysqlite.get_attributes(conn, cacheid)
-
-            g_arr = geocache.GeoCache()
-            g_arr.cacheid = cacheid
-            g_arr.dltime = int(time.time())
-            g_arr.cachename = cachename
-            g_arr.cacheowner = cacheowner
-            g_arr.cachesize = cachesize
-            g_arr.cacheurl = cacheurl
-            g_arr.cachetype = cachetype
-            g_arr.lat = float(lat)
-            g_arr.lon = float(lon)
-            g_arr.diff = diff
-            g_arr.terr = terr
-            g_arr.hidden = hidden
-            g_arr.lastfound = lastfound
-            g_arr.short = short
-            g_arr.body = body
-            g_arr.hint = hint
-            g_arr.found = found
-
-            mysqlite.add_to_db(conn, g_arr, attributes)
-        except Exception as error:
-            print("459 - Failed to parse cache info.")
-            print(error)
-
+        i += 1
     close_db(conn)
 
 def get_cache_page(conn, cacheid, url):
