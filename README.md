@@ -13,4 +13,5 @@ Source code is made available under the GPLv3 license, in the hope the code migh
 Icons came from [c:geo](https://github.com/cgeo/cgeo) and application icon cc-by [by Flaticon.com](https://www.flaticon.com/)
 
 [Speiburger](https://github.com/Speiburger) did a great job extending the app.
+
 [evilbunny2008](https://github.com/evilbunny2008) made the app exist and work for Ubuntu Touch Xenial, and was kind enough to hand over the maintenance to me.
