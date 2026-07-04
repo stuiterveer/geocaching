@@ -853,7 +853,6 @@ def get_json_row(cacheid):
         return "{}"
 
     html = HTMLParser()
-    g_c.cachename = html.unescape(g_c.cachename)
     g_c.dltime = int(time.time()) - int(g_c.dltime)
     g_c.body = htmlcode.remove_all_attrs_except(g_c.body)
 
