@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: geocaching.evilbunny\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-04 23:35+0000\n"
+"POT-Creation-Date: 2026-07-05 00:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,107 +65,107 @@ msgstr ""
 msgid "Share Cache"
 msgstr ""
 
-#: ../qml/Details.qml:251 ../qml/MapScreen.qml:205
+#: ../qml/Details.qml:248
 msgid "Cache Name"
 msgstr ""
 
-#: ../qml/Details.qml:264 ../qml/MapScreen.qml:234
+#: ../qml/Details.qml:261
 msgid "Cache Type"
 msgstr ""
 
-#: ../qml/Details.qml:274
+#: ../qml/Details.qml:271
 msgid "Cache Size"
 msgstr ""
 
-#: ../qml/Details.qml:284 ../qml/MapScreen.qml:245
+#: ../qml/Details.qml:281
 msgid "Cache ID"
 msgstr ""
 
-#: ../qml/Details.qml:294 ../qml/MapScreen.qml:256
+#: ../qml/Details.qml:291
 msgid "Distance"
 msgstr ""
 
-#: ../qml/Details.qml:304 ../qml/MapScreen.qml:267
+#: ../qml/Details.qml:301
 msgid "Difficulty"
 msgstr ""
 
-#: ../qml/Details.qml:314 ../qml/MapScreen.qml:278
+#: ../qml/Details.qml:311
 msgid "Terrain"
 msgstr ""
 
-#: ../qml/Details.qml:324
+#: ../qml/Details.qml:321
 msgid "Owner"
 msgstr ""
 
-#: ../qml/Details.qml:334
+#: ../qml/Details.qml:331
 msgid "Hidden"
 msgstr ""
 
-#: ../qml/Details.qml:344
+#: ../qml/Details.qml:341
 msgid "Last Found"
 msgstr ""
 
-#: ../qml/Details.qml:354 ../qml/MapScreen.qml:223
+#: ../qml/Details.qml:351
 msgid "Cache Location"
 msgstr ""
 
-#: ../qml/Details.qml:738
+#: ../qml/Details.qml:721
 msgid "Jan"
 msgstr ""
 
-#: ../qml/Details.qml:738
+#: ../qml/Details.qml:721
 msgid "Feb"
 msgstr ""
 
-#: ../qml/Details.qml:738
+#: ../qml/Details.qml:721
 msgid "Mar"
 msgstr ""
 
-#: ../qml/Details.qml:738
+#: ../qml/Details.qml:721
 msgid "Apr"
 msgstr ""
 
-#: ../qml/Details.qml:738
+#: ../qml/Details.qml:721
 msgid "May"
 msgstr ""
 
-#: ../qml/Details.qml:738
+#: ../qml/Details.qml:721
 msgid "Jun"
 msgstr ""
 
-#: ../qml/Details.qml:739
+#: ../qml/Details.qml:722
 msgid "Jul"
 msgstr ""
 
-#: ../qml/Details.qml:739
+#: ../qml/Details.qml:722
 msgid "Aug"
 msgstr ""
 
-#: ../qml/Details.qml:739
+#: ../qml/Details.qml:722
 msgid "Sep"
 msgstr ""
 
-#: ../qml/Details.qml:739
+#: ../qml/Details.qml:722
 msgid "Oct"
 msgstr ""
 
-#: ../qml/Details.qml:739
+#: ../qml/Details.qml:722
 msgid "Nov"
 msgstr ""
 
-#: ../qml/Details.qml:739
+#: ../qml/Details.qml:722
 msgid "Dec"
 msgstr ""
 
-#: ../qml/Details.qml:782 ../qml/MapScreen.qml:461
+#: ../qml/Details.qml:765 ../qml/MapScreen.qml:372
 msgid "%1 minutes ago"
 msgstr ""
 
-#: ../qml/Details.qml:784 ../qml/MapScreen.qml:463
+#: ../qml/Details.qml:767 ../qml/MapScreen.qml:374
 msgid "%1 hours ago"
 msgstr ""
 
-#: ../qml/Details.qml:786 ../qml/MapScreen.qml:465
+#: ../qml/Details.qml:769 ../qml/MapScreen.qml:376
 msgid "%1 days ago"
 msgstr ""
 
@@ -209,11 +209,11 @@ msgstr ""
 msgid "GPS Lock"
 msgstr ""
 
-#: ../qml/MapScreen.qml:291
+#: ../qml/MapScreen.qml:202
 msgid "More Details"
 msgstr ""
 
-#: ../qml/MapScreen.qml:314
+#: ../qml/MapScreen.qml:225
 msgid "Stored in device"
 msgstr ""
 

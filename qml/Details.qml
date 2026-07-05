@@ -237,207 +237,203 @@ Page {
             width: swipeView.width
             height: swipeView.height
 
-            Rectangle {
-                anchors.fill: parent
+            GridLayout {
+                id: gridLayout
+                width: parent.width
+                columns: 2
 
-                GridLayout {
-                    id: gridLayout
-                    width: parent.width
-                    columns: 2
-
-                    Label {
-                        width: units.gu(3)
-                        horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Cache Name") + ": "
-                    }
-
-                    Label {
-                        id: headingText
-                        width: units.gu(5)
-                        wrapMode: Text.Wrap
-                        elide: Text.ElideRight
-                        font.bold: true
-                    }
-
-                    Label {
-                        horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Cache Type") + ": "
-                    }
-
-                    Label {
-                        width: parent.width
-                        id: typeText
-                    }
-
-                    Label {
-                        horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Cache Size") + ": "
-                    }
-
-                    Label {
-                        width: parent.width
-                        id: sizeText
-                    }
-
-                    Label {
-                        horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Cache ID") + ": "
-                    }
-
-                    Label {
-                        width: parent.width
-                        id: cacheidText
-                    }
-
-                    Label {
-                        horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Distance") + ": "
-                    }
-
-                    Label {
-                        width: parent.width
-                        id: distanceText
-                    }
-
-                    Label {
-                        horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Difficulty") + ": "
-                    }
-
-                    Label {
-                        width: parent.width
-                        id: diffText
-                    }
-
-                    Label {
-                        horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Terrain") + ": "
-                    }
-
-                    Label {
-                        width: parent.width
-                        id: terrText
-                    }
-
-                    Label {
-                        horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Owner") + ": "
-                    }
-
-                    Label {
-                        width: parent.width
-                        id: ownerText
-                    }
-
-                    Label {
-                        horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Hidden") + ": "
-                    }
-
-                    Label {
-                        width: parent.width
-                        id: hiddenText
-                    }
-
-                    Label {
-                        horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Last Found") + ": "
-                    }
-
-                    Label {
-                        width: parent.width
-                        id: lastFoundText
-                    }
-
-                    Label {
-                        horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Cache Location") + ": "
-                    }
-
-                    Label {
-                        width: parent.width
-                        id: locText
-                    }
-                }
-
-                Rectangle {
-                    id: sepRect
-                    width: parent.width
-                    height: units.gu(1) / 5
-                    color: "#666666"
-                    anchors.top: gridLayout.bottom
-                    anchors.margins: units.gu(1)
-                }
-
-                ListView {
-                    id: listview
-                    height: units.gu(5)
-                    width: parent.width
-                    anchors.top: sepRect.bottom
-                    orientation: ListView.Horizontal
-                    flickableDirection: Flickable.HorizontalFlick
-                    boundsBehavior: Flickable.StopAtBounds
-                    delegate: Image {
-                        width: units.gu(5)
-                        height: units.gu(5)
-                        source: modelData
-                    }
-                }
-
-                Rectangle {
-                    id: sepRect2
-                    width: parent.width
-                    height: units.gu(1) / 5
-                    color: "#666666"
-                    anchors.top: listview.bottom
-                    anchors.margins: units.gu(1)
+                Label {
+                    width: units.gu(3)
+                    horizontalAlignment: Text.AlignRight
+                    text: i18n.tr("Cache Name") + ": "
                 }
 
                 Label {
-                    id: storedText
-                    anchors.top: sepRect2.bottom
-                    anchors.left: parent.left
-                    width: parent.width / 2
-                    
+                    id: headingText
+                    width: units.gu(5)
+                    wrapMode: Text.Wrap
+                    elide: Text.ElideRight
+                    font.bold: true
                 }
 
-                Image {
-                    id: deleteIcon
-                    source: "../assets/delete.png"
-                    anchors.top: sepRect2.bottom
-                    anchors.right: parent.right
-                    width: units.gu(3.5)
-                    height: units.gu(3.5)
+                Label {
+                    horizontalAlignment: Text.AlignRight
+                    text: i18n.tr("Cache Type") + ": "
+                }
 
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
+                Label {
+                    width: parent.width
+                    id: typeText
+                }
+
+                Label {
+                    horizontalAlignment: Text.AlignRight
+                    text: i18n.tr("Cache Size") + ": "
+                }
+
+                Label {
+                    width: parent.width
+                    id: sizeText
+                }
+
+                Label {
+                    horizontalAlignment: Text.AlignRight
+                    text: i18n.tr("Cache ID") + ": "
+                }
+
+                Label {
+                    width: parent.width
+                    id: cacheidText
+                }
+
+                Label {
+                    horizontalAlignment: Text.AlignRight
+                    text: i18n.tr("Distance") + ": "
+                }
+
+                Label {
+                    width: parent.width
+                    id: distanceText
+                }
+
+                Label {
+                    horizontalAlignment: Text.AlignRight
+                    text: i18n.tr("Difficulty") + ": "
+                }
+
+                Label {
+                    width: parent.width
+                    id: diffText
+                }
+
+                Label {
+                    horizontalAlignment: Text.AlignRight
+                    text: i18n.tr("Terrain") + ": "
+                }
+
+                Label {
+                    width: parent.width
+                    id: terrText
+                }
+
+                Label {
+                    horizontalAlignment: Text.AlignRight
+                    text: i18n.tr("Owner") + ": "
+                }
+
+                Label {
+                    width: parent.width
+                    id: ownerText
+                }
+
+                Label {
+                    horizontalAlignment: Text.AlignRight
+                    text: i18n.tr("Hidden") + ": "
+                }
+
+                Label {
+                    width: parent.width
+                    id: hiddenText
+                }
+
+                Label {
+                    horizontalAlignment: Text.AlignRight
+                    text: i18n.tr("Last Found") + ": "
+                }
+
+                Label {
+                    width: parent.width
+                    id: lastFoundText
+                }
+
+                Label {
+                    horizontalAlignment: Text.AlignRight
+                    text: i18n.tr("Cache Location") + ": "
+                }
+
+                Label {
+                    width: parent.width
+                    id: locText
+                }
+            }
+
+            Rectangle {
+                id: sepRect
+                width: parent.width
+                height: units.gu(1) / 5
+                color: "#666666"
+                anchors.top: gridLayout.bottom
+                anchors.margins: units.gu(1)
+            }
+
+            ListView {
+                id: listview
+                height: units.gu(5)
+                width: parent.width
+                anchors.top: sepRect.bottom
+                orientation: ListView.Horizontal
+                flickableDirection: Flickable.HorizontalFlick
+                boundsBehavior: Flickable.StopAtBounds
+                delegate: Image {
+                    width: units.gu(5)
+                    height: units.gu(5)
+                    source: modelData
+                }
+            }
+
+            Rectangle {
+                id: sepRect2
+                width: parent.width
+                height: units.gu(1) / 5
+                color: "#666666"
+                anchors.top: listview.bottom
+                anchors.margins: units.gu(1)
+            }
+
+            Label {
+                id: storedText
+                anchors.top: sepRect2.bottom
+                anchors.left: parent.left
+                width: parent.width / 2
+                
+            }
+
+            Image {
+                id: deleteIcon
+                source: "../assets/delete.png"
+                anchors.top: sepRect2.bottom
+                anchors.right: parent.right
+                width: units.gu(3.5)
+                height: units.gu(3.5)
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        markerPopup.close()
+                        busyIndicator.running = true
+                        pytest.call("util.delete_cache", [title], function(results) {
                             markerPopup.close()
-                            busyIndicator.running = true
-                            pytest.call("util.delete_cache", [title], function(results) {
-                                markerPopup.close()
-                                updateMap(map.center.latitude, map.center.longitude)
-                                busyIndicator.running = false
-                            })
-                        }
+                            updateMap(map.center.latitude, map.center.longitude)
+                            busyIndicator.running = false
+                        })
                     }
                 }
+            }
 
-                Image {
-                    source: "../assets/refresh.png"
-                    anchors.top: sepRect2.bottom
-                    anchors.right: deleteIcon.left
-                    width: units.gu(3.5)
-                    height: units.gu(3.5)
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            busyIndicator.running = true
-                            pytest.call("util.refresh_cache", [cacheid], function(results) {
-                                updateScreen()
-                                busyIndicator.running = false
-                            })
-                        }
+            Image {
+                source: "../assets/refresh.png"
+                anchors.top: sepRect2.bottom
+                anchors.right: deleteIcon.left
+                width: units.gu(3.5)
+                height: units.gu(3.5)
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        busyIndicator.running = true
+                        pytest.call("util.refresh_cache", [cacheid], function(results) {
+                            updateScreen()
+                            busyIndicator.running = false
+                        })
                     }
                 }
             }
@@ -455,65 +451,59 @@ Page {
                 contentHeight: shortDesc.height + longDesc.height + sepRect3.height + hintlabel.height + hintText.height + units.gu(5)
                 maximumFlickVelocity: 25000
 
-                Rectangle {
-                    id: frame
+                Label {
+                    id: shortDesc
                     width: parent.width
-                    anchors.fill: parent
+                    textFormat: Text.StyledText
+                    wrapMode: Label.WordWrap
+                    font.pixelSize: units.gu(2.5)
+                }
 
-                    Label {
-                        id: shortDesc
-                        width: parent.width
-                        textFormat: Text.StyledText
-                        wrapMode: Label.WordWrap
-                        font.pixelSize: units.gu(2.5)
-                    }
+                Label {
+                    id: longDesc
+                    anchors.top: shortDesc.bottom
+                    width: parent.width
+                    wrapMode: Label.WordWrap
+                    textFormat: Text.RichText
+                    font.pixelSize: units.gu(2.5)
+                }
 
-                    Label {
-                        id: longDesc
-                        anchors.top: shortDesc.bottom
-                        width: parent.width
-                        wrapMode: Label.WordWrap
-                        textFormat: Text.RichText
-                        font.pixelSize: units.gu(2.5)
-                    }
+                Rectangle {
+                    id: sepRect3
+                    width: parent.width
+                    height: units.gu(1)
+                    color: "#666666"
+                    anchors.top: longDesc.bottom
+                    anchors.margins: units.gu(1)
+                }
 
-                    Rectangle {
-                        id: sepRect3
-                        width: parent.width
-                        height: units.gu(1)
-                        color: "#666666"
-                        anchors.top: longDesc.bottom
-                        anchors.margins: units.gu(1)
-                    }
-
-                    Label {
-                        id: hintlabel
-                        width: parent.width
-                        anchors.top: sepRect3.bottom
-                        text: "Hint:"
-                        font.pixelSize: units.gu(3)
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                console.log("hintText clicked")
-                                hintText.text = rot13()
-                            }
+                Label {
+                    id: hintlabel
+                    width: parent.width
+                    anchors.top: sepRect3.bottom
+                    text: "Hint:"
+                    font.pixelSize: units.gu(3)
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            console.log("hintText clicked")
+                            hintText.text = rot13()
                         }
                     }
+                }
 
-                    Label {
-                        id: hintText
-                        width: parent.width
-                        anchors.top: hintlabel.bottom
-                        wrapMode: Label.WordWrap
-                        textFormat: Text.StyledText
+                Label {
+                    id: hintText
+                    width: parent.width
+                    anchors.top: hintlabel.bottom
+                    wrapMode: Label.WordWrap
+                    textFormat: Text.StyledText
 
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                console.log("hintText clicked")
-                                hintText.text = rot13()
-                            }
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            console.log("hintText clicked")
+                            hintText.text = rot13()
                         }
                     }
                 }
@@ -535,18 +525,11 @@ Page {
             width: swipeView.width
             height: swipeView.height
 
-            Rectangle {
-                z: detailsPage.z + 1
-                color: "#FFFFFF"
+            ListView {
                 anchors.fill: parent
                 width: parent.width
-
-                ListView {
-                    anchors.fill: parent
-                    width: parent.width
-                    model: logModel
-                    delegate: logDelegate
-                }
+                model: logModel
+                delegate: logDelegate
             }
 
         }
