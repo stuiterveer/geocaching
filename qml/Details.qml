@@ -69,7 +69,7 @@ Page {
         padding: 10
         width: units.gu(31)
         // height: units.gu(30.85)
-        height: units.gu(25.8)
+        height: units.gu(20.8)
         x: parent.width - width
         // y: toolBar.bottom
         modal: true
@@ -128,7 +128,7 @@ Page {
             }
         }
 
-        Rectangle {
+        /*Rectangle {
             id: thirdMenu
             border.color: "#000000"
             border.width: 1
@@ -152,14 +152,14 @@ Page {
                     loadLogVisit()
                 }
             }
-        }
+        }*/
 
         Rectangle {
             id: fourthMenu
             border.color: "#000000"
             border.width: 1
             color: "transparent"
-            anchors.top: thirdMenu.bottom
+            anchors.top: secondMenu.bottom
             width: parent.width
             height: units.gu(5)
 
