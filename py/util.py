@@ -399,7 +399,22 @@ def get_cache_list(lat, lon):
     }
 
     loc = htmlcode.decdeg2dm(lat, lon)
-    url = "https://www.geocaching.com/_next/data/release-20260702.1.3681/en/play/map.json?hf=1&lat=" + str(lat) + "&lng=" + str(lon)
+
+    url = "https://www.geocaching.com/play/map?hf=1&lat=" + str(lat) + "&lng=" + str(lon)
+    try:
+        html = SESSION.get(url)
+        data = html.text
+    except Exception as error:
+        return None
+
+    if '__N_REDIRECT' in data:
+        print("bombed out, are we still logged in?")
+        return None
+
+    release = data.split('"buildId":"', 1)[1]
+    release = release.split('"')[0].strip()
+
+    url = "https://www.geocaching.com/_next/data/" + release + "/en/play/map.json?hf=1&lat=" + str(lat) + "&lng=" + str(lon)
 
     conn = mysqlite.check_db()
 
@@ -409,10 +424,6 @@ def get_cache_list(lat, lon):
     except Exception as error:
         print("606 - bombed out, are we still logged in?")
         print(error)
-        return None
-
-    if '__N_REDIRECT' in data:
-        print("bombed out, are we still logged in?")
         return None
 
     data = json.loads(data)
