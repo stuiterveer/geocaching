@@ -80,6 +80,7 @@ Page {
             id: firstMenu
             border.color: "#000000"
             border.width: 1
+            color: "transparent"
             anchors.top: parent.top
             width: parent.width
             height: units.gu(5)
@@ -105,6 +106,7 @@ Page {
             id: secondMenu
             border.color: "#000000"
             border.width: 1
+            color: "transparent"
             anchors.top: firstMenu.bottom
             width: parent.width
             height: units.gu(5)
@@ -130,6 +132,7 @@ Page {
             id: thirdMenu
             border.color: "#000000"
             border.width: 1
+            color: "transparent"
             anchors.top: secondMenu.bottom
             width: parent.width
             height: units.gu(5)
@@ -155,6 +158,7 @@ Page {
             id: fourthMenu
             border.color: "#000000"
             border.width: 1
+            color: "transparent"
             anchors.top: thirdMenu.bottom
             width: parent.width
             height: units.gu(5)
@@ -180,6 +184,7 @@ Page {
             id: fifthMenu
             border.color: "#000000"
             border.width: 1
+            color: "transparent"
             anchors.top: fourthMenu.bottom
             width: parent.width
             height: units.gu(5)
