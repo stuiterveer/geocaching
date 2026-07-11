@@ -10,7 +10,7 @@
             "desktop":  "geocaching.desktop"
         }
     },
-    "version": "0.0.15",
+    "version": "0.0.16",
     "maintainer": "stuiterveer <admin@stuiterveer.com>",
     "framework" : "ubuntu-sdk-20.04"
 }
